@@ -1,0 +1,65 @@
+:root{
+    --light: #F7EFEE;
+    --dark: #0B2149;
+}
+
+.koulen-regular {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color:var(--light);
+    font-size: 16px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.buttonStyle{
+    background-color: transparent;
+    border: .2rem solid var(--dark);
+    color: var(--dark);
+}
+.buttonStyle *{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: .4rem;
+    margin-right: .4rem;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+}
+#headerBtn{
+    width: 100%;
+    text-align: right;
+}
+
+#logoHeader{
+    width: 100%;
+}
+
+#links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space:nowrap;
+    text-decoration-line: underline ;
+    text-underline-offset: .2rem;
+    text-decoration-thickness: .2rem;
+}
+
+#links * {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+#links a{
+    padding-left: .4rem;
+}

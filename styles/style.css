@@ -3,15 +3,37 @@
     --dark: #0B2149;
 }
 
+.dark{
+    color: var(--dark);
+}
+.light{
+    color: var(--light);
+}
+
 .koulen-regular {
     font-family: "Koulen", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: .5em;
+    margin-top: .5em;
   }
+
+.hind-vadodara-semibold {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+@media only screen and (max-width: 1000px){
+    html{
+        font-size: 10px;
+    }
+}
 
 body{
     background-color:var(--light);
-    font-size: 16px;
+    margin: 0;
     margin-left: 4rem;
     margin-right: 4rem;
 }
@@ -26,6 +48,7 @@ body{
     margin-bottom: 0rem;
     margin-left: .4rem;
     margin-right: .4rem;
+    font-size: 1.5rem;
 }
 
 #header{

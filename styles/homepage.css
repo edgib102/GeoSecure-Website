@@ -1,31 +1,172 @@
 :root{
     --light: #F7EFEE;
     --dark: #0B2149;
+
+    --borderMargin: 5rem;
+}
+
+@media only screen and (max-width: 500px){
+    :root{
+        --borderMargin:3rem;
+    }
+    html{
+        font-size: 12px;
+    }
+    #heroImage img{
+        display: none;
+    }
+    #fillerDiv{
+        display: none;
+    }
+    #dataPanel h1{
+        grid-column: 1 / span 3 !important;
+        /* background-color: red; */
+        
+    }
+
 }
 
 #heroPage{
     display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #heroPage h1{
     font-size: 6rem;
     line-height: 6rem;
 }
-#heroImage{
-    margin-left: 30rem;
+/* #heroImage{
+    /* margin-left: 30rem; */
+
+#heroImage img{
+    width: 45rem;
 }
 
 #shutdown{
     background-color: var(--dark);
-    position: fixed;
+    position:absolute;
     left: 0;
     width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px #00000057);
+    z-index: 2 ;
 }
-#border{
-    margin-left: 4rem;
-    margin-right: 4rem;
+#SDborder{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin);
+    display: flex;
 }
+#SDborder p{
+    margin-top: 0rem;
+}
+
 
 #gBtn{
     border-color: var(--light);
+}
+
+#cellIcon{
+    border: var(--light);
+    fill: var(--light);
+    padding-left: 20%;
+}
+
+#hardwareSoftwareSelect {
+    display: flex;
+    flex-direction: row;
+}
+#hardwareSoftwareSelect h1{
+    padding-top: 1rem;
+}
+.hoverSelect{
+    transition: 0.15s;
+}
+
+.hoverSelect:hover{
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 6px #00000025);
+    border-radius: 1rem;
+    z-index: 0;
+}
+
+#HSborder{
+    width:100%;
+    position:absolute;
+    left:0;
+
+}
+
+/* #HSborder div{
+    display: flex;
+    flex-direction: column;
+} */
+
+#hardwareContent{
+    margin: 1rem 1rem 1rem var(--borderMargin);
+    /* transform: translateX(var(--borderMargin)); */
+    /* display: flex;
+    flex-direction: column; */
+} 
+
+#sofwareContent{
+    margin: 1rem var(--borderMargin) 1rem 1rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+#HSbutton{
+    display: block;
+    margin: auto;
+}
+
+#solutionBuilder h1{
+    padding-top: 1rem;
+
+}
+
+#solutionBuilder button {
+    margin-bottom: 2rem;
+}
+
+#DPborder{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: inset 0px 0px 6px #00000025;
+}
+#DPaccentImg{
+    position: absolute;
+    left: 5fr;
+}
+#dataPanel{
+    margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin);
+
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    /* grid-template-areas: "div  .   ."; */
+}
+#dataPanel h1{
+    margin-bottom: 1rem;
+    grid-column: 1;
+    padding-top: 1rem;
+}
+
+#dataPanel h3{
+    width: fit-content;
+}
+
+#dataPanel p{
+    margin: auto;
+}
+
+#fillerDiv{
+    grid-column: 2 / span 3;
 }

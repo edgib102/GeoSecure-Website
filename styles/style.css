@@ -1,6 +1,7 @@
 :root{
     --light: #F7EFEE;
     --dark: #0B2149;
+    --borderMargin: 5rem;
 }
 
 .dark{
@@ -38,13 +39,28 @@
         margin-left: 3rem !important;
         margin-right: 3rem !important;
     }
+    #links{
+        display: none !important;
+    }
+    #footer{
+        margin-left: 5rem !important;
+        margin-right: 5rem !important;
+        padding: 0;
+    }
+    #footerInfo{
+        flex-direction: column !important;
+    }
+    #footerLinks{
+        padding-left: 0px !important;
+        grid-template-columns: repeat(3, 10fr) !important;
+    }
 }
 
 body{
     background-color:var(--light);
     margin: 0;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin);
 
 }
 
@@ -101,6 +117,28 @@ body{
     justify-content: center;
 }
 
+#DDbg{
+    /* height: 100%;
+    width: 100%; */
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    background-color: #0b21493a;
+    z-index: 11;
+}
+
+#headerDD:focus + #DDbg{
+    display:block !important;
+    /* background-color: antiquewhite; */
+}
+
+#DDcontent{
+    width: 50vw;
+    background: var(--dark);
+    height: 100vh;
+    margin: auto;
+}
+
 .textLink{
     white-space:nowrap;
     text-decoration-line: underline ;
@@ -132,10 +170,10 @@ body{
 #footer{
     display: flex;
     justify-content: center;
-    padding-left: 5rem; 
-    padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-left: 15rem; 
+    margin-right: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 #footerLogo{
     width:min-content;
@@ -147,17 +185,34 @@ body{
 
 #footerInfo{
     display: flex;
+    flex-direction: row;
+    
+    
 }
 #footerContact{
     display: flex;
     flex-direction: column;
 }
 #footerLinks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    row-gap: 0;
+    padding-left: 4rem;
+    
+
+}
+
+#footerLinks div{
+    height:fit-content;
+}
+/* #footerLinks{
     display: grid;
-    /* width: 100%; */
-    grid-template-columns: repeat(5, 10fr);
+    width: 100%;
+    grid-template-columns: repeat(100%, 1fr);
+    gap: 1rem;
     padding-left: 4rem;
 }
 #footerLinks div h2{
-    width:min-content;
-}
+    width:100%;
+} */

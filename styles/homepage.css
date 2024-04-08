@@ -121,6 +121,11 @@
     margin: auto;
 }
 
+#solutionBuilder{
+    z-index: 10;
+    position: relative;
+    background: var(--light);
+}
 #solutionBuilder h1{
     padding-top: 1rem;
 
@@ -136,10 +141,13 @@
     width: 100%;
     background-color: white;
     box-shadow: inset 0px 0px 6px #00000025;
+    z-index: -1;
 }
 #DPaccentImg{
     position: absolute;
-    left: 5fr;
+    right: 0%;
+    transform: translatey(-2rem);
+    width: 15rem;
 }
 #dataPanel{
     margin-left: var(--borderMargin);

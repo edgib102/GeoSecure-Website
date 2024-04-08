@@ -1,13 +1,17 @@
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {
-      initSite();
+        windowSizeUpdate();
+        initSite();
+        window.addEventListener("resize", windowSizeUpdate);
+
+        // document.getElementById("DDcontent").setPointerCapture = function (){
+        //     document.getElementById("DDcontent").style.display= "block !important"; 
+        // }
     }
 }
-window.addEventListener("resize", windowSizeUpdate);
 
 
 function initSite(){
-    windowSizeUpdate();
     console.log(document.getElementById("shutdown").clientHeight.toString());
     document.getElementById("SDpadder").style.height = document.getElementById("shutdown").clientHeight.toString()+"px";
     document.getElementById("HSpadder").style.height = document.getElementById("hardwareSoftwareSelect").clientHeight.toString()+"px";   
@@ -16,6 +20,9 @@ function initSite(){
 
 function windowSizeUpdate(){
     console.log("test");
+    // initSite();
+    initSite();
+
     if( window.innerWidth <= 500){
         // document.getElementById("cellIcon").style.width = document.getElementById("cellIcon").offsetWidth *1.7 + "px";
 

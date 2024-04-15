@@ -39,6 +39,13 @@
         margin-left: 3rem !important;
         margin-right: 3rem !important;
     }
+    /* #header{
+        position: fixed;
+        background: var(--light);
+    } */
+    .headerDD{
+        display: block !important;
+    }
     #links{
         display: none !important;
     }
@@ -63,6 +70,9 @@ body{
     margin-right: var(--borderMargin);
 
 }
+html{
+    margin: 0;
+}
 
 .buttonStyle{
     background-color: transparent;
@@ -83,20 +93,22 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: var(--dark);
+    padding-top: 1rem;
 }
 
 #headerBtn{
-    width: 100%;
+    /* width: 100%; */
     text-align: right;
+    text-wrap: nowrap;
 }
 #headerBtn button{
     margin: auto;
 }
 
 #logoHeader{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
 }
@@ -118,26 +130,56 @@ body{
 }
 
 #DDbg{
-    /* height: 100%;
-    width: 100%; */
-    /* display: none; */
-    position: absolute;
+    display: none;
     right: 0;
-    background-color: #0b21493a;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000075;
     z-index: 11;
+    overflow: hidden;
 }
 
-#headerDD:focus + #DDbg{
+.headerDD{
+    display: none;
+}
+
+/* #headerDD:focus + #DDbg{
     display:block !important;
-    /* background-color: antiquewhite; */
+
+} */
+
+.headerDD img{
+    width:2.5rem;
+    
 }
 
 #DDcontent{
-    width: 50vw;
+    width: calc(70vw - var(--borderMargin) - 2rem);
     background: var(--dark);
-    height: 100vh;
-    margin: auto;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    filter: drop-shadow(-1rem 0 1rem #00000046);
+    padding-right: var(--borderMargin);
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
+
+#DDlinks{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    row-gap: 1rem;
+}
+/* #DDcontent{
+    margin: ;
+} */
 
 .textLink{
     white-space:nowrap;

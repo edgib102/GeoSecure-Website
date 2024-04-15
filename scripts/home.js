@@ -4,6 +4,16 @@ document.onreadystatechange = function () {
         initSite();
         window.addEventListener("resize", windowSizeUpdate);
 
+        var DDlist = document.getElementsByClassName("headerDD");
+        console.log(DDlist)
+        for (var i=0; i < DDlist.length; i++){
+            DDlist[i].addEventListener("click", mobileDDtoggle);
+            // console.log(element)
+        }
+        // DDlist.forEach(element => {
+        //     addEventListener("click", mobileDDtoggle(element));
+        // });
+
         // document.getElementById("DDcontent").setPointerCapture = function (){
         //     document.getElementById("DDcontent").style.display= "block !important"; 
         // }
@@ -27,4 +37,16 @@ function windowSizeUpdate(){
         // document.getElementById("cellIcon").style.width = document.getElementById("cellIcon").offsetWidth *1.7 + "px";
 
     }
+}
+
+function mobileDDtoggle(){
+    DDitem = document.getElementById("DDbg");
+
+    if (DDitem.style.display === "block") {
+    DDitem.style.display = "none";
+    } else {
+
+    DDitem.style.display = "block";
+    }        
+
 }

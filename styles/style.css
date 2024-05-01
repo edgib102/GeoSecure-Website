@@ -80,6 +80,7 @@ html{
     color: var(--dark);
     /* margin-top: 1rem; */
     margin-bottom: 1rem;
+    cursor:pointer;
 }
 .buttonStyle *{
     margin-top: 0rem;
@@ -127,7 +128,7 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+}  
 
 #DDbg{
     display: none;
@@ -166,6 +167,13 @@ html{
     padding-left: 2rem;
     padding-top: 1rem;
 }
+#DDheader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
 
 #DDlinks{
     width: 100%;
@@ -186,6 +194,7 @@ html{
     text-decoration-line: underline ;
     text-underline-offset: .15em;
     text-decoration-thickness: .15em;
+    cursor: pointer;
 }
 .textLink:hover.light{
     color: white;

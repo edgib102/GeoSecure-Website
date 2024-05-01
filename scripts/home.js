@@ -6,8 +6,12 @@ document.onreadystatechange = function () {
 
         var DDlist = document.getElementsByClassName("headerDD");
         console.log(DDlist)
+        canClick = true;
         for (var i=0; i < DDlist.length; i++){
-            DDlist[i].addEventListener("click", mobileDDtoggle);
+            
+            DDlist[i].addEventListener("click", mobileDDtoggle);        
+        
+
             // console.log(element)
         }
         // DDlist.forEach(element => {
@@ -41,12 +45,16 @@ function windowSizeUpdate(){
 
 function mobileDDtoggle(){
     DDitem = document.getElementById("DDbg");
-
-    if (DDitem.style.display === "block") {
-    DDitem.style.display = "none";
-    } else {
-
-    DDitem.style.display = "block";
-    }        
-
+    console.log("fgogogogo")
+    if(canClick == true){
+        if (DDitem.style.display === "block") {
+            DDitem.style.display = "none";
+        } else {
+            DDitem.style.display = "block";
+        }   
+        canClick = false;
+        setTimeout(() => {
+            canClick = true
+        }, 50);          
+    }
 }

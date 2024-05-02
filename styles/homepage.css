@@ -19,19 +19,32 @@
     #heroImage img{
         display: none;
     }
-    #fillerDiv{
-        display: none;
-    }
+
     #cellIcon{
         padding-left: 0% !important;
     }
+    #hardwareSoftwareSelect{
+        flex-direction: column !important;
+    }
+    .hoverSelect div{
+        margin-left: var(--borderMargin) !important;
+        margin-right: var(--borderMargin) !important;
+    }
+    #sofwareContent{
+        /* text-align: center; */
+    }
     #dataPanel h1{
-        grid-column: 1 / span 3 !important;
+        grid-column: 1 / span 2 !important;
         /* background-color: red; */
         
     }
+    
+    #fillerDiv{
+        grid-row: 1 !important;
+        grid-column: 3 !important;
+    }
     #DPaccentImg{
-        display: none;
+        width: 10rem !important;
     }
 
 }
@@ -121,6 +134,14 @@
     /* display: flex;
     flex-direction: column; */
 } 
+
+.HSimg{
+    width: 25rem;
+    max-width: fit-content;
+    margin:auto;
+    display: block;
+    
+}
 
 #sofwareContent{
     margin: 1rem var(--borderMargin) 1rem 1rem;

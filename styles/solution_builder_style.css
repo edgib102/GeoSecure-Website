@@ -1,0 +1,35 @@
+:root{
+    --light: #F7EFEE;
+    --dark: #0B2149;
+
+    --borderMargin: 5rem;
+}
+
+#mainContent{
+    display: flex;
+    /* height: calc(100vh - 12rem); */
+}
+
+#informationPanel h1{
+    font-size: 3rem;
+}
+
+#optionGrid{
+    padding-top: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto;
+    filter: drop-shadow(.225rem .225rem .3rem rgba(0, 0, 0, 0.15));
+}
+
+.optionPanel{
+    background-color: white;
+    width: 100%;
+}
+
+#optionFooter{
+    padding-top: 2rem;
+    
+    display: flex;
+    justify-content: space-between;
+}

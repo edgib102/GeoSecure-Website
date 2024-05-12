@@ -11,6 +11,8 @@
     color: var(--light);
 }
 
+
+
 .koulen-regular {
     font-family: "Koulen", sans-serif;
     font-weight: 400;
@@ -59,7 +61,7 @@
     }
     #footerLinks{
         padding-left: 0px !important;
-        grid-template-columns: repeat(3, 10fr) !important;
+        justify-content:space-between;
     }
 }
 
@@ -72,6 +74,10 @@ body{
 }
 html{
     margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .buttonStyle{
@@ -246,12 +252,10 @@ html{
 }
 #footerLinks{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     gap: 4rem;
     row-gap: 0;
     padding-left: 4rem;
-    
-
 }
 
 #footerLinks div{

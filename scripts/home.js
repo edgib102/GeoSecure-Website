@@ -1,32 +1,39 @@
 document.onreadystatechange = function () {
-    if (document.readyState == "complete") {
-        windowSizeUpdate();
-        initSite();
-        window.addEventListener("resize", windowSizeUpdate);
+    // if (document.readyState == "complete") {
+    windowSizeUpdate();
+    initSite();
+    window.addEventListener("resize", windowSizeUpdate);
 
-        var DDlist = document.getElementsByClassName("headerDD");
-        console.log(DDlist)
-        canClick = true;
-        for (var i=0; i < DDlist.length; i++){
-            
-            DDlist[i].addEventListener("click", mobileDDtoggle);        
-        
+    var DDlist = document.getElementsByClassName("headerDD");
+    console.log(DDlist)
+    canClick = true;
 
-            // console.log(element)
+    document.getElementById("DDbg").addEventListener("click", function (e) {
+        // console.log(e.target.id);
+        if(e.target.id == "DDbg"){
+            mobileDDtoggle();
         }
-        // DDlist.forEach(element => {
-        //     addEventListener("click", mobileDDtoggle(element));
-        // });
+    });        
 
-        // document.getElementById("DDcontent").setPointerCapture = function (){
-        //     document.getElementById("DDcontent").style.display= "block !important"; 
-        // }
+    for (var i=0; i < DDlist.length; i++){
+        
+        DDlist[i].addEventListener("click", mobileDDtoggle);        
+    
+
+        // console.log(element)
     }
+    // DDlist.forEach(element => {
+    //     addEventListener("click", mobileDDtoggle(element));
+    // });
+
+    // document.getElementById("DDcontent").setPointerCapture = function (){
+    //     document.getElementById("DDcontent").style.display= "block !important"; 
+    // }
+    // }
 }
 
 
 function initSite(){
-    console.log(document.getElementById("shutdown").clientHeight.toString());
     document.getElementById("SDpadder").style.height = document.getElementById("shutdown").clientHeight.toString()+"px";
     document.getElementById("HSpadder").style.height = document.getElementById("hardwareSoftwareSelect").clientHeight.toString()+"px";   
     document.getElementById("DPpadder").style.height = document.getElementById("dataPanel").clientHeight.toString()+"px";   

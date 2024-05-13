@@ -12,7 +12,12 @@
 
 #builderHeroImage{
     width: 50%;
+    display: block;
     margin: auto;
+}
+
+#informationPanel{
+    padding-right: 4rem;
 }
 
 #informationPanel h1{
@@ -53,4 +58,5 @@
     
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }

@@ -10,6 +10,11 @@
     /* height: calc(100vh - 12rem); */
 }
 
+#builderHeroImage{
+    width: 50%;
+    margin: auto;
+}
+
 #informationPanel h1{
     font-size: 3rem;
 }
@@ -25,6 +30,22 @@
 .optionPanel{
     background-color: white;
     width: 100%;
+    display: flex;
+    font-size:  1.2rem;
+    vertical-align: center;
+}
+
+.optionPanel img{
+    padding-left: 1rem;
+    display: block;
+    height: 4rem;
+}
+
+.optionPanel p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
 }
 
 #optionFooter{

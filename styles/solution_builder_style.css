@@ -5,6 +5,16 @@
     --borderMargin: 5rem;
 }
 
+/* body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+} */
+
 #mainContent{
     display: flex;
     /* height: calc(100vh - 12rem); */
@@ -24,7 +34,14 @@
     font-size: 3rem;
 }
 
-#optionGrid{
+.optionLayout{
+    /* width: 60vw; */
+}
+.optionLayout p{
+    margin: 0;
+}
+
+.optionGrid{
     padding-top: 1rem;
     display: grid;
     gap: 2rem;
@@ -34,16 +51,22 @@
 
 .optionPanel{
     background-color: white;
-    width: 100%;
+    width: 20rem;
     display: flex;
     font-size:  1.2rem;
     vertical-align: center;
+    cursor: pointer;
 }
 
+/* .optionPanel{
+    background-color:#0B2149
+} */
 .optionPanel img{
     padding-left: 1rem;
     display: block;
     height: 4rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .optionPanel p{
@@ -51,6 +74,14 @@
     display: flex;
     justify-content: center;
     padding-left: 1rem;
+    padding-right: 1rem;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.optionPanel-active{
+    background-color: black;
 }
 
 #optionFooter{
@@ -58,5 +89,5 @@
     
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom:auto
 }

@@ -84,6 +84,19 @@ body::-webkit-scrollbar{
     background-color: black;
 }
 
+#infoSubmissionStep div{
+    padding-bottom: 1rem;
+}
+#companyInput{
+    width: 40rem;
+    height: 2rem;
+    border: none;
+}
+
+#companyInput:focus{
+    outline: none;
+}
+
 #optionFooter{
     padding-top: 2rem;
     

@@ -271,3 +271,15 @@ a{
 #footerLinks div h2{
     width:100%;
 } */
+
+.DDelement{
+    width: 40%;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    height: 2rem;
+}
+
+.DDelement:{
+    background-color: #00000046;
+}

@@ -1,3 +1,4 @@
+
 document.onreadystatechange = function () {
     // if (document.readyState == "complete") {
     windowSizeUpdate();
@@ -5,7 +6,7 @@ document.onreadystatechange = function () {
     window.addEventListener("resize", windowSizeUpdate);
 
     var DDlist = document.getElementsByClassName("headerDD");
-    console.log(DDlist)
+    console.log("DDlist")
     canClick = true;
 
     document.getElementById("DDbg").addEventListener("click", function (e) {
@@ -34,6 +35,7 @@ document.onreadystatechange = function () {
 
 
 function initSite(){
+    console.log("etetetete")
     document.getElementById("SDpadder").style.height = document.getElementById("shutdown").clientHeight.toString()+"px";
     document.getElementById("HSpadder").style.height = document.getElementById("hardwareSoftwareSelect").clientHeight.toString()+"px";   
     document.getElementById("DPpadder").style.height = document.getElementById("dataPanel").clientHeight.toString()+"px";   

@@ -4,7 +4,39 @@
 
     --borderMargin: 5rem;
 }
-
+@media only screen and (max-width: 500px){
+    #mainContent{
+        flex-direction: column;
+    }
+    #informationPanel{
+        width: 100%;
+        padding: 0 !important;
+    }
+    #informationPanel h1{
+        font-size: 4rem !important;
+        line-height: 4rem !important;
+    }
+    #informationPanel h2{
+        text-align: center;
+    }
+    #builderHeroImage{
+        width: 70% !important;
+    }
+    .optionGrid{
+        gap: 1rem !important;
+    }
+    .optionPanel{
+        width: auto!important;
+        height: 6rem;
+    }
+    .optionPanel p{
+        font-size: 1.1rem;
+    }
+    .optionPanel img{
+        width:50%;
+    }
+    
+}
 /* body{
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -32,6 +64,7 @@ body::-webkit-scrollbar{
 
 #informationPanel h1{
     font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .optionLayout{
@@ -39,6 +72,10 @@ body::-webkit-scrollbar{
 }
 .optionLayout p{
     margin: 0;
+}
+
+.optionLayout > h2{
+    margin-top: 1rem;
 }
 
 .optionGrid{
@@ -64,7 +101,8 @@ body::-webkit-scrollbar{
 .optionPanel img{
     padding-left: 1rem;
     display: block;
-    height: 4rem;
+    height: auto;
+    width: 25%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -81,14 +119,16 @@ body::-webkit-scrollbar{
 }
 
 .optionPanel-active{
-    background-color: black;
+    outline: .25rem solid var(--dark);
+    /* filter: blur(.1rem); */
+    filter: drop-shadow(0 0 .5rem rgba(107, 107, 107, 0.1));
 }
 
 #infoSubmissionStep div{
     padding-bottom: 1rem;
 }
 #companyInput{
-    width: 40rem;
+    width: 100%;
     height: 2rem;
     border: none;
 }

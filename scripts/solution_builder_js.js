@@ -19,7 +19,7 @@ function initOptions(solutionStep, layoutList){
             optionList = layoutList[i].querySelectorAll(".optionPanel")
             optionList.forEach(optionPanel => {
                 optionPanel.addEventListener("click", () =>{
-
+                    console.log(solutionStep)
                     switch (solutionStep) {
                         case 0:
                             optionList.forEach( optionPanel => {
@@ -28,7 +28,8 @@ function initOptions(solutionStep, layoutList){
                                 
                             optionPanel.classList.add("optionPanel-active")
                             break;
-                        case 1, 2:
+                        case 1:
+                        case 2:
                             optionPanel.classList.toggle("optionPanel-active")
                         default:
                             break;
@@ -50,8 +51,8 @@ document.onreadystatechange = () => {
         adjustContentMargin();
 
         let solutionStep = 0;
-
         const layoutList = document.getElementsByClassName("optionLayout");
+        initOptions(solutionStep, layoutList);
 
         document.querySelectorAll(".continueBtn").forEach(btn => {
 

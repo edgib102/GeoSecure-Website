@@ -1,0 +1,35 @@
+:root{
+    --light: #F7EFEE;
+    --dark: #0B2149;
+
+    --borderMargin: 5rem;
+}
+#heroContent{
+    display: flex;
+}
+#heroContent img{
+    width: 50rem;
+    height: auto;
+}
+
+#heroContent h1{
+    font-size: 3rem;
+}
+
+#infoItems{
+    display: flex;
+}
+.infoItem div{
+    display: flex;
+}
+.infoItem h2{
+    margin: 0;
+}
+
+#featuresBorder{
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    background-color: white;
+    width: 100%;
+}

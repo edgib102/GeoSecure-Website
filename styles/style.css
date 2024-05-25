@@ -108,6 +108,11 @@ a{
     font-size: 1.7rem;
 }
 
+.marginExtend{
+    margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin);
+}
+
 #header{
     display: flex;
     flex-direction: row;

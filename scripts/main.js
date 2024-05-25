@@ -1,5 +1,18 @@
 window.addEventListener("load", () => {
 
+    const solidBgElements = document.querySelectorAll('.solidBg');
+
+    if (solidBgElements != null){
+        solidBgElements.forEach((element) => {
+            // Create a new div element
+            const padder = document.createElement('div');
+            
+            padder.style.height = element.clientHeight.toString()+"px"
+            element.parentNode.insertBefore(padder, element.nextSibling);
+        });        
+    }
+
+
     var DDlist = document.getElementsByClassName("headerDD");
     console.log(DDlist)
     canClick = true;

@@ -43,9 +43,41 @@ function initOptions(solutionStep, layoutList){
     }
 }
 
+function sendEmail() {
+    var name = "John Doe";
+    var email = "johndoe@example.com";
+    var message = "Hello, this is a test message.";
+
+    var data = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    console.log(data)
+
+    fetch('send_email.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.text())
+    .then(responseText => {
+        console.log(responseText);
+        alert(responseText);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Oops! Something went wrong.');
+    });
+}
+
 document.onreadystatechange = () => {
     if (document.readyState == "complete") {
-
+        
+        sendEmail();
         window.addEventListener('resize', adjustContentMargin);
         window.addEventListener('load', adjustContentMargin);
         adjustContentMargin();

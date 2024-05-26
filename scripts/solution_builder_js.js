@@ -1,3 +1,5 @@
+let hasContent = false
+
 function adjustContentMargin() {
     const content = document.getElementById('mainContent');
     
@@ -15,11 +17,16 @@ function initOptions(solutionStep, layoutList){
 
     for (let i = 0; i < layoutList.length; i++) {
         if(i == solutionStep){
+
+        
+            hasContent = false
+
             layoutList[i].style.display = "block";
             optionList = layoutList[i].querySelectorAll(".optionPanel")
+
             optionList.forEach(optionPanel => {
                 optionPanel.addEventListener("click", () =>{
-                    console.log(solutionStep)
+                    hasContent = true
                     switch (solutionStep) {
                         case 0:
                             optionList.forEach( optionPanel => {
@@ -34,6 +41,7 @@ function initOptions(solutionStep, layoutList){
                         default:
                             break;
                     }
+                    
                 })
             });
         } else{
@@ -43,44 +51,40 @@ function initOptions(solutionStep, layoutList){
     }
 }
 
-function sendEmail() {
-    var name = "John Doe";
-    var email = "johndoe@example.com";
-    var message = "Hello, this is a test message.";
+async function sendEmail(email, message) {
+    const formData = new FormData();
+    formData.append('email', email);
+    formData.append('message', message);
 
-    var data = {
-        name: name,
-        email: email,
-        message: message
-    };
+    try {
+        const response = await fetch('https://formspree.io/f/mwkgjwpp', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
 
-    console.log(data)
-
-    fetch('send_email.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.text())
-    .then(responseText => {
-        console.log(responseText);
-        alert(responseText);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Oops! Something went wrong.');
-    });
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            console.log('Email sent successfully:', jsonResponse);
+        } else {
+            console.error('Error sending email:', response.statusText);
+        }
+    } catch (error) {
+        console.error('Error sending email:', error);
+    }
 }
 
 document.onreadystatechange = () => {
     if (document.readyState == "complete") {
         
-        sendEmail();
+
         window.addEventListener('resize', adjustContentMargin);
         window.addEventListener('load', adjustContentMargin);
         adjustContentMargin();
+
+        const submissionElements = document.querySelectorAll(".submission")
 
         let solutionStep = 0;
         const layoutList = document.getElementsByClassName("optionLayout");
@@ -89,11 +93,19 @@ document.onreadystatechange = () => {
         document.querySelectorAll(".continueBtn").forEach(btn => {
 
             btn.addEventListener("click", () => {
-
-                solutionStep++;
+                
+                if(hasContent == true |){
+                    solutionStep++;
+                }
+                hasContent = initOptions(solutionStep, layoutList);
+                console.log(hasContent)
                 console.log(solutionStep)
-                console.log(new Date().toLocaleTimeString())
-                initOptions(solutionStep, layoutList);
+
+                if(solutionStep == 4){
+                    sendEmail(submissionElements[0].value, submissionElements[1].value)
+                    console.log(submissionElements[0].value)
+                }
+
             })
         })
 

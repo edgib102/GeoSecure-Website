@@ -6,9 +6,39 @@
 }
 
 @media only screen and (max-width: 500px){
+    #heroContent{
+        flex-direction: column;
+    }
+
+    #heroContent img{
+        max-width:100%;
+        max-height:100%;
+    }
+
     #infoItems{
         grid-template-columns: auto auto !important;
+        gap: 2rem !important;
     }
+
+    .infoItem img{
+        width: 30% !important;
+    }
+
+    #companyPanel, #statsPanel{
+        flex-direction: column !important;
+    }
+
+    #companyPanel img, #statsPanel img{
+        max-width:100%;
+        max-height:100%;
+        padding: 0 !important;
+    }
+
+    #clientList > div{
+        gap: 0 !important;
+        justify-content: space-between !important;
+    }
+    
 }
 
 #heroContent{
@@ -24,15 +54,6 @@
     font-size: 3rem;
 }
 
-#infoItems{
-    display: flex;
-}
-.infoItem div{
-    display: flex;
-}
-.infoItem h2{
-    margin: 0;
-}
 
 #featuresBorder{
     position: absolute;
@@ -53,6 +74,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 4rem;
+    row-gap: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -64,12 +86,16 @@
     width: 15%;
 }
 
+.infoItem h2{
+    margin: 0;
+}
+
 #companyPanel{
     display: flex;
     margin-top: 2rem;
 }
 
-#companyPanel img{
+#companyPanel img, #statsPanel img{
     width: 40rem;
     height: auto;
     padding-left: 4rem;
@@ -80,11 +106,13 @@
     margin-top: 2rem;
 }
 
-#statsPanel img{
+/* #statsPanel img{
     width: 40rem;
     height: auto;
     padding-right: 4rem;
-}
+
+    
+} */
 
 #clientList{
     text-align: center;

@@ -1,7 +1,18 @@
 function createPadder (element){
+    existingPadders = document.querySelectorAll(".padder")
+
+    console.log(existingPadders)
+    if(existingPadders != null){
+        existingPadders.forEach(element => {
+            element.remove();
+        });        
+    }
+
+
     const padder = document.createElement('div');
             
     padder.style.height = element.clientHeight.toString()+"px"
+    padder.classList.add("padder");
     element.parentNode.insertBefore(padder, element.nextSibling);
 }
 
@@ -14,7 +25,9 @@ window.addEventListener("load", () => {
             // Create a new div element
             createPadder(element);
 
-            document.addEventListener()
+            window.addEventListener("resize", () => {
+                createPadder(element);
+            })
         });        
     }
 

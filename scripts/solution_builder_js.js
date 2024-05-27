@@ -94,14 +94,14 @@ document.onreadystatechange = () => {
 
             btn.addEventListener("click", () => {
                 
-                if(hasContent == true |){
+                if(hasContent == true){
                     solutionStep++;
                 }
                 hasContent = initOptions(solutionStep, layoutList);
                 console.log(hasContent)
                 console.log(solutionStep)
 
-                if(solutionStep == 4){
+                if(solutionStep == 5){
                     sendEmail(submissionElements[0].value, submissionElements[1].value)
                     console.log(submissionElements[0].value)
                 }

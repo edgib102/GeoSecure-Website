@@ -63,3 +63,45 @@
 .infoItem img{
     width: 15%;
 }
+
+#companyPanel{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#companyPanel img{
+    width: 40rem;
+    height: auto;
+    padding-left: 4rem;
+}
+
+#statsPanel{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#statsPanel img{
+    width: 40rem;
+    height: auto;
+    padding-right: 4rem;
+}
+
+#clientList{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+#clientList > div{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.clientLogo{
+    width: 4rem;
+    height: 4rem;
+    background-color: grey;
+}

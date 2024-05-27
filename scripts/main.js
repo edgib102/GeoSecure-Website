@@ -1,3 +1,10 @@
+function createPadder (element){
+    const padder = document.createElement('div');
+            
+    padder.style.height = element.clientHeight.toString()+"px"
+    element.parentNode.insertBefore(padder, element.nextSibling);
+}
+
 window.addEventListener("load", () => {
 
     const solidBgElements = document.querySelectorAll('.solidBg');
@@ -5,10 +12,9 @@ window.addEventListener("load", () => {
     if (solidBgElements != null){
         solidBgElements.forEach((element) => {
             // Create a new div element
-            const padder = document.createElement('div');
-            
-            padder.style.height = element.clientHeight.toString()+"px"
-            element.parentNode.insertBefore(padder, element.nextSibling);
+            createPadder(element);
+
+            document.addEventListener()
         });        
     }
 

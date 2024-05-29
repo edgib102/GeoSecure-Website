@@ -1,4 +1,5 @@
 let hasContent = false
+let selection = null;
 
 function adjustContentMargin() {
     const content = document.getElementById('mainContent');
@@ -12,49 +13,81 @@ function adjustContentMargin() {
     content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
 }
 
+// function initOptions(){
+//     for (let i=0; i< layoutList.length)
+// }
 
-function initOptions(solutionStep, layoutList){
+function initOptions(solutionStep, optionList){
+    
+    hasContent = false
 
-    for (let i = 0; i < layoutList.length; i++) {
-        if(i == solutionStep){
-
-        
-            hasContent = false
-
-            layoutList[i].style.display = "block";
-            optionList = layoutList[i].querySelectorAll(".optionPanel")
-
-            optionList.forEach(optionPanel => {
-                optionPanel.addEventListener("click", () =>{
+    optionList.forEach(optionPanel => {
+        optionPanel.addEventListener("click", () =>{
+            
+            switch (solutionStep) {
+                case 0:
+                    optionList.forEach( optionPanel => {
+                        optionPanel.classList.remove("optionPanel-active")
+                    });
+                        
+                    optionPanel.classList.add("optionPanel-active")
+                    selection = optionPanel.querySelector("p").textContent
+                    console.log(selection)
                     hasContent = true
-                    switch (solutionStep) {
-                        case 0:
-                            optionList.forEach( optionPanel => {
-                                optionPanel.classList.remove("optionPanel-active")
-                            });
-                                
-                            optionPanel.classList.add("optionPanel-active")
-                            break;
-                        case 1:
-                        case 2:
-                            optionPanel.classList.toggle("optionPanel-active")
-                        default:
-                            break;
-                    }
                     
-                })
-            });
-        } else{
-            layoutList[i].style.display = "none";
-        }
-        
-    }
-}
+                    break;
+                case 1:
+                case 2:
+                    panelText = optionPanel.querySelector("p").textContent
+                    console.log(optionPanel)
+                    optionPanel.classList.toggle("optionPanel-active")
+                    if (optionPanel.classList.contains("optionPanel-active")){
+                        hasContent = true
+                    }else{
+                        // console.log(dl)
+                        hasContent = false
+                        optionList.forEach(element => {
+                            if(element.classList.contains("optionPanel-active")){
+                                hasContent=true
+                            }
+                        });
+                        
+                    }
 
-async function sendEmail(email, message) {
+                    indexID = selection.indexOf(panelText) //[a, b, c] b
+                    if(indexID != -1){
+                        selection.splice(indexID, 1);
+                    }else{
+                        selection.push(optionPanel.querySelector("p").textContent);                                
+                    }
+
+                    // selection.forEach(element){
+                    //     if(element == panelText){
+                    //         element.re
+                    //     }
+                    // }
+
+
+                    
+                default:
+                    break;
+            }   
+        })
+    });
+} 
+
+
+async function sendEmail(industry, assetType, reason, email, fleetSize, state, name, phoneNumber, companyName) {
     const formData = new FormData();
-    formData.append('email', email);
-    formData.append('message', message);
+    formData.append('Selected Industry', industry);
+    formData.append('Selected Asset Type/s', assetType.join(', '));
+    formData.append('Selected Reason/s', reason.join(', '));
+    formData.append('Email Address', email);
+    formData.append('Fleet Size', fleetSize);
+    formData.append('State', state);
+    formData.append('Name', name);
+    formData.append('Phone Number', phoneNumber);
+    formData.append('Company Name', companyName);
 
     try {
         const response = await fetch('https://formspree.io/f/mwkgjwpp', {
@@ -87,24 +120,82 @@ document.onreadystatechange = () => {
         const submissionElements = document.querySelectorAll(".submission")
 
         let solutionStep = 0;
+        let selections = [];
         const layoutList = document.getElementsByClassName("optionLayout");
-        initOptions(solutionStep, layoutList);
+        let optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
+
+        initOptions(solutionStep, optionList);
 
         document.querySelectorAll(".continueBtn").forEach(btn => {
 
             btn.addEventListener("click", () => {
                 
+                
+                if(solutionStep == 3 || solutionStep == 4){
+                    submissionList = layoutList[solutionStep].querySelectorAll(".submission")
+                     
+                    isNull = false;
+                    selection = []
+
+    
+                    submissionList.forEach(element => {
+                        if (element.value == ""){
+                            isNull = true;
+                        }
+                        selection.push(element.value)
+                        console.log(element.value)
+                        
+            
+                    });
+                    console.log(selection)
+    
+                    if(isNull != true){
+                        hasContent = true;
+                    }else{
+                        selection = null
+                        console.log("is null")
+                        hasContent = false
+                        // solutionStep --;
+                    }
+                }
+
                 if(hasContent == true){
                     solutionStep++;
+
+                    for (let i = 0; i < layoutList.length; i++) {
+                        if(i == solutionStep){
+                            initOptions(solutionStep, optionList)            
+                            layoutList[solutionStep].style.display = "block";
+                        }else{
+                            layoutList[i].style.display = "none";
+                        }
+                    }
+
+                    optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
+                    initOptions(solutionStep, optionList)
                 }
-                hasContent = initOptions(solutionStep, layoutList);
-                console.log(hasContent)
-                console.log(solutionStep)
+
+                (selection == null || selection.length === 0) ? null : selections.push(selection);
 
                 if(solutionStep == 5){
-                    sendEmail(submissionElements[0].value, submissionElements[1].value)
-                    console.log(submissionElements[0].value)
+                    sendEmail(
+                        selections[0], 
+                        selections[1], 
+                        selections[2], 
+                        selections[4][1], 
+                        selections[3][1],
+                        selections[3][2], 
+                        selections[4][0], 
+                        selections[4][2], 
+                        selections[3][0], 
+                    );
                 }
+
+
+                console.log(selections)
+                selection = []
+
+                
 
             })
         })

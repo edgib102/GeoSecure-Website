@@ -44,6 +44,7 @@
 #heroContent{
     display: flex;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 #heroContent img{
     width: 40rem;
@@ -56,11 +57,8 @@
 
 
 #featuresBorder{
-    position: absolute;
-    left: 0;
-    /* top: 0; */
     background-color: white;
-    width: 100%;
+    filter: drop-shadow(0px 4px 4px #00000025);
 }
 
 #featuresBorder h1{
@@ -104,6 +102,7 @@
 #statsPanel{
     display: flex;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* #statsPanel img{
@@ -117,6 +116,7 @@
 #clientList{
     text-align: center;
     padding-top: 1rem;
+    margin-bottom: ;
 }
 
 
@@ -125,11 +125,26 @@
     justify-content: center;
     gap: 4rem;
     padding-top: 1rem;
-    padding-bottom: 2rem;
 }
 
 .clientLogo{
     width: 4rem;
     height: 4rem;
     background-color: grey;
+}
+
+#solutionCallout{
+    background-color: white;
+    text-align: center;
+    filter: drop-shadow(0px -4px 4px #00000015);
+}
+#solutionCallout div{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+#solutionCallout img{
+    position: absolute;
+    right: 0;
+    width: 18rem;
+    transform: translate(-1rem, -8.5rem);
 }

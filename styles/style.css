@@ -24,7 +24,6 @@
 
 .hind-vadodara {
     font-family: "Hind Vadodara", sans-serif;
-    font-weight: 600;
     font-style: normal;
 }
 
@@ -97,6 +96,24 @@ a{
     color: inherit;
     text-decoration: inherit;
 }
+p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* hr{
+    background-color: #0B2149;
+    color: #0B2149;
+    /* border: none; */
+    /* height: .2rem */
+
+
+.solidBg{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
 
 .buttonStyle{
     background-color: transparent;

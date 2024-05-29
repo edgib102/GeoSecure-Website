@@ -1,39 +1,31 @@
-function createPadder (element){
-    existingPadders = document.querySelectorAll(".padder")
-
-    console.log(existingPadders)
-    if(existingPadders != null){
-        existingPadders.forEach(element => {
-            element.remove();
-        });        
+function createOrUpdatePadder(element) {
+    let padder = element.nextElementSibling;
+    
+    if (padder && padder.classList.contains('padder')) {
+        padder.style.height = element.clientHeight.toString() + "px";
+    } else {
+        padder = document.createElement('div');
+        padder.style.height = element.clientHeight.toString() + "px";
+        padder.classList.add('padder');
+        element.parentNode.insertBefore(padder, element.nextSibling);
     }
-
-
-    const padder = document.createElement('div');
-            
-    padder.style.height = element.clientHeight.toString()+"px"
-    padder.classList.add("padder");
-    element.parentNode.insertBefore(padder, element.nextSibling);
 }
-
 window.addEventListener("load", () => {
 
     const solidBgElements = document.querySelectorAll('.solidBg');
 
-    if (solidBgElements != null){
+    if (solidBgElements != null) {
         solidBgElements.forEach((element) => {
-            // Create a new div element
-            createPadder(element);
+            createOrUpdatePadder(element);
 
-            window.addEventListener("resize", () => {
-                createPadder(element);
-            })
-        });        
+            window.addEventListener('resize', () => {
+                createOrUpdatePadder(element);
+            });
+        });
     }
 
 
     var DDlist = document.getElementsByClassName("headerDD");
-    console.log(DDlist)
     canClick = true;
 
     document.getElementById("DDbg").addEventListener("click", function (e) {

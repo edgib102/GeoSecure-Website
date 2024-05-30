@@ -1,0 +1,72 @@
+:root{
+    --light: #F7EFEE;
+    --dark: #0B2149;
+
+    --borderMargin: 5rem;
+}
+
+#heroContent, #G09panel{
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+#heroContent img, #G09panel img{
+    width: 40rem;
+    height: auto;
+}
+
+#heroContent h1{
+    font-size: 3rem;
+}
+
+#integrationPanel{
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px #00000025);
+}
+#integrationPanel > div{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+#integrationPanel > div > div{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+#integrationPanel > div > p{
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+#integrationInfo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+}
+.integrationItem{
+    display: flex;
+    flex-direction: row;
+}
+.integrationItem img{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1.5rem;
+    height: 100%;
+    padding-right: .5rem;
+}
+.integrationItem p{
+    margin: 0;
+}
+
+#integrationPanel >div > div > img{
+    width: 40rem;
+}
+
+#featureList p{
+    margin-top: auto;
+}

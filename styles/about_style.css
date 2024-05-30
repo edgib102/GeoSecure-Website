@@ -1,0 +1,123 @@
+@media only screen and (max-width: 500px){
+    #heroContent{
+        margin-top: 2rem;
+    }
+    #heroContent p{
+        margin: 0 !important;
+    }
+    #heroContent img{
+        width: 100% !important;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    #ownerPanel{
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+    }
+    #ownerPanel div{
+        width: 100% !important;
+    }
+    #ownerPanel img{
+        width: 50% !important;
+        height: auto;
+        padding: 0 !important;
+    }
+    
+    #connectionPanel{
+        margin-top: 2rem;
+    }
+    #connectionPanel img{
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+    #connectionPanel p{
+        margin: 0 !important;
+    }
+    
+
+    #approachList{
+        flex-direction: column;
+        gap: .5rem !important;
+    }
+    #processPanel >div >img{
+        display: none;
+    }
+}
+#heroContent, #connectionPanel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+#heroContent h1{
+    font-size: 3rem;
+}
+#heroContent p {
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+#heroContent img{
+    width: 50%;
+}
+
+#ownerPanel{
+    display: flex;
+}
+#ownerPanel img{
+    width: 12.5%;
+    padding-right: 2rem;
+}
+#ownerPanel h2{
+    margin-bottom: 1rem;
+}
+#ownerPanel div{
+    width: 45%;
+}
+
+#connectionPanel img{
+    width: 40%;
+}
+#connectionPanel h2{
+    margin-bottom: 1rem;
+}
+#connectionPanel p{
+    text-align: left;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#processPanel{
+    background-color: white;
+    filter: drop-shadow(0px -4px 4px #00000015);
+}
+#processPanel >div{
+    padding-top: 2rem;
+}
+#processPanel >div >img{
+    position: absolute;
+    right: 0;
+    width: 9rem;
+    transform: translate(-3rem, -6rem);
+}
+#approachList{
+    display: flex;
+    gap: 2rem;
+}
+#approachList h2{
+    margin: 0;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+#approachList p{
+    margin: 0;
+}
+
+#processPanel >div >button{
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+

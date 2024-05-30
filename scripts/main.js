@@ -10,6 +10,7 @@ function createOrUpdatePadder(element) {
         element.parentNode.insertBefore(padder, element.nextSibling);
     }
 }
+
 window.addEventListener("load", () => {
 
     const solidBgElements = document.querySelectorAll('.solidBg');
@@ -40,6 +41,8 @@ window.addEventListener("load", () => {
         DDlist[i].addEventListener("click", mobileDDtoggle);        
 
     }
+
+    document.body.style = "display: block;"
 
 })
 

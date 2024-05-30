@@ -30,9 +30,6 @@
         margin-left: var(--borderMargin) !important;
         margin-right: var(--borderMargin) !important;
     }
-    #sofwareContent{
-        /* text-align: center; */
-    }
     #dataPanel h1{
         grid-column: 1 / span 2 !important;
         /* background-color: red; */

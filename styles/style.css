@@ -36,7 +36,7 @@
 }
 
 .medium{
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 10000px){
@@ -55,6 +55,10 @@
         font-size: 12px;
     }
     body{
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    .marginExtend{
         margin-left: 2rem !important;
         margin-right: 2rem !important;
     }
@@ -96,9 +100,18 @@ a{
     color: inherit;
     text-decoration: inherit;
 }
+h2{
+    font-size: 1.55rem;
+}
+h3{
+    font-size: 1.2rem;
+}
 p{
     font-size: 1.1rem;
     font-weight: 500;
+}
+img{
+    max-width: 100%;
 }
 
 /* hr{
@@ -122,6 +135,9 @@ p{
     /* margin-top: 1rem; */
     margin-bottom: 1rem;
     cursor:pointer;
+}
+.buttonStyle:hover{
+    color: black;
 }
 .buttonStyle *{
     margin-top: 0rem;
@@ -210,7 +226,7 @@ p{
     margin-left: auto;
     margin-right: 0;
     filter: drop-shadow(-1rem 0 1rem #00000046);
-    padding-right: var(--borderMargin);
+    padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 1rem;
 }

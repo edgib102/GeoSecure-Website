@@ -132,8 +132,9 @@ img{
     background-color: transparent;
     border: .2rem solid var(--dark);
     color: var(--dark);
+    text-align: center;
     /* margin-top: 1rem; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     cursor:pointer;
 }
 .buttonStyle:hover{
@@ -328,3 +329,5 @@ img{
 #footerLinks div h2{
     width:100%;
 } */
+
+

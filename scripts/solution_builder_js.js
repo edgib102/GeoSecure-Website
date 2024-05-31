@@ -13,6 +13,7 @@ function adjustContentMargin() {
     content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
 }
 
+
 // function initOptions(){
 //     for (let i=0; i< layoutList.length)
 // }
@@ -173,23 +174,27 @@ document.onreadystatechange = () => {
 
                     optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
                     initOptions(solutionStep, optionList)
+                }else{
+                    noOption = document.querySelectorAll(".noOption")
+                    console.log(noOption)
+                    noOption[solutionStep].style.display = "block";
                 }
 
                 (selection == null || selection.length === 0) ? null : selections.push(selection);
 
-                if(solutionStep == 5){
-                    sendEmail(
-                        selections[0], 
-                        selections[1], 
-                        selections[2], 
-                        selections[4][1], 
-                        selections[3][1],
-                        selections[3][2], 
-                        selections[4][0], 
-                        selections[4][2], 
-                        selections[3][0], 
-                    );
-                }
+                // if(solutionStep == 5){
+                //     sendEmail(
+                //         selections[0], 
+                //         selections[1], 
+                //         selections[2], 
+                //         selections[4][1], 
+                //         selections[3][1],
+                //         selections[3][2], 
+                //         selections[4][0], 
+                //         selections[4][2], 
+                //         selections[3][0], 
+                //     );
+                // }
 
 
                 console.log(selections)

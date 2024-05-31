@@ -4,21 +4,98 @@
 
     --borderMargin: 5rem;
 }
+@media only screen and (max-width: 500px){
+    #heroContent, .hardwarePanel{
+        flex-direction: column;
+    }
+    .hardwarePanel img{
+        margin: 0 !important;
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto  !important;
+    }
 
-#heroContent, #G09panel{
+    #heroContent img{
+        margin: 0 !important;
+    }
+    #heroContent button{
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    #featureList{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
+    }
+    #integrationPanel p{
+        margin: 0 !important;
+    }
+    #integrationPanel > div > div{
+        flex-direction: column;
+    }
+    #integrationInfo{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+    }
+    #cellIcon{
+        padding-left: 0% !important;
+    }
+
+    #sureCamHardware > div{
+        margin: 0 !important;
+    }
+}
+
+#heroContent, .hardwarePanel{
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
 }
-#heroContent img, #G09panel img{
+#heroContent img{
     width: 40rem;
-    height: auto;
+    height: fit-content;
+    margin-left: 2rem;
+}
+.hardwarePanel img{
+    width: 30rem;
+    height: fit-content;
 }
 
 #heroContent h1{
     font-size: 3rem;
 }
 
+#shutdown{
+    background-color: var(--dark);
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px #00000057);
+    z-index: 2 ;
+}
+#shutdown >div{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin);
+    display: flex;
+}
+
+#shutdown >div> p{
+    margin-top: 0rem;
+}
+#cellIcon{
+    padding-left: 20%;
+    width: 10rem;
+}
+
+#sureCamHardware > div{
+    margin-left: 2rem;
+}
 #integrationPanel{
     background-color: white;
     filter: drop-shadow(0px 4px 4px #00000025);
@@ -67,6 +144,11 @@
     width: 40rem;
 }
 
+#featureList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+}
 #featureList p{
     margin-top: auto;
 }

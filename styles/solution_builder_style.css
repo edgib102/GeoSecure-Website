@@ -35,6 +35,14 @@
     .optionPanel img{
         width:50%;
     }
+    .optionLayout{
+        max-width: 100% !important;
+    }
+    .HSimg{
+        object-fit:fill !important;
+        width: fit-content !important;
+        height: auto !important;
+    }
     
 }
 /* body{
@@ -66,9 +74,9 @@ body::-webkit-scrollbar{
     font-size: 3rem;
     margin-top: 1rem;
 }
-
 .optionLayout{
-    /* width: 60vw; */
+    max-width: 40vw;
+    margin-bottom: 2rem;
 }
 .optionLayout p{
     margin: 0;
@@ -76,6 +84,14 @@ body::-webkit-scrollbar{
 
 .optionLayout > h2{
     margin-top: 1rem;
+}
+.noOption{
+    background-color: var(--dark);
+    text-align: center;
+    display: none;
+}
+.noOption h4{
+    padding: .15rem !important;
 }
 
 .optionGrid{
@@ -124,7 +140,7 @@ body::-webkit-scrollbar{
     filter: drop-shadow(0 0 .5rem rgba(107, 107, 107, 0.1));
 }
 
-#infoSubmissionStep div{
+#infoSubmissionStep > div{
     padding-bottom: 1rem;
 }
 #companyInput{
@@ -143,4 +159,40 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: space-between;
     margin-bottom:auto
+}
+#softwareHardwareRef{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#softwareHardwareRef > div{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#softwareHardwareRef button{
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HSimg{
+    display: block;
+    height: max-content;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    /* height: min-content; */
+    /* max-height: fit-content; */
+}
+.DDelement{
+    border: none;
+    background-color: white;
+    height: 2rem;
+    width: 50%;
 }

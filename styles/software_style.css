@@ -62,6 +62,7 @@
 #heroContent img{
     width: 40rem;
     height: auto;
+    margin-left: 4rem;
 }
 
 #heroContent h1{

@@ -11,10 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Koulen&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
 
+    <link href="styles/3g_shutdown_style.css" rel="stylesheet" />
 
     <script src="scripts\main.js"></script>
 </head>
 <body>
+
     <div id="header">
         <a href="index.html"><div id="logoHeader">
             <img src="content\GeoSecure IMAGE ONLY trans 1.png" alt="Logo Image">
@@ -57,6 +59,60 @@
             </div>
         </div>
     </div>
+
+    <div id="heroContent">
+        <div>
+            <h1 class="koulen-regular dark">Migrate Your Fleet Now - Or Risk Total Shutdown</h1>      
+            <h3 class="hind-vadodara semibold dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum pariatur eligendi sapiente inventore rem nihil nemo deserunt blanditiis, repudiandae sequi molestias necessitatibus ratione dolores distinctio vel sit, aut reprehenderit.</h3>      
+            <div>
+                <p class="hind-vadodara semibold dark">Time Remaining Until Total Shutdown:</p>
+                <h1 class="koulen-regular dark dark">31 August 2024</h1>
+                <h1 class="koulen-regular dark dark" id="timer">100 days 00:00:00</h1>
+            </div>
+        </div>
+
+        <img src="content\veri-ivanova-p3Pj7jOYvnM-unsplash.jpg" alt="Image Of Watch">
+    </div>
+    
+    <div id="helpPanel" class="solidBg">
+        <div class="marginExtend">
+            <h1 class="koulen-regular dark">How Can Geosecure Help?</h1>
+            <p class="hind-vadodara semibold dark"> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nemo quam at, eos iusto quia saepe velit delectus molestiae placeat corporis impedit qui nihil. Mollitia voluptatum temporibus vel placeat eum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Animi voluptate assumenda tempora, repellat perspiciatis eaque dicta inventore doloremque reprehenderit accusamus impedit ducimus fuga dolorem? Amet fugiat quibusdam blanditiis eos ipsa!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, placeat veniam sit atque consequuntur tempore voluptates ex adipisci aperiam explicabo nihil aliquid inventore consectetur laudantium impedit! Nobis ex consequatur id.
+            </p>
+            <button class="buttonStyle"><h2 class="koulen-regular"><a href="about.html">About us</a></h2></button>
+        </div>
+    </div>
+    <div id="hardwarePanel">
+        <div>
+            <h1 class="koulen-regular dark">Hardware Solutions</h1>
+            <p class="hind-vadodara semibold dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, maiores nihil? Quam voluptatibus dicta mollitia architecto eum at maxime nemo explicabo ad inventore, a laborum tempora assumenda est eius enim.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in veritatis temporibus hic illo velit rem pariatur, harum nesciunt consequatur dicta quibusdam cupiditate officia tenetur libero. Aperiam vel eveniet error!
+            </p>            
+            <a href="hardware.html"><button class="buttonStyle"><h2 class="koulen-regular">Learn More</h2></button></a>                 
+        </div>
+        <img src="content\geotab-go-device-marketing-shot11.png" alt="Hardware Image">
+
+    </div>
+<!-- 
+    <div id="solutionPanel">
+        <h1 class="koulen-regular dark">Discover The Best Way To Prepare</h1>
+        <h3 class="hind-vadodara semibold dark">Tell our product experts what you're looking for and they will provide you with solution details in minutes.</h3>
+        <a href="solution_builder.html"><button class="buttonStyle"><h2 class="koulen-regular">Learn More</h2></button></a>      
+    </div> -->
+    <div id="solutionCallout" class="solidBg">
+        <div class="marginExtend">
+            <h1 class="koulen-regular dark">Get a quote</h1>
+            <h3 class="hind-vadodara semibold dark">Tell our product experts what you're looking for and they will provide you with solution details in minutes.</h3>
+            <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Get Started</a></h2></button>
+            <img src="content\schedule_24dp_FILL0_wght400_GRAD200_opsz48.svg" alt="Chart Accent Image">    
+                   
+        </div>
+        <!-- <img src="content\monitoring_24dp_FILL0_wght400_GRAD200_opsz48.svg" alt="Chart Accent Image">     -->
+    </div> 
 
     <div id="footerBorder">
         <div id="footer">
@@ -103,5 +159,35 @@
         </div>
         <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 1rem;">© GeoSecure Australia 2024 all rights reserved | <a style="text-decoration: underline; text-underline-offset: .1rem;" href="privacy_policy.html">Privacy Policy<a\></h5>
     </div>
+    <script>
+        function countdown() {
+            const timerElement = document.getElementById('timer');
+            // Set the target date here (e.g., December 31, 2024)
+            const targetDate = new Date('August 31, 2024 23:59:59').getTime();
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    timerElement.innerHTML = "Countdown Ended";
+                    clearInterval(interval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                timerElement.innerHTML = `${days} days ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+
+            updateTimer();
+            const interval = setInterval(updateTimer, 1000);
+        }
+
+        countdown();
+    </script>
 </body>
 </html>

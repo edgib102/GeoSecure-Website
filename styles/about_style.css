@@ -83,9 +83,9 @@
     margin-bottom: 1rem;
 }
 #connectionPanel p{
-    text-align: left;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    text-align: center;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
 }
 
 #processPanel{

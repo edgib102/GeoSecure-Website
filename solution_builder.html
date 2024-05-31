@@ -18,20 +18,19 @@
 </head>
 <body>
     <div id="header">
-        
         <a href="index.html"><div id="logoHeader">
             <img src="content\GeoSecure IMAGE ONLY trans 1.png" alt="Logo Image">
             <h2 class="koulen-regular">Geosecure</h2>
         </div></a>
 
         <div id="links" >
-            <h2 class="koulen-regular dark textLink"><a>Software</a></h2>
-            <h2 class="koulen-regular dark textLink"><a>Hardware</a></h2>
-            <h2 class="koulen-regular dark textLink"><a>About</a></h2>
-            <h2 class="koulen-regular dark textLink"><a>3G Shutdown</a></h2>            
+            <h2 class="koulen-regular dark textLink"><a href="software.html">Software</a></h2>
+            <h2 class="koulen-regular dark textLink"><a href="hardware.html">Hardware</a></h2>
+            <h2 class="koulen-regular dark textLink"><a href="about.html">About</a></h2>
+            <h2 class="koulen-regular dark textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>            
         </div>
         <div id="headerBtn">
-            <button class="buttonStyle"><h2 class="koulen-regular">Get Started</h2></button>            
+            <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Get Started</a></h2></button>            
         </div>
         <div tabindex="0" class="headerDD">
             <img src="content\menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
@@ -50,10 +49,11 @@
                     </div>
 
                     <div id="DDlinks" >
-                        <h2 class="koulen-regular light textLink"><a>Software</a></h2>
-                        <h2 class="koulen-regular light textLink"><a>Hardware</a></h2>
-                        <h2 class="koulen-regular light textLink"><a>About</a></h2>
-                        <h2 class="koulen-regular light textLink"><a>3G Shutdown</a></h2>            
+                        <h2 class="koulen-regular light textLink"><a href="software.html">Software</a></h2>
+                        <h2 class="koulen-regular light textLink"><a href="hardware.html">Hardware</a></h2>
+                        <h2 class="koulen-regular light textLink"><a href="about.html">About</a></h2>
+                        <h2 class="koulen-regular light textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>   
+                        <button class="buttonStyle" style="border: .2rem solid #F7EFEE !important;"><h2 class="koulen-regular light"><a href="solution_builder.html">Get Started</a></h2></button>          
                     </div>
                 </div>
             </div>
@@ -66,8 +66,13 @@
             <h2 class="hind-vadodara semibold dark">GeoSecure will guide you through the process, tailoring the best possible solution for your needs. </h2> 
             <img id="builderHeroImage" src="content\mygeotab-sdk-api-tablet-mockup-3-2021(english)(1).png" alt="sdk and api tablet display">               
         </div>
+
         <div class="optionLayout">
             <h2 class="hind-vadodara semibold dark">First, let us know your industry. From there, we can find something that works for you.</h2>            
+            <div class="noOption">
+                <h4 class="hind-vadodara semibold light">Please Select An Option</h4>
+            </div>
+
             <div class="optionGrid">
                 <div data-id="0" class="optionPanel">
                     <img src="content\icons\local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
@@ -105,6 +110,9 @@
         </div>
         <div class="optionLayout" style="display:none">
             <h2 class="hind-vadodara semibold dark">Now, could you tell us about what types of assets/vehicles you’re looking to manage?</h2>
+            <div class="noOption">
+                <h4 class="hind-vadodara semibold light">Please Select Relevant Option/s</h4>
+            </div>
             <p class="hind-vadodara semibold dark">Select All That Apply</p>
             <div class="optionGrid">
                 <div data-id="0" class="optionPanel">
@@ -144,6 +152,9 @@
 
         <div class="optionLayout" style="display:none">
             <h2 class="hind-vadodara semibold dark">Great! What brings you to explore asset/vehicle management solutions?</h2>
+            <div class="noOption">
+                <h4 class="hind-vadodara semibold light">Please Select Relevant Option/s</h4>
+            </div>
             <p class="hind-vadodara semibold dark">Select All That Apply</p>
             <div class="optionGrid">
                 <div data-id="0" class="optionPanel">
@@ -176,6 +187,9 @@
         <div id="infoSubmissionStep" class="optionLayout" style="display: none;">
             <div>
                 <h2 class="hind-vadodara semibold dark">Finally, could you tell us a little about your company?</h2>
+                <div class="noOption">
+                    <h4 class="hind-vadodara semibold light">Please Fill in Relevant Details</h4>
+                </div>
                 <p class="hind-vadodara semibold dark">Help us provide the best recommendation possible</p>
             </div>
             <div>
@@ -215,6 +229,9 @@
         <div id="infoSubmissionStep" class="optionLayout" style="display: none;">
             <div>
                 <h2 class="hind-vadodara semibold dark">Finally, could you tell us a little about your company?</h2>
+                <div class="noOption">
+                    <h4 class="hind-vadodara semibold light">Please Fill in Relevant Details</h4>
+                </div>
                 <p class="hind-vadodara semibold dark">Help us provide the best recommendation possible</p>
             </div>
             <div>
@@ -238,22 +255,43 @@
             </div>
         </div>
 
-        <div class="optionLayout" style="display: none;">
+        <div class="optionLayout"  style="display: none;">
 
-            <h2 class="hind-vadodara semibold dark">Thanks for letting us know, we'll be in touch.</h2>
+            <h2 class="hind-vadodara bold dark">Thanks for letting us know, we'll be in touch.</h2>
+            <p class="hind-vadodara semibold dark">In the meantime, learn more about what we offer.</p>
+            <div id="softwareHardwareRef">
+                <div>
+                    <div>
+                        <h2 class="koulen-regular dark">Hardware</h2>
+                        <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your feet’s capabilities. With live vehicle tracking, collision detection, telematics, zone prevention, and more, Geosecure can do it all.</p>                        
+                    </div>
+
+                    <img class="HSimg" src="content\geotab-go-device-marketing-shot11.png" alt="Geotab Go Display Image">
+                    <button class="buttonStyle"><h2 class="koulen-regular"><a href="hardware.html">learn More</a></h2></button>
+                </div>
+                <div>
+                    <div>
+                    <h2 class="koulen-regular dark">Software</h2>
+                    <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your feet’s capabilities. With live vehicle tracking, collision detection, telematics, zone prevention, and more, Geosecure can do it all.</p>                        
+                    </div>
+
+                    <img class="HSimg" src="content\mygeotab-off-road-tracking-tablet-mockup-1-2021(english).png" alt="Geotab Go Display Image">
+                    <button class="buttonStyle"><h2 class="koulen-regular"><a href="software.html">Learn More</a></h2></button>       
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="footerBorder">
         <div id="footer">
-            <div id="footerLogo">
+            <div id="footerLogo"><a href="index.html">
                 <img src="content\GeoSecure IMAGE ONLY trans light.png" alt="Geosecure Footer Logo">
-                <h2 class="koulen-regular light">Geosecure</h2>
+                <h2 class="koulen-regular light">Geosecure</h2></a>
             </div>
             <div id="footerInfo">
                 <div id="footerContact">
-                    <h2 class="koulen-regular light">info@geosecure.com.au</h2>
-                    <h2 class="koulen-regular light" >1300 803 754</h2>                    
+                    <h2 class="koulen-regular light textLink"><a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a></h2>
+                    <h2 class="koulen-regular light textLink" ><a href="tel:+611300803754">1300 803 754</a></h2>                    
                 </div>
 
                 <div id="footerLinks">
@@ -261,18 +299,21 @@
                         <h2 class="koulen-regular light textLink"><a href="index.html">Home</a></h2>                        
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink">About</h2>                        
+                        <h2 class="koulen-regular light textLink"><a href="solution_builder.html">Solution Builder</a></h2>                        
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink">Software</h2>
+                        <h2 class="koulen-regular light textLink"><a href="about.html">About</a></h2>                        
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink">Hardware</h2>
+                        <h2 class="koulen-regular light textLink"><a href="software.html">Software</a></h2>
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink">3G Shutdown</h2>
+                        <h2 class="koulen-regular light textLink"><a href="hardware.html">Hardware</a></h2>
                     </div>
                     <div>
+                        <h2 class="koulen-regular light textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>
+                    </div>
+                    <!-- <div>
                         <h2 class="koulen-regular light textLink">G09</h2>
                     </div>
                     <div>
@@ -280,11 +321,11 @@
                     </div>
                     <div>
                         <h2 class="koulen-regular light textLink">IVMS</h2>                         
-                    </div>
+                    </div> -->
                 </div>                
             </div>
         </div>
-        <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 1rem;">© GeoSecure Australia 2024 all rights reserved | Privacy Policy</h5>
+        <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 1rem;">© GeoSecure Australia 2024 all rights reserved | <a style="text-decoration: underline; text-underline-offset: .1rem;" href="privacy_policy.html">Privacy Policy<a\></h5>
     </div>
 </body>
 </html>

@@ -73,6 +73,11 @@ body::-webkit-scrollbar{
 #informationPanel h1{
     font-size: 3rem;
     margin-top: 1rem;
+    margin-bottom: 0.5rem ;
+}
+#informationPanel h3{
+    margin: 0;
+    margin-bottom: 2rem;
 }
 .optionLayout{
     max-width: 40vw;

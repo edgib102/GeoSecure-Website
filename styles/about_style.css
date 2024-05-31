@@ -19,7 +19,7 @@
         width: 100% !important;
     }
     #ownerPanel img{
-        width: 50% !important;
+        width: 45% !important;
         height: auto;
         padding: 0 !important;
     }
@@ -99,16 +99,16 @@
     position: absolute;
     right: 0;
     width: 9rem;
-    transform: translate(-3rem, -6rem);
+    transform: translate(-3rem, -7rem);
 }
 #approachList{
     display: flex;
-    gap: 2rem;
+    gap: 2rem !important;
 }
 #approachList h2{
     margin: 0;
-    margin-bottom: .5rem;
-    margin-top: 1rem;
+    /* margin-bottom: .5rem;
+    margin-top: 1rem; */
 }
 #approachList p{
     margin: 0;
@@ -119,5 +119,18 @@
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+#processPanel h1{
+    margin-bottom: 1.5rem;
+}
+
+.approachTitle{
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
+}
+.approachTitle img{
+    height: 3rem;
+    width: auto;
 }
 

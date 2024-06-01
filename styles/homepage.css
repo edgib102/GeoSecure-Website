@@ -231,3 +231,31 @@
 #fillerDiv{
     grid-column: 2 / span 3;
 }
+
+.slider{
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+.slideTrack{
+    animation: 30s slide infinite linear;
+    display: inline-block;
+
+}
+.slide{
+    height: 5rem;
+    margin: 2rem;
+    margin-top: 0;
+}
+.slider:hover .slideTrack{
+    animation-play-state: paused;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

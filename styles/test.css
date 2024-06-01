@@ -2,14 +2,14 @@
     box-sizing: border-box;
 } */
 .slider{
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
-    width: max-content;
     
 }
 .slideTrack{
-    animation: 40s slide infinite linear;
+    animation: 5s slide infinite linear;
     display: inline-block;
+    width: max-content;
 
 }
 .slide{

@@ -1,6 +1,6 @@
-*{
+/* *{
     box-sizing: border-box;
-}
+} */
 .slider{
     overflow: hidden;
     white-space: nowrap;

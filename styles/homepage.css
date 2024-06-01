@@ -58,6 +58,10 @@
         margin-top: 1rem !important;
     }
 
+    .slide{
+        height: 5.25rem !important;
+        margin: 0rem 1rem 2rem 1rem !important;
+    }
 }
 
 #heroPage{
@@ -235,17 +239,17 @@
 .slider{
     overflow: hidden;
     white-space: nowrap;
+    width: max-content;
     
 }
 .slideTrack{
-    animation: 30s slide infinite linear;
+    animation: 40s slide infinite linear;
     display: inline-block;
 
 }
 .slide{
-    height: 5rem;
+    height: 6rem;
     margin: 2rem;
-    margin-top: 0;
 }
 .slider:hover .slideTrack{
     animation-play-state: paused;

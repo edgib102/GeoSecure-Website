@@ -240,7 +240,7 @@
 }
 
 .slider{
-    /* overflow: hidden; */
+    overflow: hidden;
     white-space: nowrap;
     
 }

@@ -62,6 +62,10 @@
         height: 5.25rem !important;
         margin: 0rem 1rem 2rem 1rem !important;
     }
+
+    .hoverSelect:hover{
+        border-radius: 0rem !important;
+    }
     /* .slider:hover .slideTrack{
         animation-play-state: 0;
     } */
@@ -166,6 +170,12 @@
 }
 
 #sofwareContent{
+    margin: 1rem 1rem 1rem 1rem;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+#dashcamContent{
     margin: 1rem var(--borderMargin) 1rem 1rem;
     /* display: flex;
     flex-direction: column; */

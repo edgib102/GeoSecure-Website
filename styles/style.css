@@ -172,7 +172,7 @@ img{
 }
 
 #logoHeader{
-    /* width: 100%; */
+    width: max-content;
     display: flex;
     flex-direction: row;
 }
@@ -383,4 +383,15 @@ img{
     border-bottom: .5rem solid white;
     margin-left: calc(50% - .5rem);
 }
-  
+
+.social-links{
+    display: flex;
+    gap: .55rem;
+    margin-right: 2rem;
+}
+.social-links img, .social-links a{
+    width: 1.7rem;
+    height: 1.7rem;
+    /* border: .1rem solid var(--dark); */
+    /* border-radius:50% ; */
+}

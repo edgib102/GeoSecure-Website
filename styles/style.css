@@ -267,7 +267,7 @@ img{
     color: black;
 }
 
-#links > div, h2{
+#links > div, #links > h2{
     padding-left: .5rem;
     padding-right: .5rem;
 }
@@ -334,6 +334,7 @@ img{
     left: 0; 
     right: 0;
     padding-left: .5rem;
+    padding-right: .5rem;
 }
 .industries-dd{
     right:auto
@@ -350,7 +351,8 @@ img{
 .dropdown-content a {
     font-size: 1.1rem;
     padding: .5rem .5rem;
-    /* white-space:initial; */
+    /* text-align: center; */
+    white-space:nowrap;
     /* padding: 12px 16px; */
     /* text-decoration: none; */
     line-height: normal;

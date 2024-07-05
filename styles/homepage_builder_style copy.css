@@ -75,7 +75,6 @@
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height:32rem
 }
 
 #heroPage h1{
@@ -315,96 +314,4 @@
     height: 22.5rem;
     display: block;
     /* margin: auto; */
-}
-
-.optionLayout{
-    width: 40rem;
-    margin-bottom: 2rem;
-}
-.optionLayout p{
-    margin: 0;
-}
-
-.optionLayout > h2{
-    margin-top: 1rem;
-}
-.noOption{
-    background-color: var(--dark);
-    text-align: center;
-    display: none;
-}
-.noOption h4{
-    padding: .15rem !important;
-}
-
-.optionGrid{
-    padding-top: 1rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: auto auto;
-    filter: drop-shadow(.225rem .225rem .3rem rgba(0, 0, 0, 0.15));
-}
-
-.optionPanel{
-    background-color: white;
-    width: 20rem;
-    display: flex;
-    font-size:  1.2rem;
-    vertical-align: center;
-    cursor: pointer;
-}
-
-/* .optionPanel{
-    background-color:#0B2149
-} */
-.optionPanel img{
-    padding-left: 1rem;
-    display: block;
-    height: auto;
-    width: 25%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.optionPanel p{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-
-}
-
-.optionPanel-active{
-    outline: .25rem solid var(--dark);
-    /* filter: blur(.1rem); */
-    filter: drop-shadow(0 0 .5rem rgba(107, 107, 107, 0.1));
-}
-
-#infoSubmissionStep > div{
-    padding-bottom: 1rem;
-}
-#companyInput{
-    width: 100%;
-    height: 2rem;
-    border: none;
-}
-
-#companyInput:focus{
-    outline: none;
-}
-
-#optionFooter{
-    padding-top: 2rem;
-    
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:auto
-}
-
-.solution-builder{
-    margin-left: 2rem;
 }

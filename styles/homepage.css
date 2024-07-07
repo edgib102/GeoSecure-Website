@@ -78,7 +78,7 @@
     height:32rem
 }
 
-#heroPage h1{
+.title-text{
     margin-top: 0;
     font-size: 6rem;
     line-height: 6rem;
@@ -406,5 +406,18 @@
 }
 
 .solution-builder{
-    margin-left: 2rem;
+    margin-left: 4rem;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+}
+.stats h1{
+    font-size: 4rem !important;
+    margin: 0;
+}
+
+.increment::after{
+    content: "+";
 }

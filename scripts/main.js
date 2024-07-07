@@ -13,6 +13,41 @@ function createOrUpdatePadder(element) {
 
 window.addEventListener("load", () => {
 
+    const numberElements = document.querySelectorAll('.increment');
+    const duration = 2000; // Duration in milliseconds
+    const frameRate = 60; // Frames per second
+    const sharpness = 3; // Sharpness of the easing function
+    const totalFrames = duration / (1000 / frameRate);
+
+    function easeOutCustom(t, sharpness) {
+      return 1 - Math.pow(1 - t, sharpness);
+    }
+
+    function updateNumber(element, target) {
+      let currentFrame = 0;
+
+      function animate() {
+        currentFrame++;
+        const progress = easeOutCustom(currentFrame / totalFrames, sharpness);
+        const currentValue = Math.ceil(target * progress);
+        
+        element.innerText = currentValue.toLocaleString();
+
+        if (currentFrame < totalFrames) {
+          requestAnimationFrame(animate);
+        } else {
+          element.innerText = target.toLocaleString();
+        }
+      }
+
+      animate();
+    }
+
+    numberElements.forEach(element => {
+      const target = +element.getAttribute('data-target');
+      updateNumber(element, target);
+    });
+
     const solidBgElements = document.querySelectorAll('.solidBg');
 
     if (solidBgElements != null) {

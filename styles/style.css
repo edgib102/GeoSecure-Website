@@ -89,8 +89,8 @@
 body{
     background-color:var(--light);
     margin: 0;
-    margin-left: var(--borderMargin);
-    margin-right: var(--borderMargin);
+    /* margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin); */
 
 }
 html{
@@ -124,9 +124,13 @@ img{
 
 
 .solidBg{
-    position: absolute;
-    left: 0;
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body > div{
+    margin-left: var(--borderMargin);
+    margin-right: var(--borderMargin);
 }
 
 

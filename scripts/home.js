@@ -128,8 +128,8 @@ document.onreadystatechange = function () {
 function initSite(){
     console.log("etetetete")
     // document.getElementById("SDpadder").style.height = document.getElementById("shutdown").clientHeight.toString()+"px";
-    document.getElementById("HSpadder").style.height = document.getElementById("hardwareSoftwareSelect").clientHeight.toString()+"px";   
-    document.getElementById("DPpadder").style.height = document.getElementById("dataPanel").clientHeight.toString()+"px";   
+    // document.getElementById("HSpadder").style.height = document.getElementById("hardwareSoftwareSelect").clientHeight.toString()+"px";   
+    // document.getElementById("DPpadder").style.height = document.getElementById("dataPanel").clientHeight.toString()+"px";   
 }
 
 function windowSizeUpdate(){

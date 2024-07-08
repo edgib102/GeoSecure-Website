@@ -50,15 +50,15 @@ window.addEventListener("load", () => {
 
     const solidBgElements = document.querySelectorAll('.solidBg');
 
-    if (solidBgElements != null) {
-        solidBgElements.forEach((element) => {
-            createOrUpdatePadder(element);
+    // if (solidBgElements != null) {
+    //     solidBgElements.forEach((element) => {
+    //         createOrUpdatePadder(element);
 
-            window.addEventListener('resize', () => {
-                createOrUpdatePadder(element);
-            });
-        });
-    }
+    //         window.addEventListener('resize', () => {
+    //             createOrUpdatePadder(element);
+    //         });
+    //     });
+    // }
 
 
     var DDlist = document.getElementsByClassName("headerDD");
@@ -83,7 +83,6 @@ window.addEventListener("load", () => {
 
 function mobileDDtoggle(){
     DDitem = document.getElementById("DDbg");
-    console.log("fgogogogo")
     if(canClick == true){
         if (DDitem.style.display === "block") {
             DDitem.style.display = "none";

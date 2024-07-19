@@ -74,13 +74,16 @@
 #heroPage{
     display: flex;
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    height:32rem
+    margin-bottom: 6rem;
+    /* height:34rem; */
+
+    background-color: var(--light);
+    z-index: 10;
 }
 
 .title-text{
     margin-top: 0;
-    font-size: 6rem;
+    font-size: 5.5rem;
     line-height: 6rem;
 }
 /* #heroImage{
@@ -88,6 +91,8 @@
 
 #heroImage{
     width: 40rem;
+    height: min-content;
+    /* object-fit: scale-down; */
 }
 
 #shutdown{
@@ -128,7 +133,6 @@
 }
 #hardwareSoftwareSelect h1{
     padding-top: 1rem;
-    text-align: center;
 }
 .hoverSelect{
     transition: 0.15s;
@@ -157,6 +161,7 @@
     /* transform: translateX(var(--borderMargin)); */
     /* display: flex;
     flex-direction: column; */
+    text-align: center;
 } 
 
 .HSimg{
@@ -182,9 +187,7 @@
     flex-direction: column; */
     text-align: center;
 }
-#sofwareContent p{
-    text-align: right;
-}
+
 #HSbutton{
     display: block;
     margin: auto;
@@ -216,10 +219,10 @@
 #DPaccentImg{
     position: absolute;
     right: 0%;
-    transform: translatey(-2rem);
+    /* transform: translatey(-2rem); */
     /* transform: translatex(2rem); */
     width: 15rem;
-    /* z-index: 0; */
+    z-index: 0;
 }
 #dataPanel{
     margin-left: var(--borderMargin);

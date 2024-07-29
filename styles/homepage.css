@@ -33,7 +33,7 @@
         margin-left: var(--borderMargin) !important;
         margin-right: var(--borderMargin) !important;
     }
-    #dataPanel h1{
+    #data-panel-content h1{
         grid-column: 1 / span 2 !important;
         /* background-color: red; */
         
@@ -73,12 +73,17 @@
 
 #heroPage{
     display: flex;
+    margin-right: 0;
+    padding-right: var(--borderMargin);
     margin-top: 2rem;
-    margin-bottom: 6rem;
+    padding-bottom: 6rem;
+    position: relative;
     /* height:34rem; */
 
     background-color: var(--light);
-    z-index: 10;
+    z-index: 1;
+
+    grid-template-columns: 1fr 2fr;
 }
 
 .title-text{
@@ -92,6 +97,7 @@
 #heroImage{
     width: 40rem;
     height: min-content;
+    margin: auto;
     /* object-fit: scale-down; */
 }
 
@@ -130,6 +136,7 @@
 #hardwareSoftwareSelect {
     display: flex;
     flex-direction: row;
+    /* height: max-content; */
 }
 #hardwareSoftwareSelect h1{
     padding-top: 1rem;
@@ -137,6 +144,18 @@
 .hoverSelect{
     transition: 0.15s;
 }
+
+.hoverSelect > div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: baseline; */
+    height: 100%;
+}
+
+.hoverSelect button{
+    margin-bottom: 1rem !important;
+}
+
 .hoverSelect:hover{
     background-color: #ffffff;
     filter: drop-shadow(0px 0px 6px #00000025);
@@ -157,10 +176,10 @@
 } */
 
 #hardwareContent{
-    margin: 1rem 1rem 1rem var(--borderMargin);
+    margin: 0rem 1rem 0rem var(--borderMargin);
     /* transform: translateX(var(--borderMargin)); */
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     text-align: center;
 } 
 
@@ -172,17 +191,18 @@
     margin:auto;
     display: block;
     margin-bottom: 1rem;
+    object-fit:scale-down;
     
 }
 
 #sofwareContent{
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 0rem 1rem;
     /* display: flex;
     flex-direction: column; */
     text-align: center;
 }
 #dashcamContent{
-    margin: 1rem var(--borderMargin) 1rem 1rem;
+    margin: 0rem var(--borderMargin) 0rem 1rem;
     /* display: flex;
     flex-direction: column; */
     text-align: center;
@@ -194,7 +214,7 @@
 }
 
 #solutionBuilder{
-    z-index: 10;
+    z-index: 1;
     position: relative;
     background: var(--light);
     display: flex;
@@ -219,35 +239,46 @@
 #DPaccentImg{
     position: absolute;
     right: 0%;
-    /* transform: translatey(-2rem); */
+    transform: translatey(-6rem);
     /* transform: translatex(2rem); */
     width: 15rem;
     z-index: 0;
 }
-#dataPanel{
+#data-panel-content{
     margin-left: var(--borderMargin);
     margin-right: var(--borderMargin);
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    gap: 1rem;
+    gap: 1.5rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
     /* grid-template-areas: "div  .   ."; */
 }
-#dataPanel h1{
+#data-panel-content h1{
     margin-bottom: 1rem;
     grid-column: 1;
     padding-top: 1rem;
 }
 
-#dataPanel h3{
+#data-panel-content h3{
     width: fit-content;
 }
 
-#dataPanel p{
+#data-panel-content p{
     margin: auto;
+}
+
+.data-panel-header{
+    display: flex;
+    align-items: center;
+
+}
+.data-panel-header img{
+    width: 2.5rem;
+    margin-left: .5rem;
+    /* height: auto; */
 }
 
 #fillerDiv{

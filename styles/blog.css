@@ -1,0 +1,38 @@
+.blog-content{
+    margin: 2rem 10rem 0rem 10rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8rem;
+    row-gap: 4rem;
+}
+
+.blog-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.blog-element p{
+    margin: 0.5rem;
+}
+.blog-element h1{
+    margin-bottom: .75rem;
+    /* margin-top: 0; */
+}
+.blog-element .medium{
+    width: 20rem;
+}
+.blog-element img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    padding-bottom: .5rem;
+}
+
+.case-studies-flowpoint{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

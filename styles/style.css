@@ -169,6 +169,9 @@ body > div{
     margin-left: calc(var(--borderMargin)/2);
     margin-right: calc(var(--borderMargin)/2);
 }
+#header div{
+    z-index: 3;
+}
 
 #headerBtn{
     /* width: 100%; */

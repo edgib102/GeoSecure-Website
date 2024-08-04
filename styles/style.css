@@ -203,7 +203,7 @@ body > div{
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    margin-right: 4rem;
+    margin-right: 2rem;
 }  
 #links h2{
     text-decoration-line: none;
@@ -306,8 +306,8 @@ body > div{
     justify-content: center;
     margin-left: 15rem; 
     margin-right: 15rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 #footerLogo{
     width:min-content;
@@ -329,7 +329,7 @@ body > div{
 }
 #footerLinks{
     display: flex;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     gap: 4rem;
     row-gap: 0;
     padding-left: 4rem;

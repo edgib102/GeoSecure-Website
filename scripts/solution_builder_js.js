@@ -140,7 +140,10 @@ document.onreadystatechange = () => {
 
     
                     submissionList.forEach(element => {
-                        if (element.value == ""){
+                        if(element.classList.contains("optional")){
+                            isNull = false;
+                        }
+                        else if (element.value == ""){
                             isNull = true;
                         }
                         selection.push(element.value)

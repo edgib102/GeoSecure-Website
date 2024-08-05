@@ -335,8 +335,10 @@ body > div{
     padding-left: 4rem;
 }
 
-#footerLinks div{
-    height:fit-content;
+#footerLinks > div > div{
+    /* height:fit-content; */
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown{

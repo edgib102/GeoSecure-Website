@@ -76,7 +76,7 @@
     margin-right: 0;
     padding-right: var(--borderMargin);
     margin-top: 2rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     position: relative;
     /* height:34rem; */
 
@@ -95,7 +95,7 @@
     /* margin-left: 30rem; */
 
 #heroImage{
-    width: 40rem;
+    width: 35rem;
     height: min-content;
     margin: auto;
     /* object-fit: scale-down; */

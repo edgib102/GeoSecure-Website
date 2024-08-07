@@ -1,6 +1,6 @@
 
 #data-panel-content{
-    height: 60rem;
+    height: 53.5rem;
     padding: 0;
     /* padding-top: 2rem; */
 }
@@ -18,12 +18,13 @@
 }
 
 .bg-blur{
-    --border-radius: 2rem;
+    --border-radius: 1.5rem;
     position: absolute;
     transform: translate(calc(var(--border-radius)*-1),calc(var(--border-radius)*-1));
     z-index: -1;
     background-color: white;
-    filter: blur(1rem);
+    filter: blur(.5rem);
+    border-radius: 1.5rem;
     padding: var(--border-radius);
     /* border: 1rem solid; */
     /* margin: 1rem; */
@@ -42,6 +43,7 @@
     right: 0;
     width: fit-content;
     margin: auto;
+    z-index: 3;
     /* margin: auto; */
 }
 #center-icon img{

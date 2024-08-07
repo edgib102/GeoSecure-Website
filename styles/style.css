@@ -276,7 +276,7 @@ body > div{
     white-space:nowrap;
     text-decoration-line: underline ;
     text-underline-offset: .15em;
-    text-decoration-thickness: .15em;
+    text-decoration-thickness: .1em;
     cursor: pointer;
 }
 .textLink:hover.light{

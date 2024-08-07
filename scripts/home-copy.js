@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const circleDisplacement = Math.PI*2/circleElements.length*i
         translateAmount = [Math.sin(circleDisplacement)*elementOffset, Math.cos(circleDisplacement)*elementOffset]
 
-        element.style.transform = `translate(${translateAmount[0]}px,${translateAmount[1]+elementOffset}px)`
+        element.style.transform = `translate(${translateAmount[0]}px,${(translateAmount[1]+elementOffset)*.85}px)`
         // console.log(`translate(${translateAmount[0]}px, ${translateAmount[1]}px)`)
 
 

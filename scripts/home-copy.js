@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     circleElements = document.querySelectorAll(".circle-data-element");
     lineElements = [];
     lineElementContainer = document.getElementById("line-content");
+    const elementOffset = 400
 
     for (let i = 0; i < circleElements.length; i++) {
         const element = circleElements[i];
-        const elementOffset = 400
         const circleDisplacement = Math.PI*2/circleElements.length*i
         translateAmount = [Math.sin(circleDisplacement)*elementOffset, Math.cos(circleDisplacement)*elementOffset]
 
@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         lineSVG.appendChild(newLine);
     }
+
+    centerIcon = document.getElementById("center-icon");
+    centerIcon.style.transform = `translateY(${elementOffset-centerIcon.offsetWidth/2}px)`
 
     // while (true){
     //     console.log("ss")

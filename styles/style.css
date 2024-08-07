@@ -323,6 +323,17 @@ body > div{
     
     
 }
+#company-info{
+    display: flex;
+    flex-direction: column;
+}
+#company-info >div{
+    display: flex;
+    flex-direction: row;
+}
+#company-info > img{
+    padding-top: 1rem;
+}
 #footerContact{
     display: flex;
     flex-direction: column;

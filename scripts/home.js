@@ -1,9 +1,7 @@
-
+elementOffset = 400;
 document.onreadystatechange = function () {
-    // if (document.readyState == "complete") {
-    windowSizeUpdate();
-    initSite();
-    window.addEventListener("resize", windowSizeUpdate);
+
+
 
     var DDlist = document.getElementsByClassName("headerDD");
     console.log("DDlist")
@@ -16,131 +14,27 @@ document.onreadystatechange = function () {
         }
     });        
 
-    for (var i=0; i < DDlist.length; i++){
-        
-        DDlist[i].addEventListener("click", mobileDDtoggle);        
-    
+    for (var i=0; i < DDlist.length; i++){DDlist[i].addEventListener("click", mobileDDtoggle);}
 
-        // console.log(element)
-    }
-    // DDlist.forEach(element => {
-    //     addEventListener("click", mobileDDtoggle(element));
-    // });
+    //circle element
+    circleElements = document.querySelectorAll(".circle-data-element");
+    lineElementContainer = document.getElementById("line-content");
 
-    // document.getElementById("DDcontent").setPointerCapture = function (){
-    //     document.getElementById("DDcontent").style.display= "block !important"; 
-    // }
-    // }
+    updateCircleElement(circleElements, lineElementContainer);
+    window.onresize = updateCircleElement(circleElements, lineElementContainer)
 
+    centerIcon = document.getElementById("center-icon");
+    centerIcon.style.transform = `translateY(${elementOffset-centerIcon.offsetWidth/2}px)`
 
-    const submissionElements = document.querySelectorAll(".submission")
+    window.addEventListener('resize', () =>{
+        updateCircleElement(circleElements, lineElementContainer);
+    });
 
-    let solutionStep = 0;
-    let selections = [];
-    const layoutList = document.getElementsByClassName("optionLayout");
-    let optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
-
-    initOptions(solutionStep, optionList);
-
-    document.querySelectorAll(".continueBtn").forEach(btn => {
-
-        btn.addEventListener("click", () => {
-            
-            
-            if(solutionStep == 3 || solutionStep == 4){
-                submissionList = layoutList[solutionStep].querySelectorAll(".submission")
-                 
-                isNull = false;
-                selection = []
-
-
-                submissionList.forEach(element => {
-                    if (element.value == ""){
-                        isNull = true;
-                    }
-                    selection.push(element.value)
-                    console.log(element.value)
-                    
-        
-                });
-                console.log(selection)
-
-                if(isNull != true){
-                    hasContent = true;
-                }else{
-                    selection = null
-                    console.log("is null")
-                    hasContent = false
-                    // solutionStep --;
-                }
-            }
-
-            if(hasContent == true){
-                solutionStep++;
-
-                for (let i = 0; i < layoutList.length; i++) {
-                    if(i == solutionStep){
-                        initOptions(solutionStep, optionList)            
-                        layoutList[solutionStep].style.display = "block";
-                    }else{
-                        layoutList[i].style.display = "none";
-                    }
-                }
-
-                optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
-                initOptions(solutionStep, optionList)
-            }else{
-                noOption = document.querySelectorAll(".noOption")
-                console.log(noOption)
-                noOption[solutionStep].style.display = "block";
-            }
-
-            (selection == null || selection.length === 0) ? null : selections.push(selection);
-
-            // if(solutionStep == 5){
-            //     sendEmail(
-            //         selections[0], 
-            //         selections[1], 
-            //         selections[2], 
-            //         selections[4][1], 
-            //         selections[3][1],
-            //         selections[3][2], 
-            //         selections[4][0], 
-            //         selections[4][2], 
-            //         selections[3][0], 
-            //     );
-            // }
-
-
-            console.log(selections)
-            selection = []
-
-            
-
-        })
-    })
-
+    window.addEventListener('resize', updateCircleElement(circleElements, lineElementContainer))
 
 
 }
 
-
-function initSite(){
-    console.log("etetetete")
-    // document.getElementById("SDpadder").style.height = document.getElementById("shutdown").clientHeight.toString()+"px";
-    // document.getElementById("HSpadder").style.height = document.getElementById("hardwareSoftwareSelect").clientHeight.toString()+"px";   
-    // document.getElementById("DPpadder").style.height = document.getElementById("dataPanel").clientHeight.toString()+"px";   
-}
-
-function windowSizeUpdate(){
-    // initSite();
-    initSite();
-
-    if( window.innerWidth <= 500){
-        // document.getElementById("cellIcon").style.width = document.getElementById("cellIcon").offsetWidth *1.7 + "px";
-
-    }
-}
 
 function mobileDDtoggle(){
     DDitem = document.getElementById("DDbg");
@@ -158,61 +52,54 @@ function mobileDDtoggle(){
     }
 }
 
-function initOptions(solutionStep, optionList){
+function updateCircleElement(circleElements, lineElementContainer) {
+
+    while (lineElementContainer.hasChildNodes()){
+        lineElementContainer.removeChild(lineElementContainer.firstChild)
+    }
     
-    hasContent = false
+    for (let i = 0; i < circleElements.length; i++) {
+        const element = circleElements[i];
+        const circleDisplacement = Math.PI*2/circleElements.length*i
+        translateAmount = [Math.sin(circleDisplacement)*elementOffset, Math.cos(circleDisplacement)*elementOffset]
 
-    optionList.forEach(optionPanel => {
-        optionPanel.addEventListener("click", () =>{
-            
-            switch (solutionStep) {
-                case 0:
-                    optionList.forEach( optionPanel => {
-                        optionPanel.classList.remove("optionPanel-active")
-                    });
-                        
-                    optionPanel.classList.add("optionPanel-active")
-                    selection = optionPanel.querySelector("p").textContent
-                    console.log(selection)
-                    hasContent = true
-                    
-                    break;
-                case 1:
-                case 2:
-                    panelText = optionPanel.querySelector("p").textContent
-                    console.log(optionPanel)
-                    optionPanel.classList.toggle("optionPanel-active")
-                    if (optionPanel.classList.contains("optionPanel-active")){
-                        hasContent = true
-                    }else{
-                        // console.log(dl)
-                        hasContent = false
-                        optionList.forEach(element => {
-                            if(element.classList.contains("optionPanel-active")){
-                                hasContent=true
-                            }
-                        });
-                        
-                    }
-
-                    indexID = selection.indexOf(panelText) //[a, b, c] b
-                    if(indexID != -1){
-                        selection.splice(indexID, 1);
-                    }else{
-                        selection.push(optionPanel.querySelector("p").textContent);                                
-                    }
-
-                    // selection.forEach(element){
-                    //     if(element == panelText){
-                    //         element.re
-                    //     }
-                    // }
+        element.style.transform = `translate(${translateAmount[0]}px,${(translateAmount[1]+elementOffset)*.85}px)`
+        // console.log(`translate(${translateAmount[0]}px, ${translateAmount[1]}px)`)
 
 
-                    
-                default:
-                    break;
-            }   
-        })
-    });
-} 
+        const parentPos = lineElementContainer.parentNode.getBoundingClientRect();
+        const childPos  = element.getBoundingClientRect();
+        const relativePos = {};
+
+        relativePos.top    = childPos.top - parentPos.top,
+        relativePos.right  = childPos.right - parentPos.right,
+        relativePos.bottom = childPos.bottom - parentPos.bottom,
+        relativePos.left   = childPos.left - parentPos.left;
+
+        console.log(childPos)
+        
+
+        const lineSVG = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        // lineSVG.setAttribute('style', 'border: 1px solid black');
+        lineSVG.setAttribute('width', "100%");
+        lineSVG.setAttribute('height', lineElementContainer.parentNode.clientHeight);
+        lineSVG.setAttribute('class', "svg-line");
+        
+        lineSVG.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
+        lineElementContainer.appendChild(lineSVG);
+        // lineElements.push(lineSVG);
+
+        document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        var newLine = document.createElementNS('http://www.w3.org/2000/svg','line');
+        newLine.setAttribute('id','line2');
+        newLine.setAttribute('x1',relativePos.left+elementOffset-(element.offsetWidth/2));
+        newLine.setAttribute('y1', relativePos.top+(element.offsetHeight/2));
+        newLine.setAttribute('x2',window.innerWidth/2); 
+        newLine.setAttribute('y2',elementOffset);
+        newLine.setAttribute("stroke", "#0B2149");
+        newLine.setAttribute("stroke-width", "5px")
+
+        lineSVG.appendChild(newLine);
+    }
+}
+

@@ -1,9 +1,38 @@
+const elementOffset = 400
+
 document.addEventListener('DOMContentLoaded', function() {
     circleElements = document.querySelectorAll(".circle-data-element");
-    lineElements = [];
     lineElementContainer = document.getElementById("line-content");
-    const elementOffset = 400
 
+    updateCircleElement(circleElements, lineElementContainer);
+    window.onresize = updateCircleElement(circleElements, lineElementContainer)
+
+    centerIcon = document.getElementById("center-icon");
+    centerIcon.style.transform = `translateY(${elementOffset-centerIcon.offsetWidth/2}px)`
+
+    window.addEventListener('resize', () =>{
+        updateCircleElement(circleElements, lineElementContainer);
+    });
+
+    window.addEventListener('resize', updateCircleElement(circleElements, lineElementContainer))
+
+    // while (true){
+    //     console.log("ss")
+    //     for (let i = 0; i < circleElements.length; i++) {
+    //         const element = circleElements[i];
+    //         style = window.getComputedStyle(element).getPropertyValue("translate")
+    //         console.log(style)
+    //         // element.style.transform = `translate(${translateAmount[0]}px,${translateAmount[1]+elementOffset}px)`
+    //     }
+    // }
+});
+
+function updateCircleElement(circleElements, lineElementContainer) {
+
+    while (lineElementContainer.hasChildNodes()){
+        lineElementContainer.removeChild(lineElementContainer.firstChild)
+    }
+    
     for (let i = 0; i < circleElements.length; i++) {
         const element = circleElements[i];
         const circleDisplacement = Math.PI*2/circleElements.length*i
@@ -47,21 +76,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
         lineSVG.appendChild(newLine);
     }
-
-    centerIcon = document.getElementById("center-icon");
-    centerIcon.style.transform = `translateY(${elementOffset-centerIcon.offsetWidth/2}px)`
-
-    // while (true){
-    //     console.log("ss")
-    //     for (let i = 0; i < circleElements.length; i++) {
-    //         const element = circleElements[i];
-    //         style = window.getComputedStyle(element).getPropertyValue("translate")
-    //         console.log(style)
-    //         // element.style.transform = `translate(${translateAmount[0]}px,${translateAmount[1]+elementOffset}px)`
-    //     }
-    // }
-});
-
-function updateCircleElement(params) {
-
 }

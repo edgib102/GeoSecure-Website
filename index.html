@@ -8,7 +8,6 @@
 
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/homepage.css" rel="stylesheet" />
-    <link href="styles/homepage-copy.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,6 @@
 
     <script src="scripts\main.js"></script>
     <script src="scripts/home.js"></script>
-    <script src="scripts/home-copy.js"></script>
     <!-- <script src="scripts\solution_builder_js.js"></script> -->
 </head>
 <body>
@@ -28,6 +26,9 @@
         </div></a>
 
         <div id="links">
+            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">Telematics</a></h2>
+            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">Camera Solutions</a></h2>
+            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">IVMS</a></h2>
             <div class="dropdown">
                 <h2 class="hind-vadodara bold dark textLink">Industries</h2>
                 <div class="arrow-up dropdown-wrapper"></div>
@@ -43,21 +44,6 @@
                     </div>
                 </div>                
             </div>
-
-            <!-- <div class="dropdown">
-                <h2 class="hind-vadodara bold dark textLink">Solutions</h2>
-                <div class="arrow-up dropdown-wrapper"></div>
-                <div class="dropdown-wrapper">
-                    <div class="dropdown-padder"></div>
-                    <div class="dropdown-content">
-                        <a class="hind-vadodara bold dark" href="#">Hardware</a>
-                        <a class="hind-vadodara bold dark" href="#">Software</a>                 
-                    </div>
-                </div>                
-            </div> -->
-            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">Solutions</a></h2>
-            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">Dashcams</a></h2>
-            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">IVMS</a></h2>
             <div class="dropdown">
                 <h2 class="hind-vadodara bold dark textLink">Resources</h2>
                 <div class="arrow-up dropdown-wrapper"></div>
@@ -68,10 +54,8 @@
                         <a class="hind-vadodara bold dark" href="#">Case Studies</a>                       
                     </div>
                 </div>                
-            </div>       
+            </div>  
             <h2 class="hind-vadodara bold dark textLink"><a href="about.html">About Us</a></h2>  
-
-            
         </div>
         <div id="headerBtn">
             <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Get Started</a></h2></button>            
@@ -128,338 +112,34 @@
             </div> -->
         </div>
         
-        <!-- <div class="solution-builder">
-            <div class="optionLayout">
-                <h2 class="hind-vadodara semibold dark">First, let us know your industry. From there, we can find something that works for you.</h2>            
-                <div class="noOption">
-                    <h4 class="hind-vadodara semibold light">Please Select An Option</h4>
-                </div>
-    
-                <div class="optionGrid">
-                    <div data-id="0" class="optionPanel">
-                        <img src="content\icons\local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                        <p class="hind-vadodara semibold dark">Transport & Logistics</p>
-                    </div>
-                    <div data-id="1" class="optionPanel">
-                        <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Tow Truck Icon">
-                        <p class="hind-vadodara semibold dark">Service & Specialty Trades</p>
-                    </div>
-                    <div data-id="2" class="optionPanel">
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Construction & Mining</p>
-                    </div>
-                    <div data-id="3" class="optionPanel">
-                        <img src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Government & Public Sector</p>
-                    </div>
-                    <div data-id="4" class="optionPanel">
-                        <img src="content\icons\airport_shuttle_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Utilities & Infrastructure</p>
-                    </div>
-                    <div data-id="5" class="optionPanel">
-                        <img src="content\icons\more_horiz_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Miscellaneous Services & Others</p>
-                    </div>
-                    
-                </div>
-                <div id="optionFooter">
-                    <p class="koulen-regular dark">STEP 1 OF 5</p>
-                    <div class="continueBtn">
-                        <button class="buttonStyle"><h2 class="koulen-regular">Continue</h2></button>            
-                    </div>
-                </div>
-                
-            </div>
-            <div class="optionLayout" style="display:none">
-                <h2 class="hind-vadodara semibold dark">Now, could you tell us about what types of assets/vehicles you’re looking to manage?</h2>
-                <div class="noOption">
-                    <h4 class="hind-vadodara semibold light">Please Select Relevant Option/s</h4>
-                </div>
-                <p class="hind-vadodara semibold dark">Select All That Apply</p>
-                <div class="optionGrid">
-                    <div data-id="0" class="optionPanel">
-                        <img src="content\icons\local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                        <p class="hind-vadodara semibold dark">Light Trucks & Articulated Vehicles</p>
-                    </div>
-                    <div data-id="1" class="optionPanel">
-                        <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Tow Truck Icon">
-                        <p class="hind-vadodara semibold dark">Semi & Heavy Combination Vehicles</p>
-                    </div>
-                    <div data-id="2" class="optionPanel">
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Cars and Light Commercial Vehicles</p>
-                    </div>
-                    <div data-id="3" class="optionPanel">
-                        <img src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Trailers & Containers</p>
-                    </div>
-                    <div data-id="4" class="optionPanel">
-                        <img src="content\icons\airport_shuttle_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Construction Machinery & Equipment</p>
-                    </div>
-                    <div data-id="5" class="optionPanel">
-                        <img src="content\icons\more_horiz_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Miscellaneous Vehicles & Others</p>
-                    </div>
-                    
-                </div>
-    
-                <div id="optionFooter">
-                    <p class="koulen-regular dark">STEP 2 OF 5</p>
-                    <div class="continueBtn">
-                        <button class="buttonStyle"><h2 class="koulen-regular">Continue</h2></button>            
-                    </div>
-                </div>
-            </div>
-    
-            <div class="optionLayout" style="display:none">
-                <h2 class="hind-vadodara semibold dark">Great! What brings you to explore asset/vehicle management solutions?</h2>
-                <div class="noOption">
-                    <h4 class="hind-vadodara semibold light">Please Select Relevant Option/s</h4>
-                </div>
-                <p class="hind-vadodara semibold dark">Select All That Apply</p>
-                <div class="optionGrid">
-                    <div data-id="0" class="optionPanel">
-                        <img src="content\icons\local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                        <p class="hind-vadodara semibold dark">Location Tracking</p>
-                    </div>
-                    <div data-id="1" class="optionPanel">
-                        <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Tow Truck Icon">
-                        <p class="hind-vadodara semibold dark">Maintenance & Utilization</p>
-                    </div>
-                    <div data-id="2" class="optionPanel">
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Analytics, Insights & Reporting</p>
-                    </div>
-                    <div data-id="3" class="optionPanel">
-                        <img src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Miscellaneous Vehicles & Others</p>
-                    </div>
-                    
-                </div>
-    
-                <div id="optionFooter">
-                    <p class="koulen-regular dark">STEP 3 OF 5</p>
-                    <div class="continueBtn">
-                        <button class="buttonStyle"><h2 class="koulen-regular">Continue</h2></button>            
-                    </div>
-                </div>
-            </div>
-    
-            <div id="infoSubmissionStep" class="optionLayout" style="display: none;">
-                <div>
-                    <h2 class="hind-vadodara semibold dark">Finally, could you tell us a little about your company?</h2>
-                    <div class="noOption">
-                        <h4 class="hind-vadodara semibold light">Please Fill in Relevant Details</h4>
-                    </div>
-                    <p class="hind-vadodara semibold dark">Help us provide the best recommendation possible</p>
-                </div>
-                <div>
-                    <p class="hind-vadodara semibold dark">Company Name</p>
-                    <input id="companyInput" class="hind-vadodara semibold dark submission" type="text">
-                </div>
-                <div>
-                    <p class="hind-vadodara semibold dark">Fleet Size</p>
-                    <select class="DDelement hind-vadodara semibold dark submission" name="fleet-size" id="fleet-size">
-                        <option value="1-4">1-4</option>
-                        <option value="5-10">5-10</option>
-                        <option value="10-50">10-50</option>
-                        <option value="50+">50+</option>
-                    </select>
-                </div>
-                <div>
-                    <p class="hind-vadodara semibold dark">State</p>
-                    <select class="DDelement hind-vadodara semibold dark submission" name="state" id="state">
-                        <option value="QLD">QLD</option>
-                        <option value="NSW">NSW</option>
-                        <option value="ACT">ACT</option>
-                        <option value="NT">NT</option>
-                        <option value="SA">SA</option>
-                        <option value="TAS">TAS</option>
-                        <option value="VIC">VIC</option>
-                        <option value="WA">WA</option>
-                    </select>
-                </div>
-                <div id="optionFooter">
-                    <p class="koulen-regular dark">STEP 4 OF 5</p>
-                    <div class="continueBtn">
-                        <button class="buttonStyle"><h2 class="koulen-regular">Continue</h2></button>            
-                    </div>
-                </div>
-            </div>
-    
-            <div id="infoSubmissionStep" class="optionLayout" style="display: none;">
-                <div>
-                    <h2 class="hind-vadodara semibold dark">Finally, could you tell us a little about your company?</h2>
-                    <div class="noOption">
-                        <h4 class="hind-vadodara semibold light">Please Fill in Relevant Details</h4>
-                    </div>
-                    <p class="hind-vadodara semibold dark">Help us provide the best recommendation possible</p>
-                </div>
-                <div>
-                    <p class="hind-vadodara semibold dark">Name</p>
-                    <input id="companyInput" class="hind-vadodara semibold dark submission" type="text">
-                </div>
-                <div>
-                    <p class="hind-vadodara semibold dark">Email Address</p>
-                    <input id="companyInput" class="hind-vadodara semibold dark submission" type="text">
-                </div>
-                <div>
-                    <p class="hind-vadodara semibold dark">Phone Number</p>
-                    <input id="companyInput" class="hind-vadodara semibold dark submission" type="text">
-                </div>
-    
-                <div id="optionFooter">
-                    <p class="koulen-regular dark">STEP 5 OF 5</p>
-                    <div class="continueBtn">
-                        <button class="buttonStyle"><h2 class="koulen-regular">Continue</h2></button>            
-                    </div>
-                </div>
-            </div>
-    
-            <div class="optionLayout"  style="display: none;">
-    
-                <h1 class="hind-vadodara bold dark">Thanks for getting in contact, we'll be in touch.</h1>
-                <p class="hind-vadodara semibold dark">In the meantime, learn more about what we offer.</p>
-                <div id="softwareHardwareRef">
-                    <div>
-                        <div>
-                            <h2 class="koulen-regular dark">Hardware</h2>
-                            <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your feet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>                        
-                        </div>
-    
-                        <img class="HSimg" src="content\geotab-go-device-marketing-shot11.png" alt="Geotab Go Display Image">
-                        <button class="buttonStyle"><h2 class="koulen-regular"><a href="hardware.html">learn More</a></h2></button>
-                    </div>
-                    <div>
-                        <div>
-                        <h2 class="koulen-regular dark">Software</h2>
-                        <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your feet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>                        
-                        </div>
-    
-                        <img class="HSimg" src="content\mygeotab-off-road-tracking-tablet-mockup-1-2021(english).png" alt="Geotab Go Display Image">
-                        <button class="buttonStyle"><h2 class="koulen-regular"><a href="software.html">Learn More</a></h2></button>       
-                    </div>
-                </div>
+ 
+        <img id="heroImage" src="content\thomas-franke-B-rJSDRNxYw-unsplash.png" alt="mygeotab mockup image">
+    </div>
+           
+    <div id="hardwareSoftwareSelect" class="solidBg">
+        <div class="hoverSelect" style="border-radius: 0 1rem 0 0">
+            <div id="hardwareContent">
+                <h1 class="koulen-regular dark">Hardware You Can Rely On</h1>
+                <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your fleet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>
+                <img class="HSimg" src="content\geotab-go-device-marketing-shot11.png" alt="Geotab Go Display Image">
+                <a href="hardware.html"><button class="buttonStyle"id="HSbutton"><h2 class="koulen-regular Dark">Learn More</h2></button></a>                      
             </div>
         </div>
-         -->
-        <img id="heroImage" src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png" alt="mygeotab mockup image">
-    </div>
-
-    <div id="data-panel" class="solidBg">
-        <!-- <img id="DPaccentImg" src="content\manufacturing_FILL0_wght400_GRAD0_opsz24.png" alt="Cog Accent Image"> -->
-        <!-- <div id="data-panel-content">
-            <h1 class="koulen-regular dark">Solutions that meet your fleet management needs</h1>
-            <div id="fillerDiv" style="grid-column: 2 / span 2"></div>
-
-            <div>
-                <div class="data-panel-header">
-                    <h3 class="koulen-regular dark">Efficiency and Cost</h3>
-                    <img src="content/icons/local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                </div>
-                <p class="hind-vadodara semibold dark">Solutions that offer cost-effective fleet management and reduce operational expenses.</p>
-                <p class="hind-vadodara semibold dark">Tools for better fuel management, fleet utilisation, and maintenance scheduling.</p>
+        <div class="hoverSelect" style="border-radius:1rem 1rem 0 0">
+            <div id="sofwareContent">
+                <h1 class="koulen-regular dark">Cutting-Edge Software</h1>
+                <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your fleet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>
+                <img class="HSimg" src="content\mygeotab-safety-dashboard-laptop-mockup-1-2021(english)(1).png" alt="Geotab Go Display Image">
+                <a href="software.html"><button class="buttonStyle"id="HSbutton"><h2 class="koulen-regular Dark">Learn More</h2></button></a>                         
             </div>
-            <div>
-                <div class="data-panel-header">
-                    <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                    <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                </div>
-                <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
+        </div>
+        <div class="hoverSelect" style="border-radius: 1rem 0 0 0">
+            <div id="camera-solution-content">
+                <h1 class="koulen-regular dark">Camera Solutions</h1>
+                <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your fleet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>
+                <img class="HSimg" src="content\surecam-tilted.png" alt="Geotab Go Display Image">
+                <a href="software.html"><button class="buttonStyle"id="HSbutton"><h2 class="koulen-regular Dark">Learn More</h2></button></a>                         
             </div>
-            <div>
-                <div class="data-panel-header">
-                    <h3 class="koulen-regular dark">Ease of Use</h3>
-                    <img src="content\icons\airport_shuttle_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                </div>
-                <p class="hind-vadodara semibold dark">User-friendly interfaces and systems that simplify fleet management tasks.</p>
-                <p class="hind-vadodara semibold dark">Add-ons to future proof your IVMS and scale with your specific needs.</p>
-            </div>
-            <div>
-                <div class="data-panel-header">
-                    <h3 class="koulen-regular dark">Safety and Compliance</h3>
-                    <img src="content\icons\pin_drop_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Truck Icon">
-                </div>
-                <p class="hind-vadodara semibold dark">Features that ensure vehicles to meet all safety and regulatory standards.</p>
-                <p class="hind-vadodara semibold dark">Real-time monitoring and reporting tools for compliance and safety management.</p>
-            </div>
-            <div>
-                <div class="data-panel-header">
-                    <h3 class="koulen-regular dark">Sustainability</h3>
-                    <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                </div>
-                <p class="hind-vadodara semibold dark">Eco-friendly fleet solutions that help reduce carbon footprint and promote sustainability.</p>
-                <p class="hind-vadodara semibold dark">Options for electric and hybrid vehicles.</p>
-            </div>
-            <div>
-                <div class="data-panel-header">
-                    <h3 class="koulen-regular dark">Support</h3>
-                    <img src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                </div>
-                <p class="hind-vadodara semibold dark">Comprehensive onboarding and continued support to ensure you are getting the best ROI on your investment.</p>
-            </div>
-        </div> -->
-        <div id="data-panel-content">
-            <div id="center-icon">
-                <div class="bg-blur"></div>
-                <img src="content\GeoSecure IMAGE ONLY trans 1.png" alt="">
-            </div>
-            <div id="line-content">
-
-            </div>
-            <div id="text-content">
-                <div class="circle-data-element">
-                    <div class="bg-blur"></div>
-                    <div class="data-panel-header">
-                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                    </div>
-                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
-                
-                </div>
-                <div class="circle-data-element">
-                    <div class="bg-blur"></div>
-                    <div class="data-panel-header">
-                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                    </div>
-                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
-                </div>
-                <div class="circle-data-element">
-                    <div class="bg-blur"></div>
-                    <div class="data-panel-header">
-                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                    </div>
-                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
-                </div>           
-                <div class="circle-data-element">
-                    <div class="bg-blur"></div>
-                    <div class="data-panel-header">
-                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                    </div>
-                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
-                </div>   
-                <div class="circle-data-element">
-                    <div class="bg-blur"></div>
-                    <div class="data-panel-header">
-                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                    </div>
-                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
-                </div>    
-                <div class="circle-data-element">
-                    <div class="bg-blur"></div>
-                    <div class="data-panel-header">
-                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
-                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
-                    </div>
-                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
-                </div>     
-            </div>
-            
         </div>
     </div>        
 
@@ -522,34 +202,75 @@
             <img src="content\logos\Messenger_creation_C226C51E-8E9D-4260-9827-97BA60E49F53_0.png" class="slide"></img>
         </div>
     </div>   
+      
+    <div id="data-panel" class="solidBg">
 
-    <div id="hardwareSoftwareSelect" class="solidBg">
-        <div class="hoverSelect" style="border-radius: 0 1rem 1rem 0">
-            <div id="hardwareContent">
-                <h1 class="koulen-regular dark">Hardware You Can Rely On</h1>
-                <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your fleet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>
-                <img class="HSimg" src="content\geotab-go-device-marketing-shot11.png" alt="Geotab Go Display Image">
-                <a href="hardware.html"><button class="buttonStyle"id="HSbutton"><h2 class="koulen-regular Dark">Learn More</h2></button></a>                      
+        <div id="data-panel-content">
+            <div id="center-icon">
+                <div class="bg-blur"></div>
+                <img src="content\GeoSecure IMAGE ONLY trans 1.png" alt="">
             </div>
-        </div>
-        <div class="hoverSelect" style="border-radius:1rem">
-            <div id="sofwareContent">
-                <h1 class="koulen-regular dark">Cutting-Edge Software</h1>
-                <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your fleet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>
-                <img class="HSimg" src="content\mygeotab-safety-dashboard-laptop-mockup-1-2021(english)(1).png" alt="Geotab Go Display Image">
-                <a href="software.html"><button class="buttonStyle"id="HSbutton"><h2 class="koulen-regular Dark">Learn More</h2></button></a>                         
-            </div>
-        </div>
-        <div class="hoverSelect" style="border-radius: 1rem 0 0 1rem">
-            <div id="dashcamContent">
-                <h1 class="koulen-regular dark">4G Dashcams</h1>
-                <p class="hind-vadodara semibold dark">Geosecure helps your business intelligently improve your fleet's capabilities. With live vehicle tracking, collision detection, telematics, geofencing, and more, Geosecure can do it all.</p>
-                <img class="HSimg" src="content\surecam-tilted.png" alt="Geotab Go Display Image">
-                <a href="software.html"><button class="buttonStyle"id="HSbutton"><h2 class="koulen-regular Dark">Learn More</h2></button></a>                         
-            </div>
-        </div>
-    </div>        
+            <div id="line-content">
 
+            </div>
+            <div id="text-content">
+                <div class="circle-data-element">
+                    <div class="bg-blur"></div>
+                    <div class="data-panel-header">
+                        <h3 class="koulen-regular dark">Efficiency and Cost</h3>
+                        <img src="content/icons/local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
+                    </div>
+                    <p class="hind-vadodara semibold dark">Solutions that offer cost-effective fleet management and reduce operational expenses.</p>
+                    <p class="hind-vadodara semibold dark">Tools for better fuel management, fleet utilisation, and maintenance scheduling.</p>
+                </div>
+                <div class="circle-data-element">
+                    <div class="bg-blur"></div>
+                    <div class="data-panel-header">
+                        <h3 class="koulen-regular dark">Reliability and Durability</h3>
+                        <img src="content\icons\front_loader_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
+                    </div>
+                    <p class="hind-vadodara semibold dark">Products and services that ensure the longevity and reliability of fleet vehicles, especially in harsh environments.</p>
+                </div>
+                <div class="circle-data-element">
+                    <div class="bg-blur"></div>
+                    <div class="data-panel-header">
+                        <h3 class="koulen-regular dark">Ease of Use</h3>
+                        <img src="content\icons\airport_shuttle_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
+                    </div>
+                    <p class="hind-vadodara semibold dark">User-friendly interfaces and systems that simplify fleet management tasks.</p>
+                    <p class="hind-vadodara semibold dark">Add-ons to future proof your IVMS and scale with your specific needs.</p>
+                </div>
+                <div class="circle-data-element">
+                    <div class="bg-blur"></div>
+                    <div class="data-panel-header">
+                        <h3 class="koulen-regular dark">Safety and Compliance</h3>
+                        <img src="content\icons\pin_drop_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Truck Icon">
+                    </div>
+                    <p class="hind-vadodara semibold dark">Features that ensure vehicles meet all safety and regulatory standards.</p>
+                    <p class="hind-vadodara semibold dark">Real-time monitoring and reporting tools for compliance and safety management.</p>
+                </div>
+                <div class="circle-data-element">
+                    <div class="bg-blur"></div>
+                    <div class="data-panel-header">
+                        <h3 class="koulen-regular dark">Sustainability</h3>
+                        <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
+                    </div>
+                    <p class="hind-vadodara semibold dark">Eco-friendly fleet solutions that help reduce carbon footprint and promote sustainability.</p>
+                    <p class="hind-vadodara semibold dark">Options for electric and hybrid vehicles.</p>
+                </div>
+                <div class="circle-data-element">
+                    <div class="bg-blur"></div>
+                    <div class="data-panel-header">
+                        <h3 class="koulen-regular dark">Support</h3>
+                        <img src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Truck Icon">
+                    </div>
+                    <p class="hind-vadodara semibold dark">Comprehensive onboarding and continued support to ensure you are getting the best ROI on your investment.</p>
+                </div>
+                     
+            </div>
+            
+        </div>
+    </div>
     <div id="HSpadder"></div>
     <div id="solutionBuilder">
         <div>
@@ -558,50 +279,73 @@
             <a href=""><button class="buttonStyle"><h2 class="koulen-regular Dark">Get Started</h2></button></a>              
         </div>
         <!-- <img src="content\mygeotab-off-road-tracking-tablet-mockup-1-2021(english).png" alt="Fleet Savings Image"> -->
-
     </div>
+
+
 
     <div id="footerBorder" class="solidBg">
         <div id="footer">
-            <div id="footerLogo"><a href="index.html">
-                <img src="content\GeoSecure IMAGE ONLY trans light.png" alt="Geosecure Footer Logo">
-                <h2 class="koulen-regular light">Geosecure</h2></a>
-            </div>
             <div id="footerInfo">
-                <div id="footerContact">
-                    <h2 class="koulen-regular light textLink"><a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a></h2>
-                    <h2 class="koulen-regular light textLink" ><a href="tel:+611300803754">1300 803 754</a></h2>           
-                    <div class="social-links">
-                        <a href=""><img src="content\social_icons\facebook_icon.svg" alt="Facebook Logo"></a>
-                        <a href=""><img src="content\social_icons\linkedin_icon.svg" alt="Linkedin Logo"></a>
-                        <a href=""><img src="content\social_icons\youtube_icon.svg" alt="Youtube Logo"></a>
-                        <a href=""><img src="content\social_icons\instagram_icon.svg" alt="Instagram Logo"></a>
-                    </div>         
+                <div id="company-info">
+                    <div>
+                        <div id="footerLogo"><a href="index.html">
+                            <img src="content\GeoSecure IMAGE ONLY trans light.png" alt="Geosecure Footer Logo">
+                            <h2 class="koulen-regular light">Geosecure</h2></a>
+                        </div>
+                        <div id="footerContact">
+                            <h2 class="koulen-regular light textLink"><a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a></h2>
+                            <h2 class="koulen-regular light textLink" ><a href="tel:+611300803754">1300 803 754</a></h2>           
+                            <div class="social-links">
+                                <a href=""><img src="content\social_icons\facebook_icon.svg" alt="Facebook Logo"></a>
+                                <a href=""><img src="content\social_icons\linkedin_icon.svg" alt="Linkedin Logo"></a>
+                                <a href=""><img src="content\social_icons\youtube_icon.svg" alt="Youtube Logo"></a>
+                                <a href=""><img src="content\social_icons\instagram_icon.svg" alt="Instagram Logo"></a>
+                            </div>         
+                        </div>                        
+                    </div>
+               
+                    <img src="content\geotab-authorised-reseller.png" alt="">     
                 </div>
+
 
                 <div id="footerLinks">
                     <div>
-                        <h2 class="koulen-regular light textLink"><a href="index.html">Home</a></h2>                        
+                        <h2 class="koulen-regular light">Industries</h2> 
+                        <div>
+                            <a class="hind-vadodara bold light textLink" href="#">Transport & Logistics</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Construction & Mining</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Utilities & Infrastructure</a>          
+                            <a class="hind-vadodara bold light textLink" href="#">Service & Specialty Trades</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Government & Public Sector</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Miscellaneous Services & Others</a>      
+                        </div>
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink"><a href="solution_builder.html">Solution Builder</a></h2>                        
+                        <h2 class="koulen-regular light">Products</h2>     
+                        <div>
+                            <a class="hind-vadodara bold light textLink" href="#">IVMS</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Camera Solutions</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Geotab GO</a>
+                        </div>                   
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink"><a href="about.html">About</a></h2>                        
+                        <h2 class="koulen-regular light">About</h2>    
+                        <div>
+                            <a class="hind-vadodara bold light textLink" href="#">Solutions</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Our Mission</a>
+                        </div>                        
                     </div>
                     <div>
-                        <h2 class="koulen-regular light textLink"><a href="software.html">Software</a></h2>
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="hardware.html">Hardware</a></h2>
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>
+                        <h2 class="koulen-regular light">Resources</h2>
+                        <div>
+                            <a class="hind-vadodara bold light textLink" href="#">Blog</a>
+                            <a class="hind-vadodara bold light textLink" href="#">Case Studies</a>      
+                        </div>
                     </div>
                 </div>                
             </div>
         </div>
-        <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 1rem;">© GeoSecure Australia 2024 all rights reserved | <a style="text-decoration: underline; text-underline-offset: .1rem;" href="privacy_policy.html">Privacy Policy<a\></h5>
+        <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 2rem;">© GeoSecure Australia 2024 all rights reserved | <a style="text-decoration: underline; text-underline-offset: .1rem;" href="privacy_policy.html">Privacy Policy<a\></h5>
     </div>
 </body>
 </html>

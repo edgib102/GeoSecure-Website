@@ -16,8 +16,18 @@
         font-size: 5rem !important;
         line-height: 5rem !important;
     }
+    #heroPage button{
+        margin: auto;
+        display: block;
+        margin-top: 2rem;
+    }
     #heroImage{
         display: none;
+    }
+    #mobile-heroImage{
+        width: 80%;
+        margin: auto;
+        display: block !important;
     }
 
     #cellIcon{
@@ -60,7 +70,7 @@
 
     .slide{
         height: 5.25rem !important;
-        margin: 0rem 1rem 2rem 1rem !important;
+        margin: 2rem 1rem 2rem 1rem !important;
     }
 
     .hoverSelect:hover{
@@ -69,6 +79,46 @@
     /* .slider:hover .slideTrack{
         animation-play-state: 0;
     } */
+    .video{
+        width: 100% !important;
+        height: auto !important;
+        /* height: min-content !important; */
+    }
+    #company-info > img{
+        display: none;
+    }
+    .video-container{
+        height: 35rem !important;
+    }
+    .video-overlay > div{
+        height: 35rem !important;
+    }
+    #text-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 2rem 1rem;
+
+    }
+    #data-panel-content{
+        height: auto !important;
+        padding-bottom: 2rem !important;
+        margin-left: var(--borderMargin);
+        margin-right: var(--borderMargin);
+    }
+    .circle-data-element{
+        position: relative !important;
+        height: 100%;
+        width: auto !important;
+        
+    }
+    .bg-blur{
+        display: none;
+    }
+    #center-icon{
+        display: none;
+    }
+
 }
 
 #heroPage{
@@ -100,7 +150,9 @@
     margin: auto;
     /* object-fit: scale-down; */
 }
-
+#mobile-heroImage{
+    display: none;
+}
 #shutdown{
     background-color: var(--dark);
     position:absolute;
@@ -244,7 +296,7 @@
     width: 15rem;
     z-index: 0;
 }
-#data-panel-content{
+/* #data-panel-content{
     margin-left: var(--borderMargin);
     margin-right: var(--borderMargin);
 
@@ -255,7 +307,6 @@
     padding-bottom: 2rem;
     padding-top: 1rem;
     /* grid-template-areas: "div  .   ."; */
-}
 #data-panel-content h1{
     margin-bottom: 1rem;
     grid-column: 1;

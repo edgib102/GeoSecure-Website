@@ -10,75 +10,46 @@ function createOrUpdatePadder(element) {
         element.parentNode.insertBefore(padder, element.nextSibling);
     }
 }
-
+// canClick =
 window.addEventListener("load", () => {
 
-    const numberElements = document.querySelectorAll('.increment');
-    const duration = 2000; // Duration in milliseconds
-    const frameRate = 60; // Frames per second
-    const sharpness = 3; // Sharpness of the easing function
-    const totalFrames = duration / (1000 / frameRate);
 
-    function easeOutCustom(t, sharpness) {
-      return 1 - Math.pow(1 - t, sharpness);
-    }
+  var DDlist = document.getElementsByClassName("headerDD");
+  canClick = true;
 
-    function updateNumber(element, target) {
-      let currentFrame = 0;
-
-      function animate() {
-        currentFrame++;
-        const progress = easeOutCustom(currentFrame / totalFrames, sharpness);
-        const currentValue = Math.ceil(target * progress);
-        
-        element.innerText = currentValue.toLocaleString();
-
-        if (currentFrame < totalFrames) {
-          requestAnimationFrame(animate);
-        } else {
-          element.innerText = target.toLocaleString();
-        }
+  document.getElementById("DDbg").addEventListener("click", function (e) {
+      // console.log(e.target.id);
+      if(e.target.id == "DDbg"){
+          mobileDDtoggle();
       }
+  });  
 
-      animate();
-    }
+  for (var i=0; i < DDlist.length; i++){
+      
+      DDlist[i].addEventListener("click", mobileDDtoggle);        
 
-    numberElements.forEach(element => {
-      const target = +element.getAttribute('data-target');
-      updateNumber(element, target);
-    });
+  }
 
-    const solidBgElements = document.querySelectorAll('.solidBg');
+  document.body.style = "display: block;"
 
-    // if (solidBgElements != null) {
-    //     solidBgElements.forEach((element) => {
-    //         createOrUpdatePadder(element);
-
-    //         window.addEventListener('resize', () => {
-    //             createOrUpdatePadder(element);
-    //         });
-    //     });
-    // }
+  var expansionElements = document.getElementsByClassName("dropdown-selected");
+  // console.log(expansionElements)
+  linkContainer = document.getElementById("DDlinks")
 
 
-    var DDlist = document.getElementsByClassName("headerDD");
-    canClick = true;
+  // backDropdownBtns = getElementsByClassName("back-dropdown")
+  // Array.from(backDropdownBtns).forEach(element => {
+  //   element.addEventListener("click")
+  // });
 
-    document.getElementById("DDbg").addEventListener("click", function (e) {
-        // console.log(e.target.id);
-        if(e.target.id == "DDbg"){
-            mobileDDtoggle();
-        }
-    });  
 
-    for (var i=0; i < DDlist.length; i++){
-        
-        DDlist[i].addEventListener("click", mobileDDtoggle);        
+  // Array.from(expansionElements).forEach(element => {
+  //   console.log(element.offsetHeight)
 
-    }
-
-    document.body.style = "display: block;"
-
+  //   element.style.height = `${linkContainer.offsetHeight}px`;
+  //   element.style.top = `-${element.getBoundingClientRect().top - linkContainer.getBoundingClientRect().top}px`;
+  //   // element.style.height = document.
+  // });
 })
 
 function mobileDDtoggle(){
@@ -88,10 +59,23 @@ function mobileDDtoggle(){
             DDitem.style.display = "none";
         } else {
             DDitem.style.display = "block";
+            console.log("ddd")
+            var mainLinks = document.getElementById("main-links")
+            console.log(document.getElementById("DDcontent").offsetWidth)
+            mainLinks.style.width = `${document.getElementById("DDcontent").offsetWidth}px`
         }   
         canClick = false;
         setTimeout(() => {
             canClick = true
         }, 50);          
     }
+}
+
+function dropdownBack(element){
+  // console.log(x)
+  element.parentNode.classList.add("inactive-dd-expansion")
+}
+function dropdownForwards(element){
+  // console.log(x)
+  element.parentNode.parentNode.classList.add("inactive-dd-expansion")
 }

@@ -78,41 +78,65 @@
                     </div>
 
                     <div id="DDlinks" >
-                        <h2 class="hind-vadodara bold light textLink"><a href="about.html">Telematics</a></h2>
-                        <h2 class="hind-vadodara bold light textLink"><a href="about.html">Camera Solutions</a></h2>
-                        <h2 class="hind-vadodara bold light textLink"><a href="about.html">IVMS</a></h2>
-                        <div class="dropdown">
-                            <h2 class="hind-vadodara bold light textLink">Industries</h2>
-                            <div class="arrow-up dropdown-wrapper"></div>
-                            <div class="dropdown-wrapper industries-dd">
-                                <div class="dropdown-padder"></div>
-                                <div class="dropdown-content">
-                                    <a class="hind-vadodara bold dark textLink" href="#">Transport & Logistics</a>
-                                    <a class="hind-vadodara bold dark textLink" href="#">Construction & Mining</a>
-                                    <a class="hind-vadodara bold dark textLink" href="#">Utilities & Infrastructure</a>          
-                                    <a class="hind-vadodara bold dark textLink" href="#">Service & Specialty Trades</a>
-                                    <a class="hind-vadodara bold dark textLink" href="#">Government & Public Sector</a>
-                                    <a class="hind-vadodara bold dark textLink" href="#">Miscellaneous Services & Others</a>       
-                                </div>
-                            </div>                
-                        </div>
-                        <div class="dropdown">
-                            <h2 class="hind-vadodara bold light textLink">Resources</h2>
-                            <div class="arrow-up dropdown-wrapper"></div>
-                            <div class="dropdown-wrapper">
-                                <div class="dropdown-padder"></div>
-                                <div class="dropdown-content">
+                        <div id="main-links">
+                            <h2 class="hind-vadodara bold light textLink"><a href="about.html">Telematics</a></h2>
+                            <h2 class="hind-vadodara bold light textLink"><a href="about.html">Camera Solutions</a></h2>
+                            <h2 class="hind-vadodara bold light textLink"><a href="about.html">IVMS</a></h2>
+                            <div class="dropdown">
+                                <button class="dropdown-select" onclick="dropdownForwards(this)">
+                                    <h2 class="hind-vadodara bold light textLink">Industries</h2>
+                                    <img src="content\arrow_forward_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg" alt="">                                
+                                </button>
+
+                                <!-- <div class="dropdown-selected">
+                                    <a class="hind-vadodara bold light textLink" href="#">Transport & Logistics</a>
+                                    <a class="hind-vadodara bold light textLink" href="#">Construction & Mining</a>
+                                    <a class="hind-vadodara bold light textLink" href="#">Utilities & Infrastructure</a>          
+                                    <a class="hind-vadodara bold light textLink" href="#">Service & Specialty Trades</a>
+                                    <a class="hind-vadodara bold light textLink" href="#">Government & Public Sector</a>
+                                    <a class="hind-vadodara bold light textLink" href="#">Miscellaneous Services & Others</a>      
+                                </div> -->
+
+                                <!-- <div class="arrow-up dropdown-wrapper"></div>
+                                
+                                <div class="dropdown-wrapper industries-dd">
+                                    <div class="dropdown-padder"></div>
+                                    <div class="dropdown-content">
+                                        <a class="hind-vadodara bold dark textLink" href="#">Transport & Logistics</a>
+                                        <a class="hind-vadodara bold dark textLink" href="#">Construction & Mining</a>
+                                        <a class="hind-vadodara bold dark textLink" href="#">Utilities & Infrastructure</a>          
+                                        <a class="hind-vadodara bold dark textLink" href="#">Service & Specialty Trades</a>
+                                        <a class="hind-vadodara bold dark textLink" href="#">Government & Public Sector</a>
+                                        <a class="hind-vadodara bold dark textLink" href="#">Miscellaneous Services & Others</a>       
+                                    </div>
+                                </div>                 -->
+                            </div>
+                            <div class="dropdown">
+                                <h2 class="hind-vadodara bold light textLink">Resources</h2>
+                                <img src="content\arrow_forward_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                <!-- <div class="dropdown-selected">
                                     <a class="hind-vadodara light dark" href="#">Blog</a>
-                                    <a class="hind-vadodara light dark" href="#">Case Studies</a>                       
-                                </div>
-                            </div>                
+                                    <a class="hind-vadodara light dark" href="#">Case Studies</a>           
+                                </div>              -->
+                            </div>  
+                            <h2 class="hind-vadodara bold dark textLink"><a href="about.html">About Us</a></h2>  
                         </div>  
-                        <h2 class="hind-vadodara bold dark textLink"><a href="about.html">About Us</a></h2>  
-                        <!-- <h2 class="hind-vadodara bold light textLink"><a href="software.html">Software</a></h2>
-                        <h2 class="hind-vadodara bold light textLink"><a href="hardware.html">Hardware</a></h2>
-                        <h2 class="hind-vadodara bold light textLink"><a href="about.html">About</a></h2>
-                        <h2 class="hind-vadodara bold light textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>   
-                        <button class="buttonStyle" style="border: .2rem solid #F7EFEE !important;"><h2 class="koulen-regular light"><a href="solution_builder.html">Get Started</a></h2></button>           -->
+                        <div>
+                            <div class="dropdown-selected">
+                                <button class="dropdown-select" onclick="dropdownBack(this)">
+                                    <img src="content\arrow_back_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                    <h1 class="koulen-regular light" style="margin: auto; width:min-content;">Industries</h1>
+                                </button>
+    
+                                <h2 class="hind-vadodara bold light" href="#">Transport & Logistics</h2>
+                                <h2 class="hind-vadodara bold light" href="#">Construction & Mining</h2>
+                                <h2 class="hind-vadodara bold light" href="#">Utilities & Infrastructure</h2>          
+                                <h2 class="hind-vadodara bold light" href="#">Service & Specialty Trades</h2>
+                                <h2 class="hind-vadodara bold light" href="#">Government & Public Sector</h2>
+                                <h2 class="hind-vadodara bold light" href="#">Miscellaneous Services & Others</h2>      
+                            </div>
+                        </div>                      
+
                     </div>
                 </div>
             </div>

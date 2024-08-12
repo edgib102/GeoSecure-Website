@@ -59,23 +59,64 @@ function mobileDDtoggle(){
             DDitem.style.display = "none";
         } else {
             DDitem.style.display = "block";
-            console.log("ddd")
-            var mainLinks = document.getElementById("main-links")
-            console.log(document.getElementById("DDcontent").offsetWidth)
-            mainLinks.style.width = `${document.getElementById("DDcontent").offsetWidth}px`
+            // console.log("ddd")
+            // var mainLinks = document.getElementById("main-links")
+            // console.log(document.getElementById("DDcontent").offsetWidth)
+            // mainLinks.style.width = `${document.getElementById("DDcontent").offsetWidth}px`
         }   
         canClick = false;
         setTimeout(() => {
             canClick = true
-        }, 50);          
+        }, 10);          
     }
+}
+var mainLinks = null;
+var secondaryLinks = null;
+
+function dropdownForwards(element){
+  var DDelements = document.getElementsByClassName("dropdown-selected") 
+
+  DDelements = document.getElementsByClassName("dropdown-selected")
+  for (let i = 0; i < DDelements.length; i++) {
+    const DDelmt = DDelements[i]
+    if(DDelements[i] != DDelements[element.getAttribute("data-value")]){
+      DDelmt.style.display = "none"
+    }else{
+      DDelmt.style.display = "block"
+    }
+    
+  }
+
+  secondaryLinks = document.getElementById("secondary-links")
+  secondaryLinks.classList.add("scroll-left-secondary")
+
+  mainLinks = element.parentNode.parentNode
+  mainLinks.classList.add("scroll-left-main")
+
+  secondaryLinks.addEventListener("animationend", () =>{
+    secondaryLinks.style.left = "0";
+    secondaryLinks.classList.remove("scroll-left-secondary")
+  })
+  mainLinks.addEventListener("animationend", () =>{
+    mainLinks.style.right = "100%";
+    mainLinks.classList.remove("scroll-left-main")
+  })
+
 }
 
 function dropdownBack(element){
-  // console.log(x)
-  element.parentNode.classList.add("inactive-dd-expansion")
-}
-function dropdownForwards(element){
-  // console.log(x)
-  element.parentNode.parentNode.classList.add("inactive-dd-expansion")
+
+  secondaryLinks.classList.add("scroll-right-secondary")
+  mainLinks.classList.add("scroll-right-main")
+
+  secondaryLinks.addEventListener("animationend", () =>{
+    secondaryLinks.style.left = "100%";
+    secondaryLinks.classList.remove("scroll-right-secondary")
+  })
+  mainLinks.addEventListener("animationend", () =>{
+    mainLinks.style.right = "0";
+    mainLinks.classList.remove("scroll-right-main")
+  })
+
+
 }

@@ -2,6 +2,7 @@
     --light: #F7EFEE;
     --dark: #0B2149;
     --borderMargin: 5rem;
+    --mobileDDanimationSpeed: .25s
 }
 
 .dark{
@@ -273,20 +274,74 @@ body > div{
 }
 
 #DDlinks{
+    width: 100%;
+    height: 50rem;
     display: flex;
-    position: absolute;
+    position: relative;
+    /* animation: scroll-left .25s ease-in-out forwards; */
+    right: 0;
+    /* right: 100%; */
+    overflow: hidden;
+    /* clip-path: inset(0 0 0 0); */
+}
+@keyframes scroll-left-main {
+    100%{
+        right: 100%;
+    }
+}
+@keyframes scroll-left-secondary {
+    100%{
+        left: 0;
+        /* transform: translateX(-200px); */
+        /* right: -100%; */
+    }
+}
+@keyframes scroll-right-main {
+    100%{
+        right: 0;
+    }
+}
+@keyframes scroll-right-secondary {
+    100%{
+        left: 100%;
+        /* transform: translateX(-200px); */
+        /* right: -100%; */
+    }
+}
+.scroll-left-main{
+    animation: scroll-left-main var(--mobileDDanimationSpeed) ease-in-out forwards;
+
+}
+.scroll-left-secondary{
+    animation: scroll-left-secondary var(--mobileDDanimationSpeed) ease-in-out forwards;
+}
+.scroll-right-main{
+    animation: scroll-right-main var(--mobileDDanimationSpeed) ease-in-out forwards;
+}
+.scroll-right-secondary{
+    animation: scroll-right-secondary var(--mobileDDanimationSpeed) ease-in-out forwards;
 }
 
+
 #main-links{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
+    right: 0;
     
     display: flex;
     flex-direction: column;
+    /* animation: scroll-left-main 1s ease-in-out forwards; */
+    /* clip-path: inset(0 0 0 0); */
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
     /* row-gap: 1rem; */
+}
+#secondary-links{
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    /* animation: scroll-left-secondary 1s ease-in-out forwards; */
 }
 /* #DDcontent{
     margin: ;

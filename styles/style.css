@@ -284,6 +284,17 @@ body > div{
     overflow: hidden;
     /* clip-path: inset(0 0 0 0); */
 }
+#DDlinks h2{
+    margin: 0;
+}
+#DDlinks > div > *{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* #DDlinks > div > h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} */
 @keyframes scroll-left-main {
     100%{
         right: 100%;

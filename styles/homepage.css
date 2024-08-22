@@ -337,21 +337,8 @@
     grid-column: 2 / span 3;
 }
 
-.slider{
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: var(--light);
-    z-index: 3;
-}
-.slideTrack{
-    animation: 30s slide infinite linear;
-    display: inline-block;
-    width: max-content;
-
-}
 .slide{
-    height: 6rem;
+    height: 5.5rem;
     margin: 2rem;
 }
 .slider:hover .slideTrack{

@@ -541,3 +541,26 @@ body > div{
         transform: translateX(110%);
     }
 }
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: var(--light);
+    z-index: 3;
+}
+.slideTrack{
+    animation: 40s slide infinite linear;
+    display: inline-block;
+    /* flex-direction: row; */
+    width: max-content;
+
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

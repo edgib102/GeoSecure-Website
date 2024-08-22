@@ -1,0 +1,113 @@
+:root{
+    --light: #F7EFEE;
+    --dark: #0B2149;
+
+    --borderMargin: 5rem;
+}
+
+.ivms-hero-element h1{
+    font-size: 5.5rem;
+    margin: auto;
+    width: fit-content;
+}
+.ivms-hero-content{
+    display: flex;
+    column-gap: 5rem;
+    justify-content: space-around;
+}
+.ivms-hero-content img{
+    width: 35rem;
+}
+.ivms-hero-content p{
+    width: 35rem;
+    margin: auto 0 auto 0;
+}
+
+.builder-datacollect-elem{
+    display: flex;
+    column-gap: 5rem;
+}
+
+.builder-ref-elem{
+    /* width: 50vw; */
+    background-color: white;
+    padding: 2rem 2rem 2rem var(--borderMargin) ;
+    border-radius: 0 2rem 2rem 0;
+    text-align: center;
+}
+.builder-ref-elem img{
+    /* margin-left: 4rem;
+    margin-right: 4rem; */
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+.builder-ref-elem button{
+    margin-top: 1rem;
+}
+
+.data-collect-elem{
+    padding-top: 2rem;
+    margin-right: var(--borderMargin);
+}
+
+.zone-monitor-elem{
+    text-align: center;
+    margin-top: 2rem;
+}
+.rule-result{
+    background-color: white;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding:  1rem 2rem;
+}
+.rule-result > div{
+    width: 50%;
+}
+.rule-result img{
+    height: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+}
+
+.zone-rules-elem{
+    text-align: center;
+    width: min-content;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.zone-rules-elem h1{
+    width: max-content;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+}
+.slideTrack{
+    display: flex;
+    flex-direction: row;
+}
+.slide{
+    margin-left: 2rem;
+}
+
+.cost-effective-elem{
+    background-color: white;
+    padding-left: var(--borderMargin);
+    /* padding-right: var(--borderMargin); */
+    display: flex;
+    height: min-content;
+}
+.cost-effective-content{
+    padding-top: 2rem;
+    padding-right: 2rem;
+    height: max-content;
+}
+.cost-effective-elem img{
+    width: 80%;
+    height: 15rem;
+    object-fit: cover;
+}

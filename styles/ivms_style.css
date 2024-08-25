@@ -4,7 +4,9 @@
 
     --borderMargin: 5rem;
 }
-
+.ivms-hero-element{
+    margin-bottom: 4rem;
+}
 .ivms-hero-element h1{
     font-size: 5.5rem;
     margin: auto;
@@ -13,19 +15,24 @@
 .ivms-hero-content{
     display: flex;
     column-gap: 5rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 1rem;
 }
 .ivms-hero-content img{
-    width: 35rem;
+    height: 16.5rem;
 }
 .ivms-hero-content p{
     width: 35rem;
     margin: auto 0 auto 0;
+    /* padding-left: 2rem; */
+}
+.ivms-hero-content button{
+    margin-top: 1rem;
 }
 
 .builder-datacollect-elem{
     display: flex;
-    column-gap: 5rem;
+    column-gap: 4rem;
 }
 
 .builder-ref-elem{
@@ -50,10 +57,30 @@
     padding-top: 2rem;
     margin-right: var(--borderMargin);
 }
-
+.aus-acc-svg{
+    position: absolute;
+    left: -1rem;
+    margin-top: 5rem;
+    /* top: 2rem; */
+    z-index: 1;
+    width: 27.5rem;
+}
 .zone-monitor-elem{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    z-index: 10;
+    position: relative;
+}
+.zone-monitor-elem > p{
+    width: 65%;
+    margin: auto;
+}
+
+.rule-result-wrapper{
+    padding-top: 2rem;
+}
+.rule-result-wrapper h1{
+    margin-bottom: 1rem;
 }
 .rule-result{
     background-color: white;
@@ -64,6 +91,17 @@
 }
 .rule-result > div{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.rule-result p{
+    /* align-self: center; */
+    /* height: 100%; */
+    float: right;
+    text-align: center;
+    /* margin-top: 50%; */
+    /* height: min-content; */
+    margin: auto;
 }
 .rule-result img{
     height: 5rem;
@@ -99,15 +137,28 @@
     padding-left: var(--borderMargin);
     /* padding-right: var(--borderMargin); */
     display: flex;
+    grid-template-columns: 3fr 2fr;
     height: min-content;
+    /* padding-bottom: 2rem; */
 }
 .cost-effective-content{
     padding-top: 2rem;
     padding-right: 2rem;
     height: max-content;
+    margin-bottom: 2rem;
 }
 .cost-effective-elem img{
     width: 80%;
-    height: 15rem;
+    height: 27.5rem;
+    /* height: min-content; */
     object-fit: cover;
+}
+.hardware-components{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    column-gap: 2rem;
+}
+.hardware-components p{
+    margin: .5rem;
 }

@@ -437,6 +437,9 @@ body > div{
     display: flex;
     flex-direction: column;
 }
+#footerLinks a{
+    white-space: nowrap;
+}
 
 .dropdown{
     z-index: 2;

@@ -1,0 +1,44 @@
+:root{
+    --light: #F7EFEE;
+    --dark: #0B2149;
+    --borderMargin: 5rem;
+    /* --mobileDDanimationSpeed: .25s */
+}
+
+.pillar-facts-elem{
+    background-color: white;
+    display: flex;
+
+    padding: 2rem var(--borderMargin) 2rem var(--borderMargin) ;
+}
+.pillar-facts-elem > div{
+    text-align: center;
+}
+
+.schedule-reasons-elem{
+    display: flex;
+    margin-top: 2rem;
+}
+.driver-schedule{
+    width: 40vw;
+    margin-right: 2rem;
+}
+.reason-elem{
+
+}
+.reason-elem > div{
+    display: flex;
+    height: min-content;
+}
+.reason-elem img{
+    height: 3rem;
+    padding-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.reason-elem h1{
+    height: min-content;
+}
+.img-wrap{
+    height: min-content;
+}

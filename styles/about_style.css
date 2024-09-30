@@ -1,136 +1,144 @@
-@media only screen and (max-width: 500px){
-    #heroContent{
-        margin-top: 2rem;
-    }
-    #heroContent p{
-        margin: 0 !important;
-    }
-    #heroContent img{
-        width: 100% !important;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-    }
-    #ownerPanel{
-        flex-direction: column;
-        align-items: center !important;
-        text-align: center;
-    }
-    #ownerPanel div{
-        width: 100% !important;
-    }
-    #ownerPanel img{
-        width: 45% !important;
-        height: auto;
-        padding: 0 !important;
-    }
-    
-    #connectionPanel{
-        margin-top: 2rem;
-    }
-    #connectionPanel img{
-        width: 100% !important;
-        margin-bottom: 1rem !important;
-    }
-    #connectionPanel p{
-        margin: 0 !important;
-    }
-    
+.hero-elem{
+    padding-bottom: 4rem !important;
+ }
+ .hero-elem > div{
+    width: 55%;
+ }
 
-    #approachList{
-        flex-direction: column;
-        gap: .5rem !important;
-    }
-    #processPanel >div >img{
-        display: none;
-    }
-}
-#heroContent, #connectionPanel{
+.basic-layout{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-#heroContent h1{
-    font-size: 3rem;
-}
-#heroContent p {
-    text-align: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-#heroContent img{
-    width: 50%;
-}
-
-#ownerPanel{
-    display: flex;
-}
-#ownerPanel img{
-    width: 12.5%;
-    padding-right: 2rem;
-}
-#ownerPanel h2{
-    margin-bottom: 1rem;
-}
-#ownerPanel div{
-    width: 45%;
-}
-
-#connectionPanel img{
-    width: 40%;
-}
-#connectionPanel h2{
-    margin-bottom: 1rem;
-}
-#connectionPanel p{
-    text-align: center;
-    /* margin-left: 5rem;
-    margin-right: 5rem; */
-}
-
-#processPanel{
-    background-color: white;
-    filter: drop-shadow(0px -4px 4px #00000015);
-}
-#processPanel >div{
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-#processPanel >div >img{
+.basic-layout img{
+    width: 30rem;
+    height: fit-content;
+    margin-left: 6rem;
+} 
+
+.hero-header{
+    font-size: 5.5rem;
+    margin-top: 0;
+}
+.left-align img{
+    margin-right: 6rem;
+    margin-left: 0 !important;
+}
+
+.builder-cta{
+    /* width: 60%; */
+    text-align: center;
+    background-color: white;
+    padding: 2rem var(--borderMargin) 2rem var(--borderMargin) ;
+    margin-top: 4rem;
+}
+.builder-cta p{
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    }
+
+    /* Carousel Wrapper */
+    .carousel-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 800px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hides overflow for the slide effect */
+    }
+
+    /* Slide Wrapper */
+    #slide-wrapper {
+    position: relative;
+    height: 10rem; /* Adjust based on your content size */
+    }
+
+    /* Slide Animation */
+    .slide {
     position: absolute;
-    right: 0;
-    width: 9rem;
-    transform: translate(-3rem, -7rem);
-}
-#approachList{
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    }
+
+    .slide.exit-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    }
+
+    .slide.enter-right {
+    transform: translateX(100%);
+    opacity: 0;
+    }
+
+    /* Carousel Navigation */
+    .carousel-nav {
     display: flex;
-    gap: 2rem !important;
-}
-#approachList h2{
-    margin: 0;
-    /* margin-bottom: .5rem;
-    margin-top: 1rem; */
-}
-#approachList p{
-    margin: 0;
-}
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 10; /* Make sure arrows are on top */
+    /* height: 50px; */
+    left: 0;
+    }
 
-#processPanel >div >button{
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-#processPanel h1{
-    margin-bottom: 1.5rem;
-}
+    .nav-arrow {
+    font-size: 30px;
+    color: #1e2a44;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+    }
 
-.approachTitle{
+    .nav-arrow.right {
+    position: absolute;
+    right: 15px; /* Ensure it sticks to the far right */
+    }
+
+    .nav-arrow.left {
+    position: absolute;
+    left: 15px; /* Ensure it sticks to the far left */
+    }
+
+    /* Dots navigation */
+    .dots {
     display: flex;
-    /* align-items: center; */
-    gap: 1rem;
-}
-.approachTitle img{
-    height: 3rem;
-    width: auto;
-}
+    justify-content: center;
+    margin-top: 20px;
+    }
 
+    .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+    background-color: #1e2a44; /* Active dot dark blue */
+    }

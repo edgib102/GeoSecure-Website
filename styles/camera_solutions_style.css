@@ -1,0 +1,189 @@
+:root{
+    --borderMargin: 5rem;
+}
+.basic-layout{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.basic-layout > img{
+    width: 30rem;
+    margin-left: 6rem;
+} 
+
+.hero-header{
+    font-size: 5.5rem;
+    margin-top: 0;
+}
+
+
+#hardwareSoftwareSelect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    column-gap: 2rem;
+    /* height: max-content; */
+}
+#hardwareSoftwareSelect h1{
+    padding-top: 1rem;
+}
+.hoverSelect{
+    transition: 0.15s;
+}
+
+.hoverSelect > div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: baseline; */
+    height: 100%;
+}
+
+.hoverSelect button{
+    margin-bottom: 2rem !important;
+}
+
+.hoverSelect:hover{
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 6px #00000025);
+    border-radius: 1rem;
+    z-index: 0;
+}
+
+#HSborder{
+    width:100%;
+    position:absolute;
+    left:0;
+
+}
+
+/* #HSborder div{
+    display: flex;
+    flex-direction: column;
+} */
+
+#hardwareContent{
+    margin: 0rem 1rem 0rem var(--borderMargin);
+    /* transform: translateX(var(--borderMargin)); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+.HSimg{
+    /* width: 25rem; */
+    height: 13.5rem;
+    width: auto;
+    max-width: 100%;
+    margin:auto;
+    display: block;
+    margin-bottom: 1rem;
+    object-fit:scale-down;
+    
+}
+
+#sofwareContent{
+    margin: 0rem 1rem 0rem 1rem;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+#camera-solution-content{
+    margin: 0rem var(--borderMargin) 0rem 1rem;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+#HSbutton{
+    display: block;
+    margin: auto;
+}
+
+#solutionBuilder{
+    z-index: 1;
+    position: relative;
+    background: var(--light);
+    display: flex;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+#solutionBuilder img{
+    height: min-content;
+    width:22.5rem;
+    margin-left: 4rem;
+    /* display: none; */
+}
+
+.stat-display{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.stat-wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.stat-wrapper img{
+    height: 2rem
+}
+
+.dvr-elem{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.dvr-elem > div{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
+}
+.dvr-elem img{
+    width: 20rem;
+}
+.reason-elem{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+.reason-elem > h1{
+    text-align: center;
+}
+.reason-elem-array{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25rem;
+    row-gap: 5rem;
+}
+[data-image]::after{
+    content: "";
+    /* content: url("/content/icons/health_and_safety_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg"); */
+    display: inline-block;
+    width: 2.5rem; /* Set the desired width */
+    height: 2.5rem; /* Set the desired height */
+    background-image: attr(data-image url);
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center;
+    margin-left: .5rem; /* Optional: Add space between text and image */
+    vertical-align: middle; /* Aligns image with text */
+}
+
+.KP2-central-img{
+    width: 40rem;
+    position: absolute;
+    top: calc(50% - 10rem);
+    /* left: calc(50% - (35rem/2)); */
+    /* left: 0; */
+    left: calc(50% - (40rem/2));
+}
+.builder-cta{
+    text-align: center;
+    background-color: white;
+    padding: 2rem var(--borderMargin) 2rem var(--borderMargin) ;
+}
+#dashcam-elem{
+    position: relative;
+    z-index: 3;
+}

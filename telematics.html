@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Koulen&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/telematics_style.css" rel="stylesheet" />
 
-    <link href="styles/about_style.css" rel="stylesheet" />
     <script src="scripts\main.js"></script>
-    <script src="scripts\about.js"></script>
+    <script src="scripts\telematics.js"></script>
 </head>
 <body>
     <div id="header">
@@ -125,137 +125,134 @@
             </div>
         </div>
     </div>
-    <div class="basic-layout">
+    <div class="hero-elem">
         <div>
-            <h1 class="koulen-regular dark hero-header">About Us</h1>
-            <h3 class="hind-vadodara semibold dark">Geosecure is dedicated to enhancing fleet management across various sectors with our tailored services and cutting-edge technology. Our solutions, including advanced GPS tracking, telematics, and dashcams, are designed to optimise operations, ensuring that your fleet remains efficient, safe, and productive, no matter the industry or challenge. </h3>            
+            <h1 class="koulen-regular dark">Telematics</h1>
+            <h3 class="hind-vadodara semibold dark">Unlock your fleet’s potential with advanced GPS tracking and telematics tailored for vehicles, electric vehicles, and heavy machinery. Through Geosecure, access Geotab’s cutting-edge technology to optimise performance, protect assets, and enhance driver behaviour. </h3>            
         </div>
         <img src="content\geotab-go-device-marketing-shot11.png" alt="">
     </div>
-    <div class="basic-layout left-align">
-        <img src="content\geotab-go-device-marketing-shot11.png" alt="">
+    <div class="solution-selector solidBg">
+        <div class="solution-selector-title">
+            <h1 class="koulen-regular dark">Fleet Management Solutions From Geosecure</h1>
+            <p class="hind-vadodara semibold dark">Learn more and click on the icons below</p>
+        </div>
+        <div class="selector-rack" >
+            <div class="selector-thumb" id="highlighted" data-id="0">
+                <img src="content\icons\update_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p class="hind-vadodara bold dark">Productivity</p> 
+            </div>           
+            <div class="selector-thumb" data-id="1">
+                <img src="content\icons\swap_driving_apps_wheel_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p class="hind-vadodara bold dark">Fleet Optimisation</p> 
+            </div>       
+            <div class="selector-thumb" data-id="2">
+                <img src="content\icons\health_and_safety_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p class="hind-vadodara semibold dark">Saftey</p> 
+            </div>   
+            <div class="selector-thumb" data-id="3">
+                <img src="content\icons\eco_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p class="hind-vadodara semibold dark">Sustainability</p> 
+            </div>   
+            <div class="selector-thumb" data-id="4">
+                <img src="content\icons\gavel_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p class="hind-vadodara semibold dark">Compliance</p> 
+            </div>   
+            <div class="selector-thumb" data-id="5">
+                <img src="content\icons\open_in_full_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <p class="hind-vadodara semibold dark">Expandability</p> 
+            </div>   
+        </div>
+        <div class="solution-panel" id="active" data-id="0">
+            <div class="solution-header">
+                <h1 class="koulen-regular dark">Productivity</h1>
+                <img src="" alt="">
+            </div>
+            <div class="fact-pillars">
+                <div>
+                    <img src="" alt="">
+                    <h1 class="koulen-regular dark">Accurate Vehicle and Plant Tracking</h1>
+                    <p class="hind-vadodara semibold dark">Geotab’s fleet management software, provided by Geosecure, captures precise data on vehicle location, speed, trip distance, and more. GPS tracking starts recording the moment you begin driving, even if your vehicle is parked indoors or underground. The GO9 device, equipped with the Global Navigation Satellite System (GNSS) module, delivers faster latch times and highly accurate location data. </p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h1 class="koulen-regular dark">Accurate Vehicle and Plant Tracking</h1>
+                    <p class="hind-vadodara semibold dark">Geotab’s fleet management software, provided by Geosecure, captures precise data on vehicle location, speed, trip distance, and more. GPS tracking starts recording the moment you begin driving, even if your vehicle is parked indoors or underground. The GO9 device, equipped with the Global Navigation Satellite System (GNSS) module, delivers faster latch times and highly accurate location data. </p>
+                </div>
+            </div>
+            <div class="central-pillar">
+                <h1 class="koulen-regular dark">Driver Behaviour</h1>
+                <img src="content\mygeotab-dashboard-end-to-end-solution-ui-smart-mockup-1-2022-EN-NA-inline@2x.png" alt="">
+                <p class="hind-vadodara semibold dark">Monitor driver behaviour with Geosecure to improve fleet safety and reduce costs. You can: </p>
+                <ul>
+                    <li class="hind-vadodara semibold dark">Track driving habits: Ensure drivers are operating vehicles safely and effectively.</li>
+                    <li class="hind-vadodara semibold dark">Generate detailed reports: Review performance data to make informed decisions. </li>
+                    <li class="hind-vadodara semibold dark">Receive real-time notifications: Act quickly to address unsafe driving behaviours. </li>
+                    <li class="hind-vadodara semibold dark">This proactive approach can help reduce fuel consumption by up to 15%, significantly lowering operational costs (<a href="https://www.geotab.com/au/blog/fuel-economy/">Geotab</a>). </li>
+                </ul>
+            </div>
+        </div>
+        <div class="solution-panel" data-id="1">
+            <h1>two</h1>
+        </div>
+        <div class="solution-panel" data-id="2">
+            <h1>4two</h1>
+        </div>
+    </div>
+    <div class="accent-panel-link">
         <div>
-            <h1 class="koulen-regular dark">Empowering Your Fleet to Succeed</h1>
-            <p class="hind-vadodara semibold dark">Geosecure provides advanced fleet management and in-vehicle camera solutions designed to enhance safety, efficiency, and compliance. As an authorised reseller of Geotab, a global leader in telematics, Geosecure offers businesses real-time vehicle tracking, driver monitoring, fuel management, and maintenance tools. Our vehicle camera solutions provide critical insights into on-road incidents, improving driver accountability and protecting against false claims. With tailored add-ons, Geosecure ensures your fleet operates securely, maximising operational efficiency and reducing risk.</p>            
+            <div>
+                <h1 class="koulen-regular dark">Comprehensive Fleet Control </h1>
+                <p class="hind-vadodara semibold dark">Geosecure, as an authorised Geotab reseller, offers solutions for fleets of all sizes. Our platform delivers real-time data on vehicle location, performance, and driver behaviour through an easy-to-use web portal. With enhanced security and efficiency features, managing your fleet becomes seamless and straightforward. </p> 
+            </div>
+            <div class="solution-builder-sec-panel">
+                <h1 class="koulen-regular dark">Interactive Solution Builder</h1>
+                <p class="hind-vadodara semibold dark">Find the ideal fleet management solution for your business with Geosecure. Start building your custom solution today.</p> 
+                <img src="content\geotab-go-device-marketing-shot11.png" alt="">
+                <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Learn More</a></h2></button>         
+            </div>
+        </div>
+        <div>
+
+            <h1 class="koulen-regular dark">Integrated Camera Solutions </h1>
+            <p class="hind-vadodara semibold dark">Boost fleet safety with Geosecure’s camera systems, fully integrated with Geotab’s telematics. Our offerings include:</p> 
+            <ul>
+                <li class="hind-vadodara semibold dark"><strong>Dash cameras:</strong> Monitor road activity and driver behaviour with front and driver-facing cameras.</li>
+                <li class="hind-vadodara semibold dark"><strong>In-vehicle CCTV:</strong> Comprehensive coverage with options like LED night vision for clear footage in any conditions.</li>
+                <li class="hind-vadodara semibold dark"><strong>Seamless integration:</strong> Choose the right camera system for your fleet from the Geotab Marketplace, all supported by Geosecure.</li>
+            </ul>
+            <p class="hind-vadodara semibold dark">Help prevent incidents and provide vital evidence when needed. </p>
+            <img src="content\telematics\6 Cam Heavy Truck.png" alt="">
+            <button class="buttonStyle" style="margin: auto; display: block;"><h2 class="koulen-regular"><a href="solution_builder.html">Learn More</a></h2></button>            
+
         </div>
     </div>
-
-    <div class="carousel-container"  data-carousel="carousel1">
-        <div class="carousel-wrapper">
-          <h2 class="koulen-regular dark">What Our Customers Say</h2>
-          <img src="city-of-townsville-logo.png" alt="City of Townsville Logo" style="max-width: 100px; margin-bottom: 20px;">
-          
-          <!-- Slide wrapper for text -->
-          <div id="slide-wrapper">
-            <div class="slide">
-              <p class="hind-vadodara semibold dark">
-                "It has been a pleasure to work with Geosecure throughout this project. The team provides excellent customer service, always going above and beyond to ensure that the system meets Council’s needs. I am excited about what we have achieved so far and working together moving forward."
-              </p>
-              <p class="hind-vadodara semibold dark"><strong>Emily Bulled, Fleet Innovation & Technology Officer, Fleet Services</strong></p>
-            </div>
-            <div class="slide">
-              <p class="hind-vadodara semibold dark">
-                "Geosecure has delivered a highly responsive solution that has improved our operations significantly. The team was very professional throughout the process."
-              </p>
-              <p class="hind-vadodara semibold dark"><strong>John Doe, Operations Manager</strong></p>
-            </div>
-            <div class="slide">
-              <p class="hind-vadodara semibold dark">
-                "Working with Geosecure has been a smooth experience. They exceeded our expectations and provided ongoing support even after project delivery."
-              </p>
-              <p class="hind-vadodara semibold dark"><strong>Jane Smith, IT Director</strong></p>
-            </div>
-          </div>
-          
-          <!-- Navigation Arrows -->
-          <div class="carousel-nav">
-            <span class="nav-arrow left">&#10094;</span>
-            <span class="nav-arrow right">&#10095;</span>
-          </div>
-    
-          <!-- Dots -->
-          <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-    <div class="basic-layout">
+    <div class="reporting-elem solidBg">
         <div>
-            <h1 class="koulen-regular dark">Andrew Hutson, Director</h1>
-            <p class="hind-vadodara semibold dark">
-                Highly driven senior leader with over 20 years’ experience providing advanced software solutions that solve complex business problems.<br><br>
-                Knowing that customer experience is at the core of every successful business, as director of Geosecure, Andrew Hutson is committed to providing advanced software solutions that solve the complex problems experienced in the transportation industry.<br><br>
-                With a background in network communications, operations, product management and general management, Andrew’s global experience spans three continents working alongside well-known brands such as Coles, Tesco, Fed-Ex, Samsung, Volvo & Wal-Mart.<br><br>
-                Born in the UK and now residing on the Sunshine Coast with his young family, Andrew’s clear vision is to identify demonstrable business cases for the specification of unique solution enhancement through client engagement.<br><br>
-                Passionate about seeing his clients succeed, Andrew is results-focussed, knowledgeable and leads with openness, honesty and integrity.
-            </p>
+            <h1 class="koulen-regular dark">Customisable Management Reporting </h1>
+            <p class="hind-vadodara semibold dark">Stay informed with tailored dashboards and reports from Geotab, configured by Geosecure to meet your needs. Key features include: </p>            
+            <ul>
+                <li class="hind-vadodara semibold dark"><strong>KPI monitoring:</strong> Track essential metrics like fuel consumption and delivery efficiency.</li>
+                <li class="hind-vadodara semibold dark"><strong>Automated reporting:</strong> Schedule regular updates directly to your inbox.</li>
+                <li class="hind-vadodara semibold dark"><strong>Data-driven decisions:</strong> Use the insights to improve fleet operations and reduce costs.</li>
+            </ul>
+            <p class="hind-vadodara semibold dark">Provide the clarity needed to keep your fleet performing at its best. </p>
+
         </div>
         <img src="content\geotab-go-device-marketing-shot11.png" alt="">
     </div>
-    <div class="basic-layout left-align">
-        <img src="content\geotab-go-device-marketing-shot11.png" alt="">
+    <div class="fact-pillars">
         <div>
-            <h1 class="koulen-regular dark">Our Story</h1>
-            <p class="hind-vadodara semibold dark">
-                Based on the Sunshine Coast, Australia, our focus on advanced technology provides innovative and disruptive solutions that help clients differentiate from competitors, reduce risk and lower operating costs.<br>
-                With an emphasis on building long-term, genuine partnerships, our expertise in automation and simplifying complex operational problems allows us to operate as an extension of our clients’ businesses rather than following a traditional client-vendor model. <br><br>
-                Geosecure’s business philosophy is to guarantee the highest quality products, absolute client satisfaction and optimum quality to price ratio delivered promptly and within budget. 
-            </p>
+            <img src="" alt="">
+            <h1 class="koulen-regular dark">Electric Vehicle Management </h1>
+            <p class="hind-vadodara semibold dark">Simplify the management of electric and traditional vehicles with Geotab’s Fuel and EV Energy Usage report, available via Geosecure. Gain insights into battery usage, compare vehicle performance, and optimise charging processes to ensure your fleet runs efficiently. </p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <h1 class="koulen-regular dark">Live Alerts and Exception Management </h1>
+            <p class="hind-vadodara semibold dark">Maintain control over your fleet with live notifications and custom exception rules through Geosecure’s telematics. Configure alerts for safety, productivity, and compliance issues, ensuring prompt action and continuous fleet performance improvement. </p>
         </div>
     </div>
-
-    
-
-    <div class="carousel-container" data-carousel="carousel2" >
-        <div class="carousel-wrapper">
-          <h1 class="koulen-regular dark">Read More</h1>
-          <img src="city-of-townsville-logo.png" alt="City of Townsville Logo" style="max-width: 100px; margin-bottom: 20px;">
-          
-          <!-- Slide wrapper for text -->
-          <div id="slide-wrapper">
-            <div class="slide active">
-
-              <p class="hind-vadodara semibold dark">
-                Townsville City Council is set to enhance its operations with Geosecure’s advanced fleet management tools, including GPS tracking, telematics, and IVMS. This strategic partnership is not only a significant step toward operational efficiency for Townsville, but it also serves as a shining example for city councils across Australia looking to modernise their fleet management practices.                </p>
-            </div>
-            <div class="slide">
-              <p class="hind-vadodara semibold dark">
-                "Geosecure has delivered a highly responsive solution that has improved our operations significantly. The team was very professional throughout the process."
-              </p>
-              <p class="hind-vadodara semibold dark"><strong>John Doe, Operations Manager</strong></p>
-            </div>
-            <div class="slide">
-              <p class="hind-vadodara semibold dark">
-                "Working with Geosecure has been a smooth experience. They exceeded our expectations and provided ongoing support even after project delivery."
-              </p>
-              <p class="hind-vadodara semibold dark"><strong>Jane Smith, IT Director</strong></p>
-            </div>
-          </div>
-          
-          <!-- Navigation Arrows -->
-          <div class="carousel-nav">
-            <span class="nav-arrow left">&#10094;</span>
-            <span class="nav-arrow right">&#10095;</span>
-          </div>
-    
-          <!-- Dots -->
-          <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-    <div class="solidBg builder-cta">
-        <h1 class="koulen-regular dark">Learn More Via Our Interactive Solution Builder</h1>
-        <p class="hind-vadodara semibold dark">Geosecure recognises the demands of the service and specialty trades industry. Our customised fleet management solutions enhance safety, boost productivity, and reduce costs in all conditions. Trust Geosecure to keep your tradespeople on the move efficiently. </p>
-        <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Get Started</a></h2></button>            
-
-    </div>
-    
     <div id="footerBorder" class="solidBg">
         <div id="footer">
             <div id="footerInfo">
@@ -320,9 +317,5 @@
         </div>
         <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 2rem;">© GeoSecure Australia 2024 all rights reserved | <a style="text-decoration: underline; text-underline-offset: .1rem;" href="privacy_policy.html">Privacy Policy<a\></h5>
     </div>
-
-    <script>
-
-    </script>
 </body>
 </html>

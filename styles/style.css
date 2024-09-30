@@ -125,6 +125,10 @@ p{
     font-size: 1.1rem;
     font-weight: 500;
 }
+li{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 img{
     max-width: 100%;
 }
@@ -566,4 +570,18 @@ body > div{
     to{
         transform: translateX(-100%);
     }
+}
+
+.rounded{
+    border-radius: 1rem;
+}
+.full{
+    padding-left: var(--borderMargin);
+    padding-right: var(--borderMargin);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+.dropshadow-img{
+    filter: drop-shadow(0 .25rem .4rem rgba(0, 0, 0, 0.37));
 }

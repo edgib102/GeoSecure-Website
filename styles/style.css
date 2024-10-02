@@ -573,7 +573,7 @@ body > div{
 }
 
 .rounded{
-    border-radius: 1rem;
+    border-radius: 1rem
 }
 .full{
     padding-left: var(--borderMargin);

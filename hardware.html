@@ -1,259 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geosecure</title>
-    <link rel="icon" type="image/x-icon" href="/content/favicon.ico">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Koulen&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" />
-
-
-    <script src="scripts\main.js"></script>
-    <link href="styles\hardware_style.css" rel="stylesheet"/>
-</head>
-<body>
-    <div id="header">
-        <a href="index.html"><div id="logoHeader">
-            <img src="content\GeoSecure IMAGE ONLY trans 1.png" alt="Logo Image">
-            <h2 class="koulen-regular">Geosecure</h2>
-        </div></a>
-
-        <div id="links" >
-            <h2 class="koulen-regular dark textLink"><a href="software.html">Software</a></h2>
-            <h2 class="koulen-regular dark textLink"><a href="hardware.html">Hardware</a></h2>
-            <h2 class="koulen-regular dark textLink"><a href="about.html">About</a></h2>
-            <h2 class="koulen-regular dark textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>            
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Geosecure
+        </title>
+        <link href="/content/favicon.ico" rel="icon" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Koulen&display=swap" rel="stylesheet"/>
+        <link href="styles/style.css" rel="stylesheet"/>
+        <script src="scripts\main.js">
+        </script>
+        <link href="styles\hardware_style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="header">
+            <a href="index.html">
+                <div id="logoHeader">
+                    <img alt="Logo Image" src="content\GeoSecure IMAGE ONLY trans 1.webp"/>
+                    <h2 class="koulen-regular">
+                        Geosecure
+                    </h2>
+                </div>
+            </a>
+            <div id="links">
+                <h2 class="hind-vadodara bold dark textLink">
+                    <a href="telematics.html">
+                        Telematics
+                    </a>
+                </h2>
+                <h2 class="hind-vadodara bold dark textLink">
+                    <a href="camera_solutions.html">
+                        Camera Solutions
+                    </a>
+                </h2>
+                <h2 class="hind-vadodara bold dark textLink">
+                    <a href="IVMS.html">
+                        IVMS
+                    </a>
+                </h2>
+                <div class="dropdown">
+                    <h2 class="hind-vadodara bold dark textLink">
+                        Industries
+                    </h2>
+                    <div class="arrow-up dropdown-wrapper">
+                    </div>
+                    <div class="dropdown-wrapper industries-dd">
+                        <div class="dropdown-padder">
+                        </div>
+                        <div class="dropdown-content">
+                            <a class="hind-vadodara bold dark textLink" href="transport_and_logistics.html">
+                                Transport & Logistics
+                            </a>
+                            <a class="hind-vadodara bold dark textLink" href="construction_and_mining.html">
+                                Construction & Mining
+                            </a>
+                            <a class="hind-vadodara bold dark textLink" href="utilities_and_infrastructure copy.html">
+                                Utilities & Infrastructure
+                            </a>
+                            <a class="hind-vadodara bold dark textLink" href="service_and_specialty_trades.html">
+                                Service & Specialty Trades
+                            </a>
+                            <a class="hind-vadodara bold dark textLink" href="goverment_and_public_sector.html">
+                                Government & Public Sector
+                            </a>
+                            <a class="hind-vadodara bold dark textLink" href="miscellaneous_services_and_others.html">
+                                Miscellaneous Services & Others
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <h2 class="hind-vadodara bold dark textLink">
+                        Resources
+                    </h2>
+                    <div class="arrow-up dropdown-wrapper">
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-padder">
+                        </div>
+                        <div class="dropdown-content">
+                            <a class="hind-vadodara bold dark" href="blog.html">
+                                Blog
+                            </a>
+                            <a class="hind-vadodara bold dark" href="case_studies.html">
+                                Case Studies
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="hind-vadodara bold dark textLink">
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </h2>
+            </div>
+            <div id="headerBtn">
+                <button class="buttonStyle">
+                    <h2 class="koulen-regular">
+                        <a href="solution_builder.html">
+                            Get Started
+                        </a>
+                    </h2>
+                </button>
+            </div>
+            <div class="headerDD" tabindex="0">
+                <img alt="Menu Icon" src="content\menu_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </div>
+            <div id="DDbg">
+                <div id="DDcontent">
+                    <div>
+                        <div id="DDheader">
+                            <div id="logoHeader">
+                                <img alt="Logo Image" src="content\GeoSecure IMAGE ONLY trans light.png"/>
+                                <h2 class="koulen-regular light">
+                                    Geosecure
+                                </h2>
+                            </div>
+                            <div class="headerDD" tabindex="0">
+                                <img alt="Menu Icon" src="content\menu_FILL0_wght400_GRAD0_opsz24_light.svg"/>
+                            </div>
+                        </div>
+                        <div id="DDlinks">
+                            <div id="main-links">
+                                <h2 class="hind-vadodara bold light textLink">
+                                    <a href="telematics.html">
+                                        Telematics
+                                    </a>
+                                </h2>
+                                <h2 class="hind-vadodara bold light textLink">
+                                    <a href="camera_solutions.html">
+                                        Camera Solutions
+                                    </a>
+                                </h2>
+                                <h2 class="hind-vadodara bold light textLink">
+                                    <a href="IVMS.html">
+                                        IVMS
+                                    </a>
+                                </h2>
+                                <div class="dropdown">
+                                    <button class="dropdown-select" data-value="0" onclick="dropdownForwards(this)">
+                                        <h2 class="hind-vadodara bold light textLink">
+                                            Industries
+                                        </h2>
+                                        <img alt="" src="content/arrow_forward_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg"/>
+                                    </button>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="dropdown-select" data-value="1" onclick="dropdownForwards(this)">
+                                        <h2 class="hind-vadodara bold light textLink">
+                                            Resources
+                                        </h2>
+                                        <img alt="" src="content/arrow_forward_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg"/>
+                                    </button>
+                                </div>
+                                <h2 class="hind-vadodara bold light textLink">
+                                    <a href="about.html">
+                                        About Us
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="secondary-links">
+                                <div class="dropdown-selected">
+                                    <button class="dropdown-select" onclick="dropdownBack(this)">
+                                        <img alt="" src="content/arrow_back_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg"/>
+                                        <h1 class="koulen-regular light" style="margin: auto; width:min-content;">
+                                            Industries
+                                        </h1>
+                                    </button>
+                                    <h2 class="hind-vadodara bold light" href="transport_and_logistics.html">
+                                        Transport & Logistics
+                                    </h2>
+                                    <h2 class="hind-vadodara bold light" href="construction_and_mining.html">
+                                        Construction & Mining
+                                    </h2>
+                                    <h2 class="hind-vadodara bold light" href="utilities_and_infrastructure copy.html">
+                                        Utilities & Infrastructure
+                                    </h2>
+                                    <h2 class="hind-vadodara bold light" href="service_and_specialty_trades.html">
+                                        Service & Specialty Trades
+                                    </h2>
+                                    <h2 class="hind-vadodara bold light" href="goverment_and_public_sector.html">
+                                        Government & Public Sector
+                                    </h2>
+                                    <h2 class="hind-vadodara bold light" href="miscellaneous_services_and_others.html">
+                                        Miscellaneous Services & Others
+                                    </h2>
+                                </div>
+                                <div class="dropdown-selected">
+                                    <button class="dropdown-select" onclick="dropdownBack(this)">
+                                        <img alt="" src="content/arrow_back_ios_24dp_F7EFEE_FILL0_wght400_GRAD0_opsz24.svg"/>
+                                        <h1 class="koulen-regular light" style="margin: auto; width:min-content;">
+                                            Resources
+                                        </h1>
+                                    </button>
+                                    <h2 class="hind-vadodara bold light" href="blog.html">
+                                        Blog
+                                    </h2>
+                                    <h2 class="hind-vadodara bold light" href="case_studies.html">
+                                        Case Studies
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="headerBtn">
-            <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Get Started</a></h2></button>            
+        <div id="heroContent">
+            <div>
+                <h1 class="koulen-regular dark">
+                    Hardware Built to suit your needs
+                </h1>
+                <h3 class="hind-vadodara semibold dark">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
+                </h3>
+                <button class="buttonStyle">
+                    <h2 class="koulen-regular">
+                        Get Started
+                    </h2>
+                </button>
+            </div>
+            <img alt="mygeotab mockup image" src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png"/>
         </div>
-        <div tabindex="0" class="headerDD">
-            <img src="content\menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
-        </div>
-        <div id="DDbg">
-            <div id="DDcontent">
+        <div class="solidBg" id="shutdown">
+            <div class="marginExtend">
                 <div>
-                    <div id="DDheader">
-                        <div id="logoHeader">
-                            <img src="content\GeoSecure IMAGE ONLY trans light.png" alt="Logo Image">
-                            <h2 class="koulen-regular light">Geosecure</h2>
-                        </div>
-                        <div tabindex="0" class="headerDD">
-                            <img src="content\menu_FILL0_wght400_GRAD0_opsz24_light.svg" alt="Menu Icon">
-                        </div>                        
-                    </div>
-
-                    <div id="DDlinks" >
-                        <h2 class="koulen-regular light textLink"><a href="software.html">Software</a></h2>
-                        <h2 class="koulen-regular light textLink"><a href="hardware.html">Hardware</a></h2>
-                        <h2 class="koulen-regular light textLink"><a href="about.html">About</a></h2>
-                        <h2 class="koulen-regular light textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>   
-                        <button class="buttonStyle" style="border: .2rem solid #F7EFEE !important;"><h2 class="koulen-regular light"><a href="solution_builder.html">Get Started</a></h2></button>          
-                    </div>
+                    <h1 class="koulen-regular light">
+                        Warning - Your Current Hardware May Become Useless Soon
+                    </h1>
+                    <p class="hind-vadodara semibold light">
+                        If your company relies on fleet tracking hardware, the shutdown could disrupt your operations significantly. Many older tracking devices operate on 3G networks. Don't let your fleet go dark and impact your bottom line.
+                    </p>
+                    <a href="3g_shutdown.html">
+                        <button class="buttonStyle" style="border-color: #F7EFEE;">
+                            <h2 class="koulen-regular light">
+                                Find Out More
+                            </h2>
+                        </button>
+                    </a>
+                </div>
+                <img alt="Cell Tower Icon" id="cellIcon" src="content/cell_tower_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </div>
+        </div>
+        <div class="hardwarePanel" id="G09hardware">
+            <img alt="mygeotab mockup image" src="content\geotab-go-device-marketing-shot11.png"/>
+            <div>
+                <h1 class="koulen-regular dark">
+                    GeoTab G09 is our powerhouse
+                </h1>
+                <p class="hind-vadodara medium dark">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div id="featureList">
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="heroContent">
-        <div>
-            <h1 class="koulen-regular dark">Hardware Built to suit your needs</h1>
-            <h3 class="hind-vadodara semibold dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!</h3>
-            <button class="buttonStyle"><h2 class="koulen-regular">Get Started</h2></button>              
-        </div>
-        <img src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png" alt="mygeotab mockup image">
-
-    </div>
-
-    <div id="shutdown" class="solidBg">
-        <div class="marginExtend">
-            <div>
-                <h1 class="koulen-regular light">Warning - Your Current Hardware May Become Useless Soon</h1>
-                <p class="hind-vadodara semibold light">If your company relies on fleet tracking hardware, the shutdown could disrupt your operations significantly. Many older tracking devices operate on 3G networks. Don't let your fleet go dark and impact your bottom line.</p>
-                <a href="3g_shutdown.html"><button class="buttonStyle" style="border-color: #F7EFEE;"><h2 class="koulen-regular light">Find Out More</h2></button></a>           
-            </div>
-            <img src="content/cell_tower_FILL0_wght400_GRAD0_opsz24.svg" alt="Cell Tower Icon" id="cellIcon">        
-        </div>
-    </div>
-    <div id="G09hardware" class="hardwarePanel">
-        <img src="content\geotab-go-device-marketing-shot11.png" alt="mygeotab mockup image">
-        <div>
-            <h1 class="koulen-regular dark">GeoTab G09 is our powerhouse</h1>
-            <p class="hind-vadodara medium dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div id="featureList">
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-            </div>
-        </div>
-
-    </div>
-    <div id="integrationPanel" class="solidBg">
-        <div class="marginExtend">
-
-            <h1 class="koulen-regular dark">Seamless Software Integration</h1>
-            <p class="hind-vadodara medium dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium, iste reprehenderit enim reiciendis non dolorum veritatis? Neque laudantium dignissimos velit maiores? Accusantium aspernatur non dolorem porro praesentium perspiciatis facere!</p>     
-            <div>
-                <img src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png" alt="">
-                <div id="integrationInfo">
-                    <div class="integrationItem">
-                        <img src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Custom Fleet Zones</p>
-
-                    </div>
-                    <div class="integrationItem">
-                        <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Live Vehicle Tracking</p>
-
-                    </div>
-                    <div class="integrationItem">
-                        <img src="content\icons\airport_shuttle_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Custom Fleet Zones</p>
-                    </div>
-                    <div class="integrationItem">
-                        <img src="content\icons\local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Custom Fleet Zones</p>
-                    </div>
-                    <div class="integrationItem">
-                        <img src="content\icons\pin_drop_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <p class="hind-vadodara semibold dark">Custom Fleet Zones</p>
-                    </div>
-                    <div class="integrationItem">
-                        <img src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                        <p class="hind-vadodara semibold dark">Live Vehicle Tracking</p>
-
-                    </div>
-                </div>         
-            </div>
-
-            <button class="buttonStyle"><h2 class="koulen-regular"><a href="solution_builder.html">Learn More</a></h2></button>   
-        </div>
-    </div>
-
-
-    <div id="sureCamHardware" class="hardwarePanel">
-        <img src="content\Surecam-Dual-Cam-no-Background-2-1024x576 1.png" alt="mygeotab mockup image">
-        <div>
-            <h1 class="koulen-regular dark">SureCam is the catch-all for In-Vehicle Monitoring Systems</h1>
-            <p class="hind-vadodara medium dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div id="featureList">
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="IVMShardware" class="hardwarePanel">
-        <div>
-            <h1 class="koulen-regular dark">SureCam is the catch-all for In-Vehicle Monitoring Systems</h1>
-            <p class="hind-vadodara medium dark">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div id="featureList">
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-                <p class="hind-vadodara semibold dark">✓ Feature</p>
-            </div>
-        </div>
-        <img src="content\ivms.png" alt="mygeotab mockup image">
-
-    </div>
-    <div id="integrationPanel" class="solidBg">
-        <div class="marginExtend">
-
-            <h1 class="koulen-regular dark">Your Support Crew</h1>
-            <p class="hind-vadodara medium dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium, iste reprehenderit enim reiciendis non dolorum veritatis? Neque laudantium dignissimos velit maiores? Accusantium aspernatur non dolorem porro praesentium perspiciatis facere!</p>     
-            <div>
-                <img src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png" alt="">
-                <div id="reviewPanel">
-                    
-                    <div>
-                        <img src="content\morten-pedersen-Z-bgD8pMv30-unsplash.png" alt="">
-                        <div>
-                            <h2 class="hind-vadodara bold dark">Customer 1</h2>
-                            <p class="hind-vadodara medium dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reiciendis aspernatur! Tempora praesentium quisquam saepe nihil. Facere, obcaecati expedita, esse voluptatem ducimus dolorem tenetur ea natus illum, sit quos distinctio.</p>
-
+        <div class="solidBg" id="integrationPanel">
+            <div class="marginExtend">
+                <h1 class="koulen-regular dark">
+                    Seamless Software Integration
+                </h1>
+                <p class="hind-vadodara medium dark">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium, iste reprehenderit enim reiciendis non dolorum veritatis? Neque laudantium dignissimos velit maiores? Accusantium aspernatur non dolorem porro praesentium perspiciatis facere!
+                </p>
+                <div>
+                    <img alt="" src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png"/>
+                    <div id="integrationInfo">
+                        <div class="integrationItem">
+                            <img alt="" src="content\icons\account_balance_24dp_FILL0_wght400_GRAD0_opsz24.png"/>
+                            <p class="hind-vadodara semibold dark">
+                                Custom Fleet Zones
+                            </p>
+                        </div>
+                        <div class="integrationItem">
+                            <img alt="" src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png"/>
+                            <p class="hind-vadodara semibold dark">
+                                Live Vehicle Tracking
+                            </p>
+                        </div>
+                        <div class="integrationItem">
+                            <img alt="" src="content\icons\airport_shuttle_24dp_FILL0_wght400_GRAD0_opsz24.png"/>
+                            <p class="hind-vadodara semibold dark">
+                                Custom Fleet Zones
+                            </p>
+                        </div>
+                        <div class="integrationItem">
+                            <img alt="" src="content\icons\local_shipping_24dp_FILL0_wght400_GRAD0_opsz24.png"/>
+                            <p class="hind-vadodara semibold dark">
+                                Custom Fleet Zones
+                            </p>
+                        </div>
+                        <div class="integrationItem">
+                            <img alt="" src="content\icons\pin_drop_24dp_FILL0_wght400_GRAD0_opsz24.svg"/>
+                            <p class="hind-vadodara semibold dark">
+                                Custom Fleet Zones
+                            </p>
+                        </div>
+                        <div class="integrationItem">
+                            <img alt="" src="content\icons\auto_towing_24dp_FILL0_wght400_GRAD0_opsz24.png"/>
+                            <p class="hind-vadodara semibold dark">
+                                Live Vehicle Tracking
+                            </p>
                         </div>
                     </div>
-                    <div>
-                        <img src="content\morten-pedersen-Z-bgD8pMv30-unsplash.png" alt="">
-                        <div>
-                            <h2 class="hind-vadodara bold dark">Customer 2</h2>
-                            <p class="hind-vadodara medium dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reiciendis aspernatur! Tempora praesentium quisquam saepe nihil. Facere, obcaecati expedita, esse voluptatem ducimus dolorem tenetur ea natus illum, sit quos distinctio.</p>
-                        </div>
-                    </div>
-                </div>         
-            </div>
-
-            <button class="buttonStyle"><h2 class="koulen-regular"><a href="about.html">About Us</a></h2></button>   
-        </div>
-    </div>
-
-    <div id="footerBorder">
-        <div id="footer">
-            <div id="footerLogo"><a href="index.html">
-                <img src="content\GeoSecure IMAGE ONLY trans light.png" alt="Geosecure Footer Logo">
-                <h2 class="koulen-regular light">Geosecure</h2></a>
-            </div>
-            <div id="footerInfo">
-                <div id="footerContact">
-                    <h2 class="koulen-regular light textLink"><a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a></h2>
-                    <h2 class="koulen-regular light textLink" ><a href="tel:+611300803754">1300 803 754</a></h2>                    
                 </div>
-
-                <div id="footerLinks">
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="index.html">Home</a></h2>                        
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="solution_builder.html">Solution Builder</a></h2>                        
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="about.html">About</a></h2>                        
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="software.html">Software</a></h2>
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="hardware.html">Hardware</a></h2>
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink"><a href="3g_shutdown.html">3G Shutdown</a></h2>
-                    </div>
-                    <!-- <div>
-                        <h2 class="koulen-regular light textLink">G09</h2>
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink">SureCam</h2>
-                    </div>
-                    <div>
-                        <h2 class="koulen-regular light textLink">IVMS</h2>                         
-                    </div> -->
-                </div>                
+                <button class="buttonStyle">
+                    <h2 class="koulen-regular">
+                        <a href="solution_builder.html">
+                            Learn More
+                        </a>
+                    </h2>
+                </button>
             </div>
         </div>
-        <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 1rem;">© GeoSecure Australia 2024 all rights reserved | <a style="text-decoration: underline; text-underline-offset: .1rem;" href="privacy_policy.html">Privacy Policy<a\></h5>
-    </div>
-</body>
+        <div class="hardwarePanel" id="sureCamHardware">
+            <img alt="mygeotab mockup image" src="content\Surecam-Dual-Cam-no-Background-2-1024x576 1.png"/>
+            <div>
+                <h1 class="koulen-regular dark">
+                    SureCam is the catch-all for In-Vehicle Monitoring Systems
+                </h1>
+                <p class="hind-vadodara medium dark">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div id="featureList">
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hardwarePanel" id="IVMShardware">
+            <div>
+                <h1 class="koulen-regular dark">
+                    SureCam is the catch-all for In-Vehicle Monitoring Systems
+                </h1>
+                <p class="hind-vadodara medium dark">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magnam tempore culpa fugit consequuntur commodi expedita! Consectetur, cum cupiditate corporis nemo facere, nam maxime est, eos quaerat ut incidunt nisi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div id="featureList">
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                    <p class="hind-vadodara semibold dark">
+                        ✓ Feature
+                    </p>
+                </div>
+            </div>
+            <img alt="mygeotab mockup image" src="content\ivms.png"/>
+        </div>
+        <div class="solidBg" id="integrationPanel">
+            <div class="marginExtend">
+                <h1 class="koulen-regular dark">
+                    Your Support Crew
+                </h1>
+                <p class="hind-vadodara medium dark">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium, iste reprehenderit enim reiciendis non dolorum veritatis? Neque laudantium dignissimos velit maiores? Accusantium aspernatur non dolorem porro praesentium perspiciatis facere!
+                </p>
+                <div>
+                    <img alt="" src="content\mygeotab-software-phone-laptop-mockup-1-2021(english).png"/>
+                    <div id="reviewPanel">
+                        <div>
+                            <img alt="" src="content\morten-pedersen-Z-bgD8pMv30-unsplash.png"/>
+                            <div>
+                                <h2 class="hind-vadodara bold dark">
+                                    Customer 1
+                                </h2>
+                                <p class="hind-vadodara medium dark">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reiciendis aspernatur! Tempora praesentium quisquam saepe nihil. Facere, obcaecati expedita, esse voluptatem ducimus dolorem tenetur ea natus illum, sit quos distinctio.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <img alt="" src="content\morten-pedersen-Z-bgD8pMv30-unsplash.png"/>
+                            <div>
+                                <h2 class="hind-vadodara bold dark">
+                                    Customer 2
+                                </h2>
+                                <p class="hind-vadodara medium dark">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reiciendis aspernatur! Tempora praesentium quisquam saepe nihil. Facere, obcaecati expedita, esse voluptatem ducimus dolorem tenetur ea natus illum, sit quos distinctio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttonStyle">
+                    <h2 class="koulen-regular">
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </h2>
+                </button>
+            </div>
+        </div>
+        <div class="solidBg" id="footerBorder">
+            <div id="footer">
+                <div id="footerInfo">
+                    <div id="company-info">
+                        <div>
+                            <div id="footerLogo">
+                                <a href="index.html">
+                                    <img alt="Geosecure Footer Logo" src="content/GeoSecure IMAGE ONLY trans light.png"/>
+                                    <h2 class="koulen-regular light">
+                                        Geosecure
+                                    </h2>
+                                </a>
+                            </div>
+                            <div id="footerContact">
+                                <h2 class="koulen-regular light textLink">
+                                    <a href="mailto:info@geosecure.com.au">
+                                        info@geosecure.com.au
+                                    </a>
+                                </h2>
+                                <h2 class="koulen-regular light textLink">
+                                    <a href="tel:+611300803754">
+                                        1300 803 754
+                                    </a>
+                                </h2>
+                                <div class="social-links">
+                                    <a href="">
+                                        <img alt="Facebook Logo" src="content/social_icons/facebook_icon.svg"/>
+                                    </a>
+                                    <a href="">
+                                        <img alt="Linkedin Logo" src="content/social_icons/linkedin_icon.svg"/>
+                                    </a>
+                                    <a href="">
+                                        <img alt="Youtube Logo" src="content/social_icons/youtube_icon.svg"/>
+                                    </a>
+                                    <a href="">
+                                        <img alt="Instagram Logo" src="content/social_icons/instagram_icon.svg"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img alt="" src="content/geotab-authorised-reseller.png"/>
+                    </div>
+                    <div id="footerLinks">
+                        <div>
+                            <h2 class="koulen-regular light">
+                                Industries
+                            </h2>
+                            <div>
+                                <a class="hind-vadodara bold light textLink" href="transport_and_logistics.html">
+                                    Transport & Logistics
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="construction_and_mining.html">
+                                    Construction & Mining
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="utilities_and_infrastructure copy.html">
+                                    Utilities & Infrastructure
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="service_and_specialty_trades.html">
+                                    Service & Specialty Trades
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="goverment_and_public_sector.html">
+                                    Government & Public Sector
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="miscellaneous_services_and_others.html">
+                                    Miscellaneous Services & Others
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="koulen-regular light">
+                                Products
+                            </h2>
+                            <div>
+                                <a class="hind-vadodara bold light textLink" href="IVMS.html">
+                                    IVMS
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="camera_solutions.html">
+                                    Camera Solutions
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="koulen-regular light">
+                                About
+                            </h2>
+                            <div>
+                                <a class="hind-vadodara bold light textLink" href="about.html">
+                                    Solutions
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="#">
+                                    Our Mission
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="koulen-regular light">
+                                Resources
+                            </h2>
+                            <div>
+                                <a class="hind-vadodara bold light textLink" href="blog.html">
+                                    Blog
+                                </a>
+                                <a class="hind-vadodara bold light textLink" href="case_studies.html">
+                                    Case Studies
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="koulen-regular light" style="margin: auto; width: 100%; text-align: center; padding-bottom: 2rem;">
+                � GeoSecure Australia 2024 all rights reserved |
+                <a href="privacy_policy.html" style="text-decoration: underline; text-underline-offset: .1rem;">
+                    Privacy Policy
+                </a>
+            </h5>
+        </div>
+    </body>
 </html>

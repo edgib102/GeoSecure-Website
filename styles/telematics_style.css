@@ -33,7 +33,7 @@
     background-color: white;
     width: 7rem;
     height: 8rem;
-    padding: .5rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     border-radius: var(--thumbBorderSize) var(--thumbBorderSize) 0 0;
     z-index: 2;
     text-align: center;
@@ -89,39 +89,77 @@
     padding-bottom: 2rem;
     padding-left: var(--borderMargin);
     padding-right: var(--borderMargin);
+    margin-bottom: 4rem;
 }
 #active{
     display: block !important;
 }
 
 .solution-header{
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
     /* display: inline-block; */
     text-align: center;
 }
-.fact-pillars{
-    display: flex;
-    text-align: center;
+.solution-header > img{
+    width: 3rem;
+    padding-left: 1rem;
 }
+.fact-pillars{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+.fact-pillars img{
+    width: 3rem;
+}
+
 .central-pillar{
     text-align: center;
-    margin-top: 2rem;
+    /* margin-tops: 4rem !important; */
+    margin-bottom: 2rem !important;
+    width: 60%;
+    margin: auto;
+}
+.central-pillar h1{
+    margin-bottom: 2rem;
 }
 .central-pillar img{
-    width: 30%;
+    width: 50%;
+    padding-bottom: 2rem;
 }
 .central-pillar ul{
     text-align: left;
 }
-.central-pillar li{
+.central-pillar ul{
     margin: auto;
+    text-align: center;
+}
+.central-pillar li{
     width: fit-content;
+    margin: auto;
+    
+    /* width: 60%; */
+}
+
+.left-li{
+    text-align: left; width: fit-content; margin: auto;
+}
+
+.primary-img{
+    object-fit: cover;
+    width: 70% !important;
 }
 
 .accent-panel-link{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     column-gap: 4rem;
-    gap: 6rem;
+    row-gap: 2rem;
 }
 .accent-panel-link > div{
     display: flex;
@@ -133,10 +171,12 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 2rem;
 }
-.solution-builder-sec-panel > button{
+.panel-btn{
     width: fit-content;
-    margin: auto;
+    /* margin: auto; */
+    margin: auto auto 0 auto;
     align-self: flex-end;
 }
 .accent-panel-link img{
@@ -154,7 +194,24 @@
     padding-top: 2rem;
     padding-left: var(--borderMargin);
     padding-right: var(--borderMargin);
+    padding-bottom: 2rem;
 }
 .reporting-elem > img{
-    width: 30rem
+    width: 25rem;;
+    
+    padding-left: 8rem;
+    
 } 
+
+.builder-cta{
+    /* width: 60%; */
+    text-align: center;
+    background-color: white;
+    padding: 2rem var(--borderMargin) 2rem var(--borderMargin) ;
+    margin-top: 4rem;
+}
+.builder-cta p{
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto ;
+}

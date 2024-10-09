@@ -6,20 +6,25 @@
 }
 .ivms-hero-element{
     margin-bottom: 4rem;
+    display: flex;
 }
 .ivms-hero-element h1{
     font-size: 5.5rem;
     margin: auto;
     width: fit-content;
 }
-.ivms-hero-content{
+/* .ivms-hero-content{
     display: flex;
     column-gap: 5rem;
     justify-content: space-evenly;
     margin-top: 1rem;
+} */
+.ivms-hero-content > div{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .ivms-hero-content img{
-    height: 16.5rem;
+    height: 18rem;
 }
 .ivms-hero-content p{
     width: 35rem;
@@ -88,6 +93,7 @@
     width: 50%;
     margin: auto;
     padding:  1rem 2rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.11) ;
 }
 .rule-result > div{
     width: 50%;
@@ -163,3 +169,22 @@
 .hardware-components p{
     margin: .5rem;
 }
+
+
+.hero-elem{
+    padding-bottom: 4rem !important;
+ }
+ .hero-elem > div{
+    width: 55%;
+ }
+
+.basic-layout{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.basic-layout img{
+    width: 30rem;
+    height: fit-content;
+    margin-left: 6rem;
+} 

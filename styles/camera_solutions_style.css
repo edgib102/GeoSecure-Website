@@ -140,7 +140,8 @@
     column-gap: 8rem;
 }
 .dvr-elem img{
-    width: 20rem;
+    height: 20rem;
+    padding-top: 2rem;
 }
 .reason-elem{
     padding-top: 2rem;

@@ -126,7 +126,7 @@
     margin-right: 0;
     padding-right: var(--borderMargin);
     margin-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     position: relative;
     /* height:34rem; */
 
@@ -149,6 +149,12 @@
     height: min-content;
     margin: auto;
     /* object-fit: scale-down; */
+}
+#hero-video{
+    width: 35rem;
+    height: min-content;
+    margin: auto;
+    padding-left: 4rem;
 }
 #mobile-heroImage{
     display: none;

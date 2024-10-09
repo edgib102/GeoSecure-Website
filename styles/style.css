@@ -585,3 +585,8 @@ body > div{
 .dropshadow-img{
     filter: drop-shadow(0 .25rem .4rem rgba(0, 0, 0, 0.37));
 }
+
+.hero-header{
+    font-size: 5.5rem;
+    margin-top: 0;
+}

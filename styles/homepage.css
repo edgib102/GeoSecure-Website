@@ -1,6 +1,6 @@
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
     :root{
         --borderMargin:2rem;
     }
@@ -144,19 +144,12 @@
 /* #heroImage{
     /* margin-left: 30rem; */
 
-#heroImage{
+/* #heroImage{
     width: 35rem;
     height: min-content;
     margin: auto;
     /* object-fit: scale-down; */
-}
-#hero-video{
-    width: 35rem;
-    max-width: 40%;
-    height: min-content;
-    margin: auto;
-    padding-left: 4rem;
-}
+
 #mobile-heroImage{
     display: none;
 }

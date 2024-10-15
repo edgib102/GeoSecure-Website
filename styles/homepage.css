@@ -29,7 +29,12 @@
         padding-left: 0% !important;
     }
     #hardwareSoftwareSelect{
-        flex-direction: column !important;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100% !important;
+        text-align: center !important;
+    }
+    #hardwareSoftwareSelect p, h1{
+        text-align: center !important;
     }
     #sofwareContent{
         text-align: right !important;
@@ -238,7 +243,7 @@
 } */
 
 #hardwareContent{
-    margin: 0rem 1rem 0rem 1rem
+    margin: 0rem 1rem 0rem 1rem;
     /* transform: translateX(var(--borderMargin)); */
     display: flex;
     flex-direction: column;
@@ -369,7 +374,7 @@
 }
 .video-container{
     width: 100%;
-    height: 40rem;
+    height: 40rem !important;
     
 }
 #bg-video{
@@ -393,7 +398,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40rem;
+    height: 40rem !important;
     margin-left: var(--borderMargin);
     margin-right: var(--borderMargin);
 }

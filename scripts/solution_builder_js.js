@@ -129,27 +129,22 @@ document.onreadystatechange = () => {
 
         console.log(imgList)
 
-        imgList.forEach(img => {
-            if(img.getAttribute('data-image-id') != solutionStep){
-                console.log("dd")
-                img.style.display = "none"
-            }else{
-                img.style.display = "block"
-            }
-        });
-
         initOptions(solutionStep, optionList);
 
         document.querySelectorAll(".continueBtn").forEach(btn => {
 
             btn.addEventListener("click", () => {
+                        
+
 
                 imgList.forEach(img => {
-                    if(img.getAttribute('data-image-id') != solutionStep){
+                    if(img.getAttribute('data-img-id') != (solutionStep+1)){
                         console.log("step:" + solutionStep + "  "+ img)
                         img.style.display = "none"
+                        console.log(img.getAttribute('data-img-id'))
                     }else{
                         img.style.display = "block"
+                        
                     }
                 });
                 

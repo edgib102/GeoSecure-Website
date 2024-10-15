@@ -1,9 +1,4 @@
-:root{
-    --light: #F7EFEE;
-    --dark: #0B2149;
 
-    --borderMargin: 5rem;
-}
 .ivms-hero-element{
     margin-bottom: 4rem;
     display: flex;
@@ -46,6 +41,7 @@
     padding: 2rem 2rem 2rem var(--borderMargin) ;
     border-radius: 0 2rem 2rem 0;
     text-align: center;
+    height: fit-content;
 }
 .builder-ref-elem img{
     /* margin-left: 4rem;
@@ -155,8 +151,10 @@
     margin-bottom: 2rem;
 }
 .cost-effective-elem img{
-    width: 80%;
-    height: 27.5rem;
+    width: 100%;
+    max-width: 100%;
+    /* width: 50rem;     */
+    /* height: 27.5rem; */
     /* height: min-content; */
     object-fit: cover;
 }
@@ -178,13 +176,19 @@
     width: 55%;
  }
 
-.basic-layout{
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.rules-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
-.basic-layout img{
-    width: 30rem;
-    height: fit-content;
-    margin-left: 6rem;
-} 
+.rules-items-wrapper div{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.rules-items-wrapper li{
+    margin-bottom: .75rem;
+}
+.highlighted{
+    background-color: white;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.121);
+}

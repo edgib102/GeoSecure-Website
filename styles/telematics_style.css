@@ -1,14 +1,15 @@
 :root{
-    --borderMargin: 5rem;
+    /* --borderMargin: 5rem; */
     --thumbBorderSize: 1.5rem
 }
 .hero-elem{
     display: flex;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .hero-elem > img{
-    width: 30rem
+    width: 30rem;
+    margin-left: 4rem
 } 
 
 .hero-elem h1{
@@ -25,7 +26,11 @@
     display: flex;
     /* column-gap: 4rem; */
     justify-content: space-between;
-    margin: 0 var(--borderMargin) 0 var(--borderMargin);
+    margin-left: calc(var(--borderMargin)/2);
+    margin-right: calc(var(--borderMargin)/2);
+    margin-top: 2rem;
+
+    /* margin: 2rem var(--borderMargin) 0 var(--borderMargin); */
     /* z-index: -5; */
 }
 .selector-thumb{
@@ -35,6 +40,7 @@
     height: 8rem;
     padding: 1rem 1rem 0 1rem;
     border-radius: var(--thumbBorderSize) var(--thumbBorderSize) 0 0;
+    
     z-index: 2;
     text-align: center;
 
@@ -121,7 +127,7 @@
     text-align: center;
     /* margin-tops: 4rem !important; */
     margin-bottom: 2rem !important;
-    width: 60%;
+    /* width: 60%; */
     margin: auto;
 }
 .central-pillar h1{
@@ -164,7 +170,7 @@
 .accent-panel-link > div{
     display: flex;
     flex-direction: column;
-    height: 40rem;
+    /* height: 40rem; */
 }
 .solution-builder-sec-panel{
     text-align: center;
@@ -197,8 +203,8 @@
     padding-bottom: 2rem;
 }
 .reporting-elem > img{
-    width: 25rem;;
-    
+    width: 25rem;
+    object-fit: contain;
     padding-left: 8rem;
     
 } 

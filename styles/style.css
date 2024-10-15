@@ -1,7 +1,7 @@
 :root{
     --light: #F7EFEE;
     --dark: #0B2149;
-    --borderMargin: 5rem;
+    /* --borderMargin: 10rem; */
     --mobileDDanimationSpeed: .25s
 }
 
@@ -40,14 +40,78 @@
     font-weight: 500;
 }
 
+
+
 @media only screen and (max-width: 10000px){
     html{
         font-size: 18px;
+    }
+    :root{
+        --borderMargin: 15rem;
+    }
+}
+@media only screen and (max-width: 1800px){
+    :root{
+        --borderMargin: 13rem;
+    }
+    .hero-header-dynamic{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .laptop-title{
+        display: none;
+    }
+    .laptop-hero{
+        display: flex;
+        flex-direction: row;
+    }
+    .laptop-hero video, .laptop-hero button{
+        display: block !important;
+    }
+    .basic-layout h1{
+        /* font-size: 5rem !important; */
+        /* line-height: 5rem !important; */
+    }
+    .basic-layout button{
+        /* margin: auto;
+        display: block;
+        margin-top: 2rem; */
+        display: none;
+    }
+    .basic-layout video{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1400px){
+    :root{
+        --borderMargin: 10rem;
+    }
+    /* .basic-layout > div{
+        flex-direction: row;
+    } */
+    
+}
+@media only screen and (max-width: 1200px){
+    :root{
+        --borderMargin: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1088px){
+    :root{
+        --borderMargin: 4.5rem;
+    }
+}
+@media only screen and (max-width: 850px){
+    :root{
+        --borderMargin: 3rem;
     }
 }
 @media only screen and (max-width: 800px){
     html{
         font-size: 14px;
+    }
+    :root{
+        --borderMargin: 5rem;
     }
 }
 
@@ -127,7 +191,7 @@ p{
 }
 li{
     font-size: 1.1rem;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 img{
     max-width: 100%;
@@ -364,9 +428,9 @@ body > div{
 
 .textLink{
     white-space:nowrap;
-    text-decoration-line: underline ;
-    text-underline-offset: .15em;
-    text-decoration-thickness: .1em;
+    /* text-decoration-line: underline ; */
+    /* text-underline-offset: .15em; */
+    /* text-decoration-thickness: .1em; */
     cursor: pointer;
 }
 .textLink:hover.light{
@@ -423,6 +487,7 @@ body > div{
 }
 #company-info > img{
     padding-top: 1rem;
+    max-width: 20rem;
 }
 #footerContact{
     display: flex;
@@ -586,7 +651,33 @@ body > div{
     filter: drop-shadow(0 .25rem .4rem rgba(0, 0, 0, 0.37));
 }
 
-.hero-header{
-    font-size: 5.5rem;
+.hero-header, .hero-header-dynamic{
+    font-size: 4rem;
     margin-top: 0;
+}
+
+.basic-layout{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.basic-layout img, .basic-layout video{
+    width: 35rem;
+    max-width: 40%;
+    height: min-content;
+    margin: auto;
+    margin-left: 4rem;
+} 
+.laptop-hero video, .laptop-hero button{
+    display: none;
+}
+.laptop-hero button{
+    display: none;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mobile-heroImage{
+    display: none;
 }

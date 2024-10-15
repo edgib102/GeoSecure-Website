@@ -125,12 +125,33 @@ document.onreadystatechange = () => {
         const layoutList = document.getElementsByClassName("optionLayout");
         let optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
 
+        imgList = document.querySelectorAll("[data-img-id]")
+
+        console.log(imgList)
+
+        imgList.forEach(img => {
+            if(img.getAttribute('data-image-id') != solutionStep){
+                console.log("dd")
+                img.style.display = "none"
+            }else{
+                img.style.display = "block"
+            }
+        });
+
         initOptions(solutionStep, optionList);
 
         document.querySelectorAll(".continueBtn").forEach(btn => {
 
             btn.addEventListener("click", () => {
-                
+
+                imgList.forEach(img => {
+                    if(img.getAttribute('data-image-id') != solutionStep){
+                        console.log("step:" + solutionStep + "  "+ img)
+                        img.style.display = "none"
+                    }else{
+                        img.style.display = "block"
+                    }
+                });
                 
                 if(solutionStep == 3 || solutionStep == 4){
                     submissionList = layoutList[solutionStep].querySelectorAll(".submission")

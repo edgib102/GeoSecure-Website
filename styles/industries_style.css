@@ -1,9 +1,9 @@
-:root{
+/* :root{
     --light: #F7EFEE;
     --dark: #0B2149;
     --borderMargin: 5rem;
-    /* --mobileDDanimationSpeed: .25s */
-}
+
+} */
 /* .hero-elem{
     display: flex;
     margin-top: 2rem;
@@ -24,16 +24,6 @@
     width: 55%;
  }
 
-.basic-layout{
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.basic-layout img{
-    width: 30rem;
-    height: fit-content;
-    margin-left: 6rem;
-} 
 .center-layout{
     text-align: center;
     margin-top: 2rem;
@@ -71,16 +61,20 @@
 .pillar-facts-elem > div{
     text-align: center;
 }
+
 .pillar-facts-elem img{
-    height: 15rem;
+    max-height: 15rem;
+    width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    object-fit: contain;
 }
 .pillar-title{
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: .75rem;
+    /* gap: .75rem ; */
 }
 .pillar-title img{
     height: 3rem;
@@ -116,6 +110,8 @@
     width: calc(100% + var(--borderMargin));
     /* width: 110%; */
     max-width: none;
+    filter:drop-shadow(0 0 .7rem rgba(0, 0, 0, 0.1));
+    margin-bottom: 2rem;
 }
 .driver-schedule h1{
     text-align: center;
@@ -127,8 +123,11 @@
     transform: translateX(calc(var(--borderMargin)*-1));
     border-radius: 0 1rem 1rem 0;
     /* padding-left: var(--borderMargin); */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 .driver-acc-elem-padder{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 2rem 1rem 1rem var(--borderMargin)  ;
     text-align: center;
 }

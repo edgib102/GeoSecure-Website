@@ -1,9 +1,4 @@
-:root{
-    --light: #F7EFEE;
-    --dark: #0B2149;
 
-    --borderMargin: 5rem;
-}
 
 @media only screen and (max-width: 500px){
     :root{
@@ -21,7 +16,7 @@
         display: block;
         margin-top: 2rem;
     }
-    #heroImage{
+    #hero-video{
         display: none;
     }
     #mobile-heroImage{
@@ -126,7 +121,7 @@
     margin-right: 0;
     padding-right: var(--borderMargin);
     margin-top: 2rem;
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
     position: relative;
     /* height:34rem; */
 
@@ -138,7 +133,7 @@
 
 .title-text{
     margin-top: 0;
-    font-size: 5.5rem;
+    font-size: 5rem;
     line-height: 6rem;
 }
 /* #heroImage{
@@ -152,6 +147,7 @@
 }
 #hero-video{
     width: 35rem;
+    max-width: 40%;
     height: min-content;
     margin: auto;
     padding-left: 4rem;
@@ -192,15 +188,23 @@
 }
 
 #hardwareSoftwareSelect {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
     /* height: max-content; */
 }
 #hardwareSoftwareSelect h1{
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 .hoverSelect{
     transition: 0.15s;
+    border-radius: 1rem;
+
+}
+.hoverSelect > div{
+    margin: 1rem;
+    margin-top: 0;
 }
 
 .hoverSelect > div{
@@ -211,7 +215,7 @@
 }
 
 .hoverSelect button{
-    margin-bottom: 2rem !important;
+    margin-bottom: 4rem !important;
 }
 
 .hoverSelect:hover{
@@ -234,7 +238,7 @@
 } */
 
 #hardwareContent{
-    margin: 0rem 1rem 0rem var(--borderMargin);
+    margin: 0rem 1rem 0rem 1rem
     /* transform: translateX(var(--borderMargin)); */
     display: flex;
     flex-direction: column;
@@ -260,7 +264,7 @@
     text-align: center;
 }
 #camera-solution-content{
-    margin: 0rem var(--borderMargin) 0rem 1rem;
+    margin: 0rem 1rem 0rem 1rem;
     /* display: flex;
     flex-direction: column; */
     text-align: center;
@@ -278,6 +282,10 @@
     display: flex;
     margin-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
+}
+#solutionBuilder > div{
+    width: 100%;
 }
 #solutionBuilder img{
     height: min-content;
@@ -487,6 +495,7 @@
 
 .solution-builder{
     margin-left: 4rem;
+    text-align: center;
 }
 
 .stats{
@@ -553,4 +562,9 @@
 }
 #center-icon img{
     width: 10rem;
+}
+
+.quote-elem{
+    padding: 2rem 0 2rem 0;
+    text-align: center;
 }

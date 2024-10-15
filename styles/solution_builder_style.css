@@ -60,14 +60,15 @@ body::-webkit-scrollbar{
     /* height: calc(100vh - 12rem); */
 }
 
-#builderHeroImage{
-    width: 50%;
-    display: block;
-    margin: auto;
-}
-
 #informationPanel{
     padding-right: 4rem;
+}
+#informationPanel img{
+    width: 17.5rem;
+    /* max-width: 50%; */
+    /* width: 100%; */
+    display: none;
+    margin: auto;
 }
 
 #informationPanel h1{
@@ -80,7 +81,7 @@ body::-webkit-scrollbar{
     margin-bottom: 2rem;
 }
 .optionLayout{
-    max-width: 40vw;
+    /* max-width: 40vw; */
     margin-bottom: 2rem;
 }
 .optionLayout p{

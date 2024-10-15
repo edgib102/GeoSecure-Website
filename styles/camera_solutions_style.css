@@ -1,15 +1,6 @@
 :root{
-    --borderMargin: 5rem;
+    /* --borderMargin: 5rem; */
 }
-.basic-layout{
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.basic-layout > img{
-    width: 30rem;
-    margin-left: 6rem;
-} 
 
 .hero-header{
     font-size: 5.5rem;
@@ -22,8 +13,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
     column-gap: 2rem;
+    margin-bottom: 4rem;
     /* height: max-content; */
 }
+
 #hardwareSoftwareSelect h1{
     padding-top: 1rem;
 }
@@ -32,6 +25,7 @@
 }
 
 .hoverSelect > div{
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     /* justify-content: baseline; */
@@ -62,7 +56,7 @@
 } */
 
 #hardwareContent{
-    margin: 0rem 1rem 0rem var(--borderMargin);
+    /* margin: 0rem 1rem 0rem var(--borderMargin); */
     /* transform: translateX(var(--borderMargin)); */
     display: flex;
     flex-direction: column;
@@ -82,13 +76,13 @@
 }
 
 #sofwareContent{
-    margin: 0rem 1rem 0rem 1rem;
+    /* margin: 0rem 1rem 0rem 1rem; */
     /* display: flex;
     flex-direction: column; */
     text-align: center;
 }
 #camera-solution-content{
-    margin: 0rem var(--borderMargin) 0rem 1rem;
+    /* margin: 0rem var(--borderMargin) 0rem 1rem; */
     /* display: flex;
     flex-direction: column; */
     text-align: center;
@@ -115,6 +109,7 @@
 }
 
 .stat-display{
+    display: none !important;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -142,6 +137,7 @@
 .dvr-elem img{
     height: 20rem;
     padding-top: 2rem;
+    object-fit: contain;
 }
 .reason-elem{
     padding-top: 2rem;
@@ -155,7 +151,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 25rem;
+    column-gap: 20rem;
     row-gap: 5rem;
 }
 [data-image]::after{
@@ -172,12 +168,12 @@
 }
 
 .KP2-central-img{
-    width: 40rem;
+    width: 45rem;
     position: absolute;
     top: calc(50% - 10rem);
     /* left: calc(50% - (35rem/2)); */
     /* left: 0; */
-    left: calc(50% - (40rem/2));
+    left: calc(50% - (45rem/2));
 }
 .builder-cta{
     text-align: center;

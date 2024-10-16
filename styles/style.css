@@ -62,6 +62,12 @@
         text-align: center;
         margin-bottom: 2rem;
     }
+
+    .hero-header, .hero-header-dynamic{
+        /* font-size: 4rem !important; */
+        margin-top: 0;
+    }
+    
     .laptop-title{
         display: none;
     }

@@ -17,6 +17,32 @@
     font-size: 5.5rem;
     margin-top: 0;
 } */
+@media only screen and (max-width: 550px){
+    .pillar-facts-elem{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100% !important;
+        text-align: center !important;
+    }
+
+    .dynamic > div> .icon-title{
+        flex-direction: column-reverse;
+    }
+    .icon-title >img{
+        margin: auto !important;
+        /* display: block; */
+    }
+
+    .center-layout > img{
+        width: 70% ;
+    }
+    .center-layout-img{
+        width: 100% !important;
+    }
+}
+
+.center-layout-img{
+    width: 50;
+}
  .hero-elem{
     padding-bottom: 4rem !important;
  }
@@ -40,11 +66,6 @@
 .center-layout li{
     margin: auto;
     width: fit-content;
-}
-
-.hero-header{
-    font-size: 5.5rem;
-    margin-top: 0;
 }
 
 .pillar-facts-wrapper{
@@ -90,7 +111,7 @@
 .icon-title img{
     margin: 0;
     height: 3rem;
-    width: fit-content;
+    /* width: fit-content; */
     /* width: min-content; */
 }
 

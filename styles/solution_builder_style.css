@@ -56,7 +56,9 @@ body::-webkit-scrollbar{
 } */
 
 #mainContent{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     /* height: calc(100vh - 12rem); */
 }
 
@@ -84,7 +86,8 @@ body::-webkit-scrollbar{
     margin-bottom: 2rem;
 }
 .optionLayout{
-    /* max-width: 40vw; */
+    width: 100%;
+    margin-left: auto;
     margin-bottom: 2rem;
 }
 .optionLayout p{

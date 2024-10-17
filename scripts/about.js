@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+
+
     // Initialize all carousels
     const carousels = document.querySelectorAll('.carousel-wrapper');
     
@@ -14,9 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
         slides.forEach((slide, i) => {
           slide.classList.remove('active', 'exit-left', 'enter-right');
           if (i === index) {
-
+              resizeCarousel(carousel, slide)
+              window.onresize = () => {
+                console.log("ddd")
+                resizeCarousel(carousel, slide)
+              }
               slide.classList.add('active');
-              window.addEventListener('resize', resizeCarousel(carousel, slide))
+
+              // window.onresize = resizeCarousel(carousel, slide)
+              // window.addEventListener('resize', resizeCarousel(carousel, slide))
               // slide.classList.add('active');
             
           }
@@ -60,7 +69,7 @@ function resizeCarousel(carousel, slide){
   current = carousel.offsetHeight
   current = slide.offsetHeight + current
 
-  carousel.style.height = slide.offsetHeight + 70 + "px"
+  carousel.style.height = slide.offsetHeight + 170 + "px"
   console.log(carousel.offsetHeight + "current")
   console.log(slide.offsetHeight + current + "multi")
 }

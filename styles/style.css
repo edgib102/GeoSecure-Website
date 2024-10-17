@@ -782,7 +782,7 @@ body > div{
     max-width: 40%;
     height: min-content;
     margin: auto;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     object-fit: scale-down;
 } 
 

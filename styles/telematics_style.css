@@ -34,6 +34,13 @@
     ul{
         padding: 0;
     }
+    .central-pillar img{
+        width: 80% !important;
+    }
+    .fact-pillars{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto !important;
+    }
 }
 
 

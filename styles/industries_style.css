@@ -59,6 +59,20 @@
     .driver-schedule > img{
         display: none;
     }
+    .fact-expanded-wrapper{
+        grid-template-columns: auto !important;
+    }
+
+    #proactive-1{
+        display: none;
+    }
+    #proactive-2{
+        display: block !important;
+    }
+}
+
+#proactive-2{
+    display: none;
 }
 
 .center-layout-img{

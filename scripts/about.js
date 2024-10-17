@@ -8,13 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const dots = carousel.querySelectorAll('.dot');
       const leftArrow = carousel.querySelector('.nav-arrow.left');
       const rightArrow = carousel.querySelector('.nav-arrow.right');
-      
+    
+
       function showSlide(index) {
         slides.forEach((slide, i) => {
           slide.classList.remove('active', 'exit-left', 'enter-right');
           if (i === index) {
 
               slide.classList.add('active');
+              window.addEventListener('resize', resizeCarousel(carousel, slide))
               // slide.classList.add('active');
             
           }
@@ -50,4 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
       // Initialize the first slide of the carousel
       showSlide(0);
     });
+
   });
+
+function resizeCarousel(carousel, slide){
+  console.log(slide.offsetHeight)
+  current = carousel.offsetHeight
+  current = slide.offsetHeight + current
+
+  carousel.style.height = slide.offsetHeight + 70 + "px"
+  console.log(carousel.offsetHeight + "current")
+  console.log(slide.offsetHeight + current + "multi")
+}
+  // carousel.querySelector(".slide

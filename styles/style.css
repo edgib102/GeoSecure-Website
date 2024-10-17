@@ -264,7 +264,12 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 70%;
-        margin: 2rem auto 0 auto;
+        /* margin: 2rem 0 auto auto; */
+    }
+
+    .left-align img{
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
     
 }

@@ -51,6 +51,8 @@
     }
 }
 
+
+
 @media only screen and (min-width: 1800px){
     :root{
         --borderMargin: 13rem;
@@ -178,6 +180,9 @@
     }
     html{
         font-size: 12px;
+    }
+    .basic-layout.dynamic >div{
+        margin-right: 0 !important;
     }
     /* #header{
         position: fixed;
@@ -785,6 +790,9 @@ body > div{
     /* margin-left: 4rem; */
     object-fit: scale-down;
 } 
+.basic-layout.dynamic >div{
+    margin-right: 4rem;
+}
 
 .basic-layout.dynamic >div > img{
     display: none;

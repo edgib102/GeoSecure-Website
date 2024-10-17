@@ -62,13 +62,16 @@ body::-webkit-scrollbar{
 
 #informationPanel{
     padding-right: 4rem;
+    display: none;
+    text-align: center;
 }
 #informationPanel img{
-    width: 17.5rem;
+    width: 40%;
     /* max-width: 50%; */
     /* width: 100%; */
-    display: none;
+    margin-bottom: 4rem !important;
     margin: auto;
+    display: block;
 }
 
 #informationPanel h1{

@@ -1,6 +1,43 @@
 :root{
     /* --borderMargin: 5rem; */
 }
+
+@media only screen and (max-width: 1200px){
+    .reason-elem-array{
+        gap: 4rem;
+        column-gap: 13rem !important;
+    }
+    .KP2-central-img{
+        width: 30rem !important;
+        left: calc(50% - (30rem/2)) !important;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #hardwareSoftwareSelect{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100% !important;
+        text-align: center !important;
+    }
+
+    .KP2-central-img{
+        display: none;
+    }
+    .reason-elem-array{
+        margin-top: 4rem;
+        gap: 2rem !important;
+        
+    }
+    .reason-elem-array h1{
+        text-align: center;
+
+    }
+    .reason-elem-array p{
+        text-align: center;
+        
+    }
+}
+
 @media only screen and (max-width: 550px){
     #hardwareSoftwareSelect{
         grid-template-rows: 1fr 1fr 1fr;
@@ -174,6 +211,7 @@
 }
 .reason-elem > h1{
     text-align: center;
+    margin-bottom: 2rem;
 }
 .reason-elem-array{
     display: grid;
@@ -182,17 +220,8 @@
     column-gap: 20rem;
     row-gap: 5rem;
 }
-[data-image]::after{
-    content: "";
-    /* content: url("/content/icons/health_and_safety_24dp_0B2149_FILL0_wght400_GRAD0_opsz24.svg"); */
-    display: inline-block;
-    width: 2.5rem; /* Set the desired width */
-    height: 2.5rem; /* Set the desired height */
-    background-image: attr(data-image url);
-    background-size: cover; /* Ensures the image covers the whole area */
-    background-position: center;
-    margin-left: .5rem; /* Optional: Add space between text and image */
-    vertical-align: middle; /* Aligns image with text */
+.reason-elem-array > div{
+    height: fit-content;
 }
 
 .KP2-central-img{

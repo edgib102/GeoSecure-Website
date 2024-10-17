@@ -125,7 +125,7 @@ document.onreadystatechange = () => {
         const layoutList = document.getElementsByClassName("optionLayout");
         let optionList = layoutList[solutionStep].querySelectorAll(".optionPanel")
 
-        imgList = document.querySelectorAll("[data-img-id]")
+        imgList = document.querySelectorAll("[data-inf-id]")
 
         console.log(imgList)
 
@@ -138,10 +138,10 @@ document.onreadystatechange = () => {
 
 
                 imgList.forEach(img => {
-                    if(img.getAttribute('data-img-id') != (solutionStep+1)){
+                    if(img.getAttribute('data-inf-id') != (solutionStep+1)){
                         console.log("step:" + solutionStep + "  "+ img)
                         img.style.display = "none"
-                        console.log(img.getAttribute('data-img-id'))
+                        console.log(img.getAttribute('data-inf-id'))
                     }else{
                         img.style.display = "block"
                         

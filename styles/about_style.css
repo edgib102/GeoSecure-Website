@@ -2,28 +2,7 @@
 @media only screen and (max-width: 550px){
 
 }
-.hero-elem{
-    padding-bottom: 4rem !important;
- }
- .hero-elem > div{
-    width: 55%;
- }
 
-.basic-layout{
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.basic-layout img{
-    width: 30rem;
-    height: fit-content;
-    margin-left: 6rem;
-} 
-
-.hero-header{
-    font-size: 5.5rem;
-    margin-top: 0;
-}
 .left-align img{
     margin-right: 6rem;
     margin-left: 0;

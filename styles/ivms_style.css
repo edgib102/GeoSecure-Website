@@ -11,7 +11,7 @@
     }
 }
 @media only screen and (max-width: 550px){
-    
+
     .aus-acc-svg{
         width: 40% !important;
         transform: translateY(-1rem) !important;
@@ -111,6 +111,7 @@
     /* margin-left: 4rem;
     margin-right: 4rem; */
     width: 60%;
+    max-width: 25rem;
     margin: auto;
     display: block;
 }
@@ -152,9 +153,12 @@
     background-color: white;
     display: flex;
     width: 50%;
+    max-width: 45rem;
     margin: auto;
+    margin-top: 2rem;
     padding:  1rem 2rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.11) ;
+    border-radius: 1rem;
 }
 .rule-result > div{
     width: 50%;
@@ -206,13 +210,13 @@
     grid-template-columns: 3fr 2fr;
     height: min-content;
     /* padding-bottom: 2rem; */
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .cost-effective-content{
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-right: 2rem;
     height: max-content;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .acc-img-wrapper{
     display: flex;

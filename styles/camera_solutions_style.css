@@ -26,7 +26,12 @@
     .reason-elem-array{
         margin-top: 4rem;
         gap: 2rem !important;
+
+        grid-template-columns: auto !important;
         
+    }
+    .reason-elem-array > div > div{
+        margin: auto;
     }
     .reason-elem-array h1{
         text-align: center;
@@ -61,6 +66,7 @@
 
     .dvr-elem > div{
         gap: 3rem !important;
+        grid-template-columns: 100% !important;
     }
 
     .right-align{
@@ -69,6 +75,9 @@
     .right-align > div{
         margin-left: auto;
         margin-right: auto;
+    }
+    .reason-elem-array > div > div{
+        width: 100% !important;
     }
 }
 
@@ -197,8 +206,8 @@
 }
 
 .dvr-elem{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     text-align: center;
 }
 .dvr-elem > div{
@@ -213,8 +222,8 @@
     object-fit: contain;
 }
 .reason-elem{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     position: relative;
 }
 .reason-elem > h1{
@@ -259,7 +268,7 @@
 .builder-cta{
     text-align: center;
     background-color: white;
-    padding: 2rem var(--borderMargin) 2rem var(--borderMargin) ;
+    padding: 4rem var(--borderMargin) 4rem var(--borderMargin) ;
 }
 #dashcam-elem{
     position: relative;

@@ -1,15 +1,17 @@
-
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 800px){
     .builder-datacollect-elem{
         flex-direction: column;
-    }
-    .builder-ref-elem{
-        border-radius: 0 !important;
     }
     .data-collect-elem{
         margin-left: var(--borderMargin);
         margin-right: var(--borderMargin);
     }
+    .builder-ref-elem{
+        border-radius: 0 !important;
+    }
+}
+@media only screen and (max-width: 550px){
+    
     .aus-acc-svg{
         width: 40% !important;
         transform: translateY(-1rem) !important;

@@ -4,15 +4,15 @@
 }
 
 @media only screen and (max-width: 1000px){
-    .selector-rack{
+    /* .selector-rack{
         white-space: nowrap;
         position: relative;
         overflow-x: scroll;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
 
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
         margin: 0 !important
     }
     .selector-rack:-webkit-scrollbar {
@@ -26,6 +26,13 @@
         display: inline-block;
         margin-right: 4rem;
         margin-left: 1rem;
+    } */
+
+    .selector-rack{
+        display: none !important;
+    }
+    .glide{
+        display: block !important;
     }
     
 }
@@ -42,6 +49,66 @@
         grid-template-columns: auto !important;
     }
 }
+/* .glide__padder{
+    padding-left: 4rem;
+    padding-right: 4rem;
+} */
+
+.glide__bullets{
+    position: absolute;
+    top: -2rem;
+    transform: translateY(-50%);
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.glide__bullet{
+    background-color: #b3b3b3;
+    height: 1rem;
+    width: 1rem;
+    border: 0;
+    border-radius: 100%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.glide__bullet--active{
+    background-color: var(--dark);
+}
+
+.glide__track{
+    /* margin-left: 4rem !important; */
+    margin-top: 4rem !important;
+}
+/* .glide__track, .glide__slides { 
+    overflow: visible !important; 
+  } */
+.glide__arrows{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.glide__arrow{
+    background-color: transparent;
+    border: 0;
+}
+
+.glide {
+    display: none;
+
+}
+.glide__slide > div{
+    margin: auto;
+    width: 8.5rem;
+}
 
 
 .solution-selector-title{
@@ -49,7 +116,6 @@
     margin-left: var(--borderMargin);
     margin-right: var(--borderMargin);
 }
-
 
 .selector-rack{
     display: flex;
@@ -76,7 +142,7 @@
 }
 
 .selector-thumb > img{
-    width: 40%;
+    width: 2rem
 }
 .selector-thumb > p{
     position: relative;

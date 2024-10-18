@@ -10,7 +10,6 @@ window.addEventListener("load", () => {
             for (let x = 0; x < solutionPanels.length; x++) {
                 const panel = solutionPanels[x];
                 if (thumbs[i].getAttribute("data-id") == panel.getAttribute("data-id")) {
-                    console.log("sucses")
                     document.getElementById("active").removeAttribute("id")
                     panel.setAttribute('id','active');
                 }
@@ -20,43 +19,32 @@ window.addEventListener("load", () => {
     }
 
     
-    // const box = document.getElementById('selecftor-rack');
 
-    // let isDown = false;
-    // let startX;
-    // let startY;
-    // let scrollLeft;
-    // let scrollTop;
+    var glide = new Glide('.glide', {
+        type: 'carousel',
+        perView: 4,
+        // autoplay: 4000,
+        // hoverPause: checkbox.checked,
+        // focusAt: 'center',
+        gap: 10,
+        breakpoints: {
+          800: {
+            perView: 3
+          },
+          500: {
+            perView: 2
+          },
+          250: {
+            perView: 1
+          }
+        },
+        peek: 0
+        // grow: 150,
+      })
+    
 
-    // box.addEventListener('mousedown', (e) => {
-    //     isDown = true;
-    //     startX = e.pageX - box.offsetLeft;
-    //     startY = e.pageY - box.offsetTop;
-    //     scrollLeft = box.scrollLeft;
-    //     scrollTop = box.scrollTop;
-    //     box.style.cursor = 'grabbing';
-    // });
+    glide.mount()
 
-    // box.addEventListener('mouseleave', () => {
-    //     isDown = false;
-    //     box.style.cursor = 'grab';
-    // });
-
-    // box.addEventListener('mouseup', () => {
-    //     isDown = false;
-    //     box.style.cursor = 'grab';
-    // });
-
-    // document.addEventListener('mousemove', (e) => {
-    //     if (!isDown) return;
-    //     e.preventDefault();
-    //     const x = e.pageX - box.offsetLeft;
-    //     const y = e.pageY - box.offsetTop;
-    //     const walkX = (x - startX) * 1; // Change this number to adjust the scroll speed
-    //     const walkY = (y - startY) * 1; // Change this number to adjust the scroll speed
-    //     box.scrollLeft = scrollLeft - walkX;
-    //     box.scrollTop = scrollTop - walkY;
-    // });
-
+    // new Glide('.glide').mount()
 
 });

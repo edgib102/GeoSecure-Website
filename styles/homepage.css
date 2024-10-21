@@ -566,3 +566,6 @@
     padding: 2rem 0 2rem 0;
     text-align: center;
 }
+.quote-elem img{
+    width: 6rem;
+}

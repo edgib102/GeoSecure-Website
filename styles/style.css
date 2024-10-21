@@ -326,7 +326,7 @@ body > div{
     /* margin-bottom: 1rem; */
     cursor:pointer;
 }
-.buttonStyle h2{
+.buttonStyle h2, .buttonStyle h3{
     margin-top: .15rem;
 }
 .buttonStyle:hover{
@@ -645,7 +645,7 @@ body > div{
     /* top: 0;  */
     /* bottom: 0; */
     left: 0; 
-    right: 0;
+    right: auto;
     padding-left: .5rem;
     padding-right: .5rem;
 }

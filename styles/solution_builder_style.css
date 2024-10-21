@@ -5,8 +5,11 @@
     --borderMargin: 5rem;
 }
 @media only screen and (max-width: 1200px){
+
     #mainContent{
-        flex-direction: column;
+        /* flex-direction: column; */
+        grid-template-columns: auto !important;
+        
     }
     #informationPanel{
         width: 100%;
@@ -20,7 +23,7 @@
         text-align: center;
     }
     #builderHeroImage{
-        width: 70% !important;
+        /* width: 50% !important; */
     }
     .optionGrid{
         gap: 1rem !important;
@@ -33,7 +36,7 @@
         font-size: 1.1rem;
     }
     .optionPanel img{
-        width:50%;
+        width: 4rem !important;
     }
     .optionLayout{
         max-width: 100% !important;
@@ -44,6 +47,9 @@
         height: auto !important;
     }
     
+}
+
+@media only screen and (max-width: 700px){
 }
 /* body{
     -ms-overflow-style: none;
@@ -67,9 +73,9 @@ body::-webkit-scrollbar{
     display: none;
     text-align: center;
 }
-#informationPanel img{
-    width: 40%;
-    /* max-width: 50%; */
+#builderHeroImage{
+    width: 30rem;
+    max-width: 60%;
     /* width: 100%; */
     margin-bottom: 4rem !important;
     margin: auto;

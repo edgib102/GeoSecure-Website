@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
             perView: 1
           }
         },
-        peek: 0
+        // peek: 0
         // grow: 150,
       })
     

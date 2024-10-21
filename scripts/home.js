@@ -37,7 +37,7 @@ function updateCircleElement(circleElements, lineElementContainer) {
 
         // if
 
-        elementOffset = document.getElementById("data-panel").offsetHeight/2 -100
+        elementOffset = document.getElementById("data-panel").offsetHeight/2 -130
         console.log(document.getElementById("data-panel").offsetHeight/2)
 
         while (lineElementContainer.hasChildNodes()){

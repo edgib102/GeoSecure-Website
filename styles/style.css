@@ -131,11 +131,6 @@
     :root{
         --borderMargin: 7.5rem;
     }
-}
-@media only screen and (max-width: 1088px){
-    :root{
-        --borderMargin: 4.5rem;
-    }
 
     #footer{
         margin-left: var(--borderMargin) !important;
@@ -160,7 +155,18 @@
     #footerLinks > div{
         width: min-content;
         margin: auto;
+        margin-top: 0;
         margin-bottom: 2rem;
+    }
+    #company-info{
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1088px){
+    :root{
+        --borderMargin: 4.5rem;
     }
 }
 @media only screen and (max-width: 850px){
@@ -184,48 +190,9 @@
     .basic-layout.dynamic >div{
         margin-right: 0 !important;
     }
-    /* #header{
-        position: fixed;
-        background: var(--light);
-    } */
-    /* #header{
-        margin-left: var(--borderMargin) !important;
-        margin-right: var(--borderMargin) !important;
-    }
-    #headerBtn{
-        margin-left: auto;
-        margin-right: 1rem;
-    }
-    .headerDD{
-        display: block !important;
-    }
-    #links{
-        display: none !important;
-    } */
-    #footer{
-        /* margin-left: 5rem !important;
-        margin-right: 5rem !important; */
-        padding: 0;
-    }
+
     #footerInfo{
         flex-direction: column-reverse !important;
-        width: 100%;
-    }
-    #footerLinks{
-        flex-direction: column;
-        width: 100%;
-        padding-left: 0px !important;
-        flex-wrap: wrap;
-        text-align: center;
-        /* margin-top: 2rem; */
-        /* height: 16rem; */
-        /* flex-direction: column-reverse; */
-        /* justify-content:space-between; */
-    }
-    #footerLinks > div{
-        width: min-content;
-        margin: auto;
-        margin-bottom: 2rem;
     }
 
     .industries-links{
@@ -288,11 +255,14 @@
         justify-content: space-between;
         width: 100% !important;
     }
-
+    #company-info{
+        width: fit-content;
+    }
     #company-info > img{
         padding-top: 1rem;
         /* max-width: 20rem; */
-        max-width: 100% !important;
+        /* margin: auto; */
+        /* max-width: 100% !important; */
     }
     #company-info > div{
         width: fit-content;
@@ -334,12 +304,6 @@ img{
     max-width: 100%;
 }
 
-
-/* hr{
-    background-color: #0B2149;
-    color: #0B2149;
-    /* border: none; */
-    /* height: .2rem */
 
 
 .solidBg{
@@ -494,6 +458,7 @@ body > div{
 }
 #DDlinks h3, #DDlinks h2{
     margin: 0;
+    cursor: pointer;
 }
 #DDlinks > div > *{
     margin-top: 1rem;
@@ -562,9 +527,12 @@ body > div{
     width: 100%;
     /* animation: scroll-left-secondary 1s ease-in-out forwards; */
 }
-/* #DDcontent{
-    margin: ;
-} */
+.dropdown-selected > .dropdown-select{
+    margin-bottom: 2rem !important;
+}
+.dropdown-selected h2{
+    margin-bottom: 1rem !important;
+}
 
 .textLink{
     white-space:nowrap;

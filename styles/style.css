@@ -691,7 +691,7 @@ body > div{
     display: block;
 }
 .dropdown:hover h3, .dropdown:hover h2{
-    color: black;
+    color: white
 }
 .dropdown-select{
     width: 100%;

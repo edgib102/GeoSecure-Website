@@ -135,8 +135,9 @@
 }
 
 .pillar-facts-elem img{
-    max-height: 15rem;
-    width: 100%;
+    /* max-height: 15rem; */
+    height: 15rem;
+    /* width: 100%; */
     margin-top: 1rem;
     margin-bottom: 1rem;
     object-fit: contain;

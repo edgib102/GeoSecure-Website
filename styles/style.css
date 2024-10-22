@@ -241,7 +241,9 @@
         margin-bottom: 2rem;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 20rem;
+        /* width: 70% !important; */
+        /* height: 20rem; */
         /* margin: 2rem 0 auto auto; */
     }
 

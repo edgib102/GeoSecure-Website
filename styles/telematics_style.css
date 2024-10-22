@@ -74,6 +74,13 @@
     .accent-panel-link:not(.fleet-solution-ref) >div{
         margin-bottom: 2rem;
     }
+
+    /* .glide__slide--active > .selector-thumb{
+        margin-right: 2rem !important;
+    }
+    .glide__slide > .selector-thumb{
+        margin-right: 4rem;
+    } */
 }
 /* .glide__padder{
     padding-left: 4rem;
@@ -156,6 +163,7 @@
     margin: auto;
     width: 8.5rem;
 }
+
 
 
 .solution-selector-title{

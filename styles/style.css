@@ -609,6 +609,10 @@ body > div{
     padding-left: 4rem;
 }
 
+.industries-links{
+    width: min-content;
+}
+
 .general-links > div, .industries-links > div{
     /* height:fit-content; */
     display: flex;

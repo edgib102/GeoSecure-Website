@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
         perView: 4,
         // autoplay: 4000,
         // hoverPause: checkbox.checked,
-        focusAt: 'center',
+        // focusAt: 'center',
         // gap: 10,
         // peek: {
         //     before: 1000,
@@ -44,9 +44,10 @@ window.addEventListener("load", () => {
             perView: 3
           },
           500: {
-            perView: 2
+            perView: 2,
+            focusAt: 0
           },
-          250: {
+          350: {
             perView: 1
           }
         },
@@ -70,12 +71,12 @@ window.addEventListener("load", () => {
 
 function updateSlide(thumb) {
     
-    document.getElementById("highlighted").removeAttribute("id")
+    document.getElementById("thumb-highlighted").removeAttribute("id")
 
     if(thumb.parentElement.className.includes("glide__slide")){
-        thumb.parentElement.setAttribute('id','highlighted');
+        thumb.parentElement.setAttribute('id','thumb-highlighted');
     }else{
-        thumb.setAttribute('id','highlighted');                
+        thumb.setAttribute('id','thumb-highlighted');                
     }
 
 

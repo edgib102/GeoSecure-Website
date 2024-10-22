@@ -278,8 +278,8 @@
     position: relative;
     background: var(--light);
     display: flex;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
     text-align: center;
 }
 #solutionBuilder > div{

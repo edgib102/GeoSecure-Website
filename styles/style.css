@@ -619,6 +619,10 @@ body > div{
     flex-direction: column;
 }
 
+.general-links > div > div{
+    display: flex; flex-direction: column;
+}
+
 .mygeotab-login > img{
     margin-top: 2rem;
     width: 100%;

@@ -378,6 +378,7 @@ body > div{
 }
 #logoHeader img {
     width: 4.5rem;
+    height: auto;
     /* padding-bottom: .25rem; */
 }
 #logoHeader h3 {

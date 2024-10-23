@@ -690,9 +690,9 @@ body > div{
 .dropdown:hover .dropdown-wrapper {
     display: block;
 }
-.dropdown:hover h3, .dropdown:hover h2{
-    color: white
-}
+/* #main-links > .dropdown:hover h3, #main-links > .dropdown: h2{
+    color: rebeccapurple;
+} */
 .dropdown-select{
     width: 100%;
     background: none;

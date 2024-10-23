@@ -108,12 +108,10 @@
     height: fit-content;
 }
 .builder-ref-elem img{
-    /* margin-left: 4rem;
-    margin-right: 4rem; */
-    /* width: 60%;  */
-    max-width: 80%;
+
+    max-width: 80% !important;
     width: 15rem;
-    /* max-width: 25rem; */
+    height: auto;
     margin: auto;
     display: block;
 }

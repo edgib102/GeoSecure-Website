@@ -110,8 +110,10 @@
 .builder-ref-elem img{
     /* margin-left: 4rem;
     margin-right: 4rem; */
-    width: 60%;
-    max-width: 25rem;
+    /* width: 60%;  */
+    max-width: 80%;
+    width: 15rem;
+    /* max-width: 25rem; */
     margin: auto;
     display: block;
 }

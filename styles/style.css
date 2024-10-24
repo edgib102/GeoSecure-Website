@@ -13,9 +13,18 @@
 }
 
 
+@font-face {
+    font-family: 'Adjusted Arial Fallback';
+    src: local(Arial);
+    size-adjust: 100%;
+    ascent-override: 119%;
+    descent-override: 59%;
+    line-gap-override: normal;
+}
+
 
 .koulen-regular {
-    font-family: "Koulen", sans-serif;
+    font-family: "Koulen", "Adjusted Arial Fallback";
     font-weight: 400;
     font-style: normal;
     margin-bottom: .25em;

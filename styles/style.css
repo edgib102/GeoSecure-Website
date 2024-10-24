@@ -367,7 +367,7 @@ body > div{
     margin-right: calc(var(--borderMargin)/2);
 }
 #header div{
-    z-index: 3;
+    z-index: 6;
 }
 
 #headerBtn{

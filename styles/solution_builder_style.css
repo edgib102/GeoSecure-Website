@@ -76,6 +76,7 @@ body::-webkit-scrollbar{
 #builderHeroImage{
     width: 30rem;
     max-width: 60%;
+    height: auto;
     /* width: 100%; */
     margin-bottom: 4rem !important;
     margin: auto;

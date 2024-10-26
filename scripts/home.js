@@ -1,4 +1,6 @@
 
+
+
 document.onreadystatechange = function () {
 
     //circle element
@@ -15,9 +17,26 @@ document.onreadystatechange = function () {
 
     window.addEventListener('resize', updateCircleElement(circleElements, lineElementContainer))
 
+    // Add an event listener for window resize
+    window.addEventListener('resize', checkAndSetAutoplay);
 
+    // Optional: Run the function on page load as well
+    window.addEventListener('load', checkAndSetAutoplay);
 }
 
+function checkAndSetAutoplay() {
+    // Get all video elements on the page
+    const videos = document.querySelectorAll('video');
+
+    videos.forEach(video => {
+        // Check if the video is visible (display is not 'none')
+        const style = window.getComputedStyle(video);
+        if (style.display !== 'none') {
+            // If video is visible, set autoplay to true
+            video.autoplay = true;
+        }
+    });
+}
 
 
 

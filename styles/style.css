@@ -807,8 +807,8 @@ body > div{
     padding-bottom: 4rem;
 }
 .basic-layout > img, .basic-layout > video{
-    width: 35rem;
-    max-width: 40%;
+    width: 25rem;
+    /* max-width: 40%; */
     height: min-content;
     max-height: 20%;
     margin: auto;

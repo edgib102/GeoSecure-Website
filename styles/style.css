@@ -813,9 +813,10 @@ body > div{
 }
 .basic-layout > img, .basic-layout > video{
     width: 25rem;
-
-    height: min-content;
-
+    /* max-width: 40%; */
+    /* height: min-content; */
+    height: auto;
+    max-height: 20%;
     margin: auto;
     /* margin-left: 4rem; */
     object-fit:cover;

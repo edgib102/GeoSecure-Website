@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1300px){
+    .slider{
+        display: block !important;
+    }
+}
 @media only screen and (max-width: 800px){
     #hardwareSoftwareSelect{
         grid-template-rows: 1fr 1fr 1fr;
@@ -14,6 +19,7 @@
         margin-left: var(--borderMargin) !important;
         margin-right: var(--borderMargin) !important;
     }
+
 }
 
 @media only screen and (max-width: 550px){
@@ -121,9 +127,6 @@
         display: none;
     }
 
-    .slider{
-        display: block !important;
-    }
 
 }
 

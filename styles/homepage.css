@@ -1,4 +1,20 @@
-
+@media only screen and (max-width: 800px){
+    #hardwareSoftwareSelect{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100% !important;
+        text-align: center !important;
+    }
+    #hardwareSoftwareSelect p, h1{
+        text-align: center !important;
+    }
+    #sofwareContent{
+        text-align: right !important;
+    }
+    .hoverSelect div{
+        margin-left: var(--borderMargin) !important;
+        margin-right: var(--borderMargin) !important;
+    }
+}
 
 @media only screen and (max-width: 550px){
     :root{
@@ -28,21 +44,7 @@
     #cellIcon{
         padding-left: 0% !important;
     }
-    #hardwareSoftwareSelect{
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 100% !important;
-        text-align: center !important;
-    }
-    #hardwareSoftwareSelect p, h1{
-        text-align: center !important;
-    }
-    #sofwareContent{
-        text-align: right !important;
-    }
-    .hoverSelect div{
-        margin-left: var(--borderMargin) !important;
-        margin-right: var(--borderMargin) !important;
-    }
+
     #data-panel-content h1{
         grid-column: 1 / span 2 !important;
         /* background-color: red; */

@@ -830,7 +830,7 @@ body > div{
 } 
 .basic-layout video{
     max-width: 50%;
-    width: 35   rem !important;
+    width: 35rem !important;
 }
 .basic-layout.dynamic >div{
     margin-right: 4rem;

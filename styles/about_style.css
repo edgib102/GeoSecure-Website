@@ -31,16 +31,16 @@
 
 /* Carousel Wrapper */
 .carousel-wrapper {
-background-color: white;
-width: 80%;
-height: max-content;
-padding: 2rem;
-padding-left: 4rem;
-padding-right: 4rem;
-/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-text-align: center;
-position: relative;
-overflow: hidden; /* Hides overflow for the slide effect */
+    background-color: white;
+    width: 80%;
+    height: max-content;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hides overflow for the slide effect */
 }
 
 /* Slide Wrapper */
@@ -187,7 +187,7 @@ opacity: 0;
     padding: 2rem 4rem 2rem 4rem;
 }
 .logo-header{
-    width: 7rem;
+    height: 7rem;
     padding-top: 2rem;
 }
 /* .glide img{

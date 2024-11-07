@@ -223,15 +223,17 @@
 
         <h2>Contact Form</h2>
 
-        <form method="POST" data-netlify="true" name="contact" netlify>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-    
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <input type="submit" value="Submit">
-        </form>
+        <form name="contact" netlify>
+            <p>
+              <label>Name <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
 
         <div class="solidBg" id="footerBorder">
             <div id="footer">

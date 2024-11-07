@@ -65,6 +65,12 @@
     }
 }
 
+@media only screen and (min-width: 2200px){
+    .basic-layout img{
+        width: 33rem !important;
+    }
+}
+
 
 
 @media only screen and (min-width: 1800px){
@@ -72,6 +78,7 @@
         --borderMargin: 13rem;
     }
 }
+
 @media only screen and (max-width: 1800px){
 
     .hero-header-dynamic{

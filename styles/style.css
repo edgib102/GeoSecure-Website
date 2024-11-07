@@ -828,6 +828,10 @@ body > div{
     /* margin-left: 4rem; */
     object-fit:cover;
 } 
+.basic-layout video{
+    max-width: 50%;
+    width: 35   rem !important;
+}
 .basic-layout.dynamic >div{
     margin-right: 4rem;
 }

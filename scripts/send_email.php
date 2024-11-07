@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate inputs
     if (!empty($name) && !empty($email) && !empty($message) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Set up email parameters
-        $to = "eden@sheepishstudios.com";  // Replace with your email
+        $to = "edengibson355@gmail.com";  // Replace with your email
         $subject = "Contact Form Submission from $name";
         $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
         $headers = "From: $email";

@@ -236,7 +236,7 @@
         display: block !important;
         margin: auto !important;
         width: 100% !important;
-        max-width: none !important;
+        max-width: 100% !important;
     }
     .basic-layout.dynamic{
         text-align: center;

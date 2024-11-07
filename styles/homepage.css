@@ -360,7 +360,7 @@
 
 .slide{
     height: 5.5rem;
-    margin: 2rem;
+    margin: 3rem;
 }
 .slider:hover .slideTrack{
     animation-play-state: paused;

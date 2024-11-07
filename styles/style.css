@@ -455,6 +455,9 @@ body > div{
     padding-left: 2rem;
     padding-top: 1rem;
 }
+#DDcontent > div{
+    margin-right: var(--borderMargin);
+}
 #DDheader{
     width: 100%;
     display: flex;

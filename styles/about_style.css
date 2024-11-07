@@ -179,6 +179,7 @@ opacity: 0;
 }
 
 .glide__track{
+    border-radius: 1rem;
     background-color: white;
     text-align: center;
 }

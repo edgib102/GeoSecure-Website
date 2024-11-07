@@ -121,6 +121,10 @@
         display: none;
     }
 
+    .slider{
+        display: block !important;
+    }
+
 }
 
 #heroPage{
@@ -570,4 +574,8 @@
 }
 .quote-elem img{
     width: 6rem;
+}
+
+.slider{
+    display: none;
 }

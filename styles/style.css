@@ -285,6 +285,10 @@
         width: fit-content;
         margin: auto;
     }
+
+    #DDcontent > div{
+        margin-right: 0 !important;
+    }
     
 }
 

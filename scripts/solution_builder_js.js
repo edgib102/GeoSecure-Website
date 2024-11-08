@@ -187,7 +187,6 @@ async function sendEmail(industry, assetType, reason, email, fleetSize, state, n
     // } catch (error) {
     //     console.error('Error sending email:', error);
     // }
-}
 
 document.onreadystatechange = () => {
     if (document.readyState == "complete") {

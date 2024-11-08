@@ -98,24 +98,59 @@ async function sendEmail(industry, assetType, reason, email, fleetSize, state, n
     formData.append('Phone Number', phoneNumber);
     formData.append('Company Name', companyName);
 
-    try {
-        const response = await fetch('https://formspree.io/f/mwkgjwpp', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
 
-        if (response.ok) {
-            const jsonResponse = await response.json();
-            console.log('Email sent successfully:', jsonResponse);
-        } else {
-            console.error('Error sending email:', response.statusText);
-        }
-    } catch (error) {
-        console.error('Error sending email:', error);
-    }
+    document.querySelector('form[name="Solution Builder Form"] input[name="Industry"]').value = formData.get('Selected Industry');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Assets/Vehicles"]').value = formData.get('Selected Asset Type/s');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Reason"]').value = formData.get('Selected Reason/s');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Company Name"]').value = formData.get('Company Name');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Fleet Size"]').value = formData.get('Fleet Size');
+    document.querySelector('form[name="Solution Builder Form"] input[name="State"]').value = formData.get('State');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Name"]').value = formData.get('Name');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Email Address"]').value = formData.get('Email Address');
+    document.querySelector('form[name="Solution Builder Form"] input[name="Phone Number"]').value = formData.get('Phone Number');
+
+    document.forms["Solution Builder Form"].submit();
+
+    // try {
+    //     const response = await fetch('https://formspree.io/f/mwkgjwpp', {
+    //         method: 'POST',
+    //         body: formData,
+    //         headers: {
+    //             'Accept': 'application/json'
+    //         }
+    //     });
+
+    //     if (response.ok) {
+    //         const jsonResponse = await response.json();
+    //         console.log('Email sent successfully:', jsonResponse);
+    //     } else {
+    //         console.error('Error sending email:', response.statusText);
+    //     }
+    // } catch (error) {
+    //     console.error('Error sending email:', error);
+    // }
+
+    // try{
+    //     const handleSubmit = event => {
+    //         event.preventDefault();
+          
+    //         const myForm = event.target;
+    //         const formData = new FormData(myForm);
+          
+    //         fetch("/", {
+    //           method: "POST",
+    //           headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //           body: new URLSearchParams(formData).toString()
+    //         })
+    //           .then(() => console.log("Form successfully submitted"))
+    //           .catch(error => alert(error));
+    //       };
+          
+    //       document.querySelector("form").addEventListener("submit", handleSubmit);
+          
+    // } catch (error) {
+    //     console.error('Error sending email:', error);
+    // }
 }
 
 document.onreadystatechange = () => {
@@ -208,19 +243,19 @@ document.onreadystatechange = () => {
 
                 (selection == null || selection.length === 0) ? null : selections.push(selection);
 
-                // if(solutionStep == 5){
-                //     sendEmail(
-                //         selections[0], 
-                //         selections[1], 
-                //         selections[2], 
-                //         selections[4][1], 
-                //         selections[3][1],
-                //         selections[3][2], 
-                //         selections[4][0], 
-                //         selections[4][2], 
-                //         selections[3][0], 
-                //     );
-                // }
+                if(solutionStep == 5){
+                    sendEmail(
+                        selections[0], 
+                        selections[1], 
+                        selections[2], 
+                        selections[4][1], 
+                        selections[3][1],
+                        selections[3][2], 
+                        selections[4][0], 
+                        selections[4][2], 
+                        selections[3][0], 
+                    );
+                }
 
                 selection = []
 

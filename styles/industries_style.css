@@ -87,12 +87,15 @@
     }
 }
 
+/* body > .center-layout .center-layout-img{
+    width: 70%;
+} */
 #proactive-2{
     display: none;
 }
 
 .center-layout-img{
-    width: 50;
+    width: 50% !important;
 }
  .hero-elem{
     padding-bottom: 4rem !important;

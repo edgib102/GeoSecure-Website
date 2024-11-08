@@ -87,6 +87,7 @@ function initOptions(solutionStep, optionList){
 
 
 async function sendEmail(industry, assetType, reason, email, fleetSize, state, name, phoneNumber, companyName) {
+
     const formData = new FormData();
     formData.append('Selected Industry', industry);
     formData.append('Selected Asset Type/s', assetType.join(', '));
@@ -97,17 +98,52 @@ async function sendEmail(industry, assetType, reason, email, fleetSize, state, n
     formData.append('Name', name);
     formData.append('Phone Number', phoneNumber);
     formData.append('Company Name', companyName);
+  
+    // Use the fetch API to submit the form data
+    fetch("/", {
+      method: "POST",
+      body: formData,
+      headers: {
+        "Content-Type": "multipart/form-data", // Netlify expects this
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Handle success, e.g., show a confirmation message
+        alert("Form successfully submitted!");
+      } else {
+        // Handle errors
+        alert("Form submission failed. Please try again.");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("There was an error submitting the form.");
+    });
+  }
+  
+
+    // const formData = new FormData();
+    // formData.append('Selected Industry', industry);
+    // formData.append('Selected Asset Type/s', assetType.join(', '));
+    // formData.append('Selected Reason/s', reason.join(', '));
+    // formData.append('Email Address', email);
+    // formData.append('Fleet Size', fleetSize);
+    // formData.append('State', state);
+    // formData.append('Name', name);
+    // formData.append('Phone Number', phoneNumber);
+    // formData.append('Company Name', companyName);
 
 
-    document.querySelector('form[name="Solution Builder Form"] input[name="Industry"]').value = formData.get('Selected Industry');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Assets/Vehicles"]').value = formData.get('Selected Asset Type/s');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Reason"]').value = formData.get('Selected Reason/s');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Company Name"]').value = formData.get('Company Name');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Fleet Size"]').value = formData.get('Fleet Size');
-    document.querySelector('form[name="Solution Builder Form"] input[name="State"]').value = formData.get('State');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Name"]').value = formData.get('Name');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Email Address"]').value = formData.get('Email Address');
-    document.querySelector('form[name="Solution Builder Form"] input[name="Phone Number"]').value = formData.get('Phone Number');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Industry"]').value = formData.get('Selected Industry');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Assets/Vehicles"]').value = formData.get('Selected Asset Type/s');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Reason"]').value = formData.get('Selected Reason/s');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Company Name"]').value = formData.get('Company Name');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Fleet Size"]').value = formData.get('Fleet Size');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="State"]').value = formData.get('State');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Name"]').value = formData.get('Name');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Email Address"]').value = formData.get('Email Address');
+    // document.querySelector('form[name="Solution Builder Form"] input[name="Phone Number"]').value = formData.get('Phone Number');
 
     // document.forms["Solution Builder Form"].submit();
 

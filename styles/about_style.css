@@ -147,6 +147,8 @@ opacity: 0;
 .glide__arrows{
     position: absolute;
     top: 50%;
+    left: 0;
+    width: 100%;
     transform: translateY(-50%);
     /* width: 100%; */
     display: flex;
@@ -166,10 +168,12 @@ opacity: 0;
 }
 .glide__arrow--right{
     
-    /* position: absolute; */
-    /* left: 60vw; */
-    
-    transform: translateX(calc(60vw + var(--borderMargin)/2));
+    position: absolute;
+    /* right: calc(-100vw + var(--borderMargin)*2); */
+    right: 0;
+    transform: translateX(100%);
+    padding-left: 1rem;
+    /* transform: translateX(calc(60vw + var(--borderMargin)/2)); */
     
 }
 

@@ -10,13 +10,14 @@ function adjustContentMargin() {
     const viewportHeight = window.innerHeight;
     
     const remainingSpace = viewportHeight - contentHeight - headerHeight - footerHeight;
-    content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
+    // content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
 
     if(window.innerHeight >= 50){
-        content.style.marginBottom = remainingSpace/2
-        content.style.marginTop = remainingSpace/2
+        console.log("trueee")
+        content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace/2}px` : '0';
+        content.style.marginTop = remainingSpace > 0 ? `${remainingSpace/2}px` : '0';
     } else{
-        content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
+        // content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
     }
 }
 

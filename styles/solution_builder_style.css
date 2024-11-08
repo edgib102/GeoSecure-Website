@@ -2,6 +2,30 @@
     --light: #F7EFEE;
     --dark: #0B2149;
 }
+
+@media only screen and (min-width: 1800px){
+    #mainContent{
+        /* display: flex; */
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10rem;
+        /* height: calc(100vh - 12rem); */
+    }
+    .optionPanel{
+        margin: auto;
+    }
+    .optionLayout{
+        width: min-content !important;
+        margin: auto !important;
+    }
+    .optionLayout > h2{
+        text-align: center;
+    }
+    .optionGrid{
+        width: min-content !important;
+        column-gap: 8rem !important ;
+    }
+}
 @media only screen and (max-width: 1800px){
 
     #mainContent{
@@ -47,7 +71,6 @@
         width: fit-content !important;
         height: auto !important;
     }
-    
 
 }
 

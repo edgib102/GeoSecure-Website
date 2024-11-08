@@ -243,6 +243,8 @@ document.onreadystatechange = () => {
 
                 (selection == null || selection.length === 0) ? null : selections.push(selection);
 
+                console.log(selections)
+
                 if(solutionStep == 5){
                     sendEmail(
                         selections[0], 

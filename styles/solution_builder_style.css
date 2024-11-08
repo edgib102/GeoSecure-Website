@@ -66,10 +66,13 @@
     .optionLayout > h2{
         text-align: center;
     }
-    .HSimg{
+    /* .HSimg{
         object-fit:fill !important;
         width: fit-content !important;
         height: auto !important;
+    } */
+    #softwareHardwareRef{
+        margin-bottom: 8rem !important;
     }
 
 }
@@ -227,9 +230,10 @@ body::-webkit-scrollbar{
 }
 .HSimg{
     display: block;
-    height: max-content;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    object-fit: contain;
     /* height: min-content; */
     /* max-height: fit-content; */
 }

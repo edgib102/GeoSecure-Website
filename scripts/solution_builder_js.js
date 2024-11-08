@@ -88,6 +88,8 @@ function initOptions(solutionStep, optionList){
 
 async function sendEmail(industry, assetType, reason, email, fleetSize, state, name, phoneNumber, companyName) {
 
+    event.preventDefault()
+
     const formData = new FormData();
     formData.append('Selected Industry', industry);
     formData.append('Selected Asset Type/s', assetType.join(', '));
@@ -99,28 +101,27 @@ async function sendEmail(industry, assetType, reason, email, fleetSize, state, n
     formData.append('Phone Number', phoneNumber);
     formData.append('Company Name', companyName);
   
-    // Use the fetch API to submit the form data
+    const data = new URLSearchParams(formData).toString();
+
     fetch("/", {
-      method: "POST",
-      body: formData,
-      headers: {
-        "Content-Type": "multipart/form-data", // Netlify expects this
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        // Handle success, e.g., show a confirmation message
-        alert("Form successfully submitted!");
-      } else {
-        // Handle errors
-        alert("Form submission failed. Please try again.");
-      }
-    })
-    .catch(error => {
-      console.error("Error:", error);
-      alert("There was an error submitting the form.");
-    });
-  }
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: data // The form data as a URL-encoded string
+      })
+      .then(response => {
+        if (response.ok) {
+            console.log("yes")
+        } else {
+          throw new Error("Form submission failed");
+        }
+      })
+      .catch(error => {
+        document.getElementById("form-response").innerText = "Error submitting form: " + error.message;
+        document.getElementById("form-response").style.color = "red";
+      });
+    }
   
 
     // const formData = new FormData();

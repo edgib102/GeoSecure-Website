@@ -200,6 +200,14 @@
         font-size: 14px;
     }
 }
+@media only screen and (min-width: 800px){
+    html{
+        font-size: 14px;
+    }
+    #DDcontent{
+        width: calc(20rem + var(--borderMargin)) !important;
+    }
+}
 
 @media only screen and (max-width: 550px){
     :root{
@@ -293,9 +301,9 @@
         margin: auto;
     }
 
-    #DDcontent > div{
+    /* #DDcontent > div{
         margin-right: 0 !important;
-    }
+    } */
     
 }
 
@@ -457,13 +465,13 @@ body > div{
 }
 
 #DDcontent{
-    width: calc(70vw - var(--borderMargin) - 2rem);
+    width: calc(20rem + var(--borderMargin));
     background: var(--dark);
     height: 100%;
     margin-left: auto;
     margin-right: 0;
     filter: drop-shadow(-1rem 0 1rem #00000046);
-    padding-right: 2rem;
+    padding-right: 0;
     padding-left: 2rem;
     padding-top: 1rem;
 }

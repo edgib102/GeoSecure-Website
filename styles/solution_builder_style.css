@@ -105,6 +105,7 @@ body::-webkit-scrollbar{
     width: 30rem;
     max-width: 60%;
     height: auto;
+    margin-top: 3rem !important;
     margin-bottom: 4rem !important;
     margin: auto;
     display: block;
@@ -113,7 +114,7 @@ body::-webkit-scrollbar{
 #informationPanel h1{
     font-size: 3rem;
     margin-top: 1rem;
-    margin-bottom: 0.5rem ;
+    margin-bottom: 2rem ;
 }
 #informationPanel h3{
     margin: 0;

@@ -136,7 +136,6 @@ document.onreadystatechange = () => {
             btn.addEventListener("click", () => {
                         
 
-
                 imgList.forEach(img => {
                     if(img.getAttribute('data-inf-id') != (solutionStep+1)){
                         console.log("step:" + solutionStep + "  "+ img)
@@ -215,10 +214,9 @@ document.onreadystatechange = () => {
                 //     );
                 // }
 
-
-                console.log(selections)
                 selection = []
 
+                adjustContentMargin()
                 
 
             })

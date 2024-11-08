@@ -1,10 +1,8 @@
 :root{
     --light: #F7EFEE;
     --dark: #0B2149;
-
-    --borderMargin: 5rem;
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1800px){
 
     #mainContent{
         /* flex-direction: column; */
@@ -41,12 +39,16 @@
     .optionLayout{
         max-width: 100% !important;
     }
+    .optionLayout > h2{
+        text-align: center;
+    }
     .HSimg{
         object-fit:fill !important;
         width: fit-content !important;
         height: auto !important;
     }
     
+
 }
 
 @media only screen and (max-width: 700px){

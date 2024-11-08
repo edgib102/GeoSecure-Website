@@ -109,7 +109,7 @@ async function sendEmail(industry, assetType, reason, email, fleetSize, state, n
     document.querySelector('form[name="Solution Builder Form"] input[name="Email Address"]').value = formData.get('Email Address');
     document.querySelector('form[name="Solution Builder Form"] input[name="Phone Number"]').value = formData.get('Phone Number');
 
-    document.forms["Solution Builder Form"].submit();
+    // document.forms["Solution Builder Form"].submit();
 
     // try {
     //     const response = await fetch('https://formspree.io/f/mwkgjwpp', {

@@ -91,6 +91,9 @@ async function sendEmail(industry, assetType, reason, email, fleetSize, state, n
     event.preventDefault()
 
     const formData = new FormData();
+
+    formData.append('form-name', 'Solution Builder Form');
+
     formData.append('Selected Industry', industry);
     formData.append('Selected Asset Type/s', assetType.join(', '));
     formData.append('Selected Reason/s', reason.join(', '));

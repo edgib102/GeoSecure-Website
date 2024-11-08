@@ -1,4 +1,4 @@
 [[plugins]]
   package = "netlify-plugin-inline-critical-css"
     [plugins.inputs]
-            directoryFilter = ["!styles\packages"]
+            directoryFilter = ["!styles/packages"]

@@ -11,6 +11,13 @@ function adjustContentMargin() {
     
     const remainingSpace = viewportHeight - contentHeight - headerHeight - footerHeight;
     content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
+
+    if(window.innerHeight >= 50){
+        content.style.marginBottom = remainingSpace/2
+        content.style.marginTop = remainingSpace/2
+    } else{
+        content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
+    }
 }
 
 

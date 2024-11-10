@@ -61,7 +61,7 @@
         font-size: 18px;
     }
     :root{
-        --borderMargin: 15rem;
+        --borderMargin: max(calc((100vw - 100rem) / 2), 20vw);
     }
 }
 
@@ -73,11 +73,11 @@
 
 
 
-@media only screen and (min-width: 1800px){
+/* @media only screen and (max-width: 2600px){
     :root{
-        --borderMargin: 13rem;
+        --borderMargin: calc((100vw - 100rem) / 2);
     }
-}
+} */
 
 @media only screen and (max-width: 1800px){
 
@@ -137,20 +137,18 @@
     }
 }
 
-@media only screen and (max-width: 1400px){
+/* @media only screen and (max-width: 2500px){
     :root{
-        --borderMargin: 10rem;
+        --borderMargin: 15vw;
     }
-    /* .basic-layout > div{
-        flex-direction: row;
-    } */
+
 
     
     
-}
+} */
 @media only screen and (max-width: 1200px){
     :root{
-        --borderMargin: 7.5rem;
+        /* --borderMargin: 7.5rem; */
     }
 
     #footer{

@@ -23,13 +23,6 @@
     .driver-schedule{
         width: 100% !important;
     }
-
-    #holistic-1{
-        display: none;
-    }
-    #holistic-2{
-        display: block !important;
-    }
     .pillar-facts-elem{
         gap: 4rem !important;
     }
@@ -79,12 +72,12 @@
         width: 70% !important;
     }
 
-    #proactive-1{
+    /* #proactive-1{
         display: none;
     }
     #proactive-2{
         display: block !important;
-    }
+    } */
 }
 
 /* body > .center-layout .center-layout-img{
@@ -92,6 +85,11 @@
 } */
 #proactive-2{
     display: none;
+}
+
+#holistic-2{
+    margin-top: 2rem;
+    display: block;
 }
 
 .center-layout-img{
@@ -178,7 +176,7 @@
 }
 .driver-schedule{
     /* max-width: 40%; */
-    width: 40%;
+    width: 60%;
     margin-right: 2rem;
 }
 .driver-schedule > img{
@@ -198,16 +196,17 @@
 .driver-acc-elem{
     background-color: white;
     height: fit-content;
-    width: calc(100% + var(--borderMargin));
-    transform: translateX(calc(var(--borderMargin)*-1));
-    border-radius: 0 1rem 1rem 0;
+    width: 100%;
+    
+    border-radius: 2rem;
     /* padding-left: var(--borderMargin); */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 .driver-acc-elem-padder{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 2rem 1rem 1rem var(--borderMargin)  ;
+    padding: 2rem;
+    /* padding: 2rem 1rem 1rem var(--borderMargin)  ; */
     text-align: center;
 }
 .driver-acc-elem-padder > img{

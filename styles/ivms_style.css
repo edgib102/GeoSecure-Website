@@ -102,8 +102,9 @@
 .builder-ref-elem{
     /* width: 50vw; */
     background-color: white;
-    padding: 2rem 2rem 2rem var(--borderMargin) ;
-    border-radius: 0 2rem 2rem 0;
+    /* padding: 2rem 2rem 2rem var(--borderMargin) ; */
+    padding: 2rem;
+    border-radius: 2rem;
     text-align: center;
     height: fit-content;
 }
@@ -121,7 +122,7 @@
 
 .data-collect-elem{
     padding-top: 2rem;
-    margin-right: var(--borderMargin);
+    /* margin-right: var(--borderMargin); */
 }
 .aus-acc-svg{
     position: absolute;

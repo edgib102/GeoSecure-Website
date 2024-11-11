@@ -10,6 +10,7 @@ function createOrUpdatePadder(element) {
         element.parentNode.insertBefore(padder, element.nextSibling);
     }
 }
+
 // canClick =
 window.addEventListener("load", () => {
 

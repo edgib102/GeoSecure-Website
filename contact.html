@@ -14,7 +14,9 @@
         <link rel="stylesheet" href="styles\contact.css">
         <script src="scripts\main.js">
         </script>
-    </head>
+
+        <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+
     <body>
         <div id="header">
             <a href="index.html">
@@ -281,6 +283,9 @@
                     <h3 class="hind-vadodara semibold dark">
                         <a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a>
                     </h3>   
+                    <gmp-map center="-26.40747833251953,153.0474395751953" zoom="14" map-id="DEMO_MAP_ID">
+                        <gmp-advanced-marker position="-26.40747833251953,153.0474395751953" title="My location"></gmp-advanced-marker>
+                      </gmp-map>
 
                 </div>          
             </div>

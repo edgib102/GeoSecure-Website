@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="styles\contact.css">
         <script src="scripts\main.js">
         </script>
+                <script src="scripts\contact.js">
+        </script>
 
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGnlmYUIlwUCoxt3ys6yqcELA5ESdgwLo&callback=console.debug&libraries=maps,marker&v=beta"></script>
 
@@ -265,46 +267,49 @@
                 </div>
             </div>
         </div>
-        <div class="contact">         
-            <div class="general-info">
-                <h1 class="koulen-regular dark hero-header">
-                    Contact Us
-                </h1>    
-                <div>
-                    <h1 class="koulen-regular dark">
-                        Location
-                    </h1>
-                    <h3 class="hind-vadodara semibold dark">
-                        117A-90 Goodchap St, Noosaville, Sunshine Coast
-                    </h3>
-                    <h3 class="hind-vadodara semibold dark">
-                        <a href="tel:+64 1300 803 754">1300 803 754</a>
-                    </h3>      
-                    <h3 class="hind-vadodara semibold dark">
-                        <a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a>
-                    </h3>   
-                    <gmp-map center="-26.40747833251953,153.0474395751953" zoom="14" map-id="DEMO_MAP_ID">
-                        <gmp-advanced-marker position="-26.40747833251953,153.0474395751953" title="My location"></gmp-advanced-marker>
-                      </gmp-map>
-
-                </div>          
-            </div>
+        <div id="contact">         
+            <h1 class="koulen-regular dark hero-header">
+                Contact Us
+            </h1> 
             <div>
-                <form netlify method="POST" name="Contact Us General Submission">
-                
-                    <div><label class="hind-vadodara semibold dark">Name: <input class="hind-vadodara semibold dark input-text" type="text" name="name"/></label></div>
-                     
-                    <div><label class="hind-vadodara semibold dark">Email: <input class="hind-vadodara semibold dark input-text" type="email" name="email"/></label></div>
+                <div class="general-info">  
+                    <div>
+                        <h1 class="koulen-regular dark">
+                            Location
+                        </h1>
+                        <h3 class="hind-vadodara semibold dark">
+                            <a href="tel:+64 1300 803 754">1300 803 754</a>
+                        </h3>      
+                        <h3 class="hind-vadodara semibold dark">
+                            <a href="mailto:info@geosecure.com.au">info@geosecure.com.au</a>
+                        </h3>  
+                        <h3 class="hind-vadodara semibold dark">
+                            117A-90 Goodchap St, Noosaville, Sunshine Coast
+                        </h3> 
+                        <gmp-map center="-26.40747833251953,153.0474395751953" zoom="14" map-id="DEMO_MAP_ID">
+                            <gmp-advanced-marker position="-26.40747833251953,153.0474395751953" title="My location"></gmp-advanced-marker>
+                        </gmp-map>
 
-                    <div><label class="hind-vadodara semibold dark">Message: <textarea class="hind-vadodara semibold dark input-text large" type="email" name="email"></textarea></label></div>
+                    </div>          
+                </div>
+                <div>
+                    <form netlify method="POST" name="Contact Us General Submission">
+                    
+                        <div><label class="hind-vadodara semibold dark">Name: <input class="hind-vadodara semibold dark input-text" type="text" name="name"/></label></div>
+                        
+                        <div><label class="hind-vadodara semibold dark">Email: <input class="hind-vadodara semibold dark input-text" type="email" name="email"/></label></div>
 
-                    <button type="submit" class="buttonStyle">
-                        <h2 class="koulen-regular">
-                            Send
-                        </h2>
-                    </button>
-                </form>
-            </div>
+                        <div><label class="hind-vadodara semibold dark">Message: <textarea class="hind-vadodara semibold dark input-text large" type="email" name="email"></textarea></label></div>
+
+                        <button type="submit" class="buttonStyle">
+                            <h2 class="koulen-regular">
+                                Send
+                            </h2>
+                        </button>
+                    </form>
+                </div>                
+            </div> 
+
         </div>
         <div class="solidBg" id="footerBorder">
             <div id="footer">

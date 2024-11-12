@@ -7,7 +7,7 @@
         gap: 4rem;
         column-gap: 13rem !important;
     }
-    .KP2-central-img{
+    .central-img{
         width: 30rem !important;
         left: calc(50% - (30rem/2)) !important;
     }
@@ -20,7 +20,7 @@
         text-align: center !important;
     }
 
-    .KP2-central-img{
+    .central-img{
         display: none;
     }
     .reason-elem-array{
@@ -257,13 +257,13 @@
     margin-left: auto;
 }
 
-.KP2-central-img{
-    width: 45rem;
+.central-img{
+    width: 22.5rem;
     position: absolute;
     top: calc(50% - 10rem);
     /* left: calc(50% - (35rem/2)); */
     /* left: 0; */
-    left: calc(50% - (45rem/2));
+    left: calc(50% - (22.5rem/2));
 }
 .builder-cta{
     text-align: center;

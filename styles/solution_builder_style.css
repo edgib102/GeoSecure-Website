@@ -94,6 +94,7 @@ body::-webkit-scrollbar{
 
 #mainContent{
     /* display: flex; */
+    padding-top: 2rem !important;
     display: grid;
     grid-template-columns: 2fr 1fr;
     /* height: calc(100vh - 12rem); */
@@ -208,7 +209,7 @@ body::-webkit-scrollbar{
     
     display: flex;
     justify-content: space-between;
-    margin-bottom:2rem
+    margin-bottom:4rem
 }
 #softwareHardwareRef{
     display: grid;

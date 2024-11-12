@@ -10,13 +10,16 @@
         margin: 2rem calc(var(--borderMargin)) 0rem calc(var(--borderMargin)) !important;
     }
 }
-
+.hero-header{
+    margin-top: 2rem;
+}
 .blog-content{
     margin: 2rem calc(var(--borderMargin)) 0rem calc(var(--borderMargin));
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10%;
     row-gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .blog-element{

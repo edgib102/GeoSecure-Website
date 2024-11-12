@@ -22,6 +22,14 @@
 
 }
 
+@media only screen and (max-width: 650px){
+    .slide{
+        height: 3.5rem !important;
+        margin: 2rem 1rem 2rem 1rem !important;
+    }    
+}
+
+
 @media only screen and (max-width: 550px){
     :root{
         --borderMargin:2rem;
@@ -76,10 +84,6 @@
         margin-top: 1rem !important;
     }
 
-    .slide{
-        height: 5.25rem !important;
-        margin: 2rem 1rem 2rem 1rem !important;
-    }
 
     .hoverSelect:hover{
         border-radius: 0rem !important;
@@ -520,9 +524,10 @@
 
 
 #data-panel-content{
-    height: 53.5rem;
+    height: 46rem;
     padding: 0;
-    padding-top: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     /* padding-top: 2rem; */
 }
 .circle-data-element{

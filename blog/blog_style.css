@@ -1,0 +1,30 @@
+.blog-content{
+    margin-bottom: 4rem;
+}
+.blog-content > h1, .blog-content > img{
+    padding-top: 2rem;
+}
+.basic-layout > div{
+    margin-left: 2rem !important;
+    height: fit-content;
+    margin: auto;
+    width: 80%;
+}
+
+.ref-link{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.builder-cta{
+    /* width: 60%; */
+    text-align: center;
+    background-color: white;
+    padding: 4rem var(--borderMargin) 4rem var(--borderMargin);
+    margin-top: 4rem;
+}
+.builder-cta p{
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto ;
+}

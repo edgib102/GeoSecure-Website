@@ -25,6 +25,9 @@
     align-items: center;
     text-align: center;
 }
+.blog-content button{
+    margin-top: 1rem;
+}
 .blog-element p{
     margin: 0.5rem;
 }
@@ -40,9 +43,11 @@
     height: 20rem;
     object-fit: cover;
     padding-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 .case-studies-flowpoint{
+    /* background-color: wh; */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -2,7 +2,7 @@ let hasContent = false
 let selection = null;
 
 function adjustContentMargin() {
-    const content = document.getElementById('mainContent');
+    const content = document.getElementById('form-content');
     
     const contentHeight = content.offsetHeight;
     const footerHeight = document.getElementById('footerBorder').offsetHeight;

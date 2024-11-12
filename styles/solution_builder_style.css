@@ -104,6 +104,10 @@ body::-webkit-scrollbar{
     padding-right: 4rem;
     display: none;
     text-align: center;
+    margin: auto !important;
+}
+.informationPanel{
+    margin: auto;
 }
 #builderHeroImage{
     width: 30rem;

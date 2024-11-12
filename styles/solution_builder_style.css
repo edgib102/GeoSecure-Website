@@ -14,16 +14,19 @@
     .optionPanel{
         margin: auto;
     }
-    .optionLayout{
+    /* .optionLayout{
         width: min-content !important;
         margin: auto !important;
-    }
+    } */
     .optionLayout > h2{
         text-align: center;
     }
     .optionGrid{
         width: min-content !important;
         column-gap: 8rem !important ;
+    }
+    #builderHeroImage{
+        max-width: 100% !important;
     }
 }
 @media only screen and (max-width: 1800px){
@@ -205,7 +208,7 @@ body::-webkit-scrollbar{
     
     display: flex;
     justify-content: space-between;
-    margin-bottom:auto
+    margin-bottom:2rem
 }
 #softwareHardwareRef{
     display: grid;

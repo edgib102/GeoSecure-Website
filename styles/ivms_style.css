@@ -1,6 +1,8 @@
 @media only screen and (max-width: 800px){
     .builder-datacollect-elem{
         flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
     }
     .data-collect-elem{
         margin-left: var(--borderMargin);

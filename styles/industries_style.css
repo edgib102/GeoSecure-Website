@@ -17,6 +17,15 @@
     font-size: 5.5rem;
     margin-top: 0;
 } */
+@media only screen and (min-width: 1100px){
+    .icon-title{
+        flex-direction: column-reverse;
+        width: fit-content;
+    }
+    .icon-title > img{
+        width: 100% !important;
+    }
+}
 
 
 @media only screen and (max-width: 1100px){
@@ -32,10 +41,18 @@
         display: none;
     }
 }
+@media only screen and (min-width: 450px){
+    .center-layout{
+        text-align: center;
+        margin-top: 2rem;
+        width: 70%;
+        margin: auto;
+    }
+}
 @media only screen and (max-width: 450px){
 
     .schedule-reasons-elem{
-        flex-direction: row !important;
+        flex-direction: column !important;
     }
 
     .mobile-wrap{
@@ -46,7 +63,7 @@
     }
 
     .pillar-facts-elem{
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-columns: 100% !important;
         text-align: center !important;
     }
@@ -59,8 +76,16 @@
         /* display: block; */
     }
 
-    .center-layout > img{
-        width: 70% ;
+    .center-layout{
+        width: auto !important;
+
+    }
+    
+
+    .center-layout img{
+        width: 100% !important;
+        margin: auto;
+        display: block;
     }
     .center-layout-img{
         width: 100% !important;
@@ -94,6 +119,7 @@
 
 .center-layout-img{
     width: 50% !important;
+    max-width: 40rem !important;
 }
  .hero-elem{
     padding-bottom: 4rem !important;
@@ -101,13 +127,6 @@
  .hero-elem > div{
     width: 55%;
  }
-
-.center-layout{
-    text-align: center;
-    margin-top: 2rem;
-    width: 70%;
-    margin: auto;
-}
 .center-layout img{
     margin-top: 1rem;
     width: 30%;

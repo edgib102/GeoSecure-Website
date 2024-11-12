@@ -235,7 +235,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 20rem;
-    row-gap: 5rem;
+    row-gap: 7rem;
 }
 .reason-elem-array > div{
     height: fit-content;
@@ -259,8 +259,9 @@
 
 .central-img{
     width: 22.5rem;
+    max-width: 40%;
     position: absolute;
-    top: calc(50% - 10rem);
+    top: calc(50% - 7rem);
     /* left: calc(50% - (35rem/2)); */
     /* left: 0; */
     left: calc(50% - (22.5rem/2));

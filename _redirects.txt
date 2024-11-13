@@ -1,1 +1,1 @@
-/in-vehicle-monitoring-system-ivms/     /ivms
+/in-vehicle-monitoring-system-ivms     /ivms

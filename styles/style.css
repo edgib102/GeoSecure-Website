@@ -222,7 +222,7 @@
         flex-direction: column-reverse !important;
     }
     #footerInfo a{
-        padding-top: .5rem !important;
+        margin-top: .25rem !important;
     }
     #footerContact h2{
         padding-bottom: .25rem;
@@ -231,6 +231,7 @@
     .industries-links{
         width: 100% !important;
         display: flex;
+        gap: .5rem;
         flex-direction: column;
         
     }

@@ -221,7 +221,7 @@
     #footerInfo{
         flex-direction: column-reverse !important;
     }
-    #footerInfo a{
+    /* #footerInfo a{
         margin-top: .25rem !important;
     }
     #footerContact h2{
@@ -239,7 +239,7 @@
      
         gap: 1rem !important;
      
-    }
+    } */
     /* .footer-industries > div{
         display: grid !important;
         grid-template-columns: 1fr 1fr;

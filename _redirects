@@ -17,7 +17,6 @@
 /expandability/     /telematics
 /sustainability/        /telematics
 /productivity/      /telematics
-/geotab/ /
 /noosaville-ivms/       /ivms
 /telematics-noosaville      /telematics
 /partners/      /about
@@ -25,10 +24,29 @@
 /telematics-driver-behavior/        /telematics
 /chatswood-construction-fleet-management/       /construction-and-mining
 /north-melbourne-civil-construction-fleet-management/       /construction-and-mining
-/praiso/        /telematics
 /rockdale-transport-logistics-fleet-management/     /transport-and-logistics
-/praiso-driver-management-app-and-online-portal-creating-a-safer-driver-experience/     /telematics
 /the-benefits-of-fleet-management-geo-tracking-in-the-civil-construction-and-mining-industry/       /construction-and-mining
 /docklands-transport-logistics-fleet-management/        /transport-and-logistics
 /nedlands-transport-logistics-fleet-management/         /transport-and-logistics
 /compliance/         /telematics
+/south-melbourne-trade-services-fleet-management/    /telematics
+/yeppoon-mining-operations-fleet-management/     /construction-and-mining
+/telematics-nambour/     /telematics
+/banora-point-mining-operations-fleet-management/    /construction-and-mining
+/tarneit-transport-logistics-fleet-management/   /transport-and-logistics
+/pymble-civil-construction-fleet-management/     /construction-and-mining
+/punchbowl-construction-fleet-management/    /construction-and-mining
+/meadow-heights-civil-construction-fleet-management/     /construction-and-mining
+/ballarat-transport-logistics-fleet-management/  /transport-and-logistics
+/victoria-point-transport-logistics-fleet-management/    /transport-and-logistics
+/port-lincoln-civil-construction-fleet-management/   /construction-and-mining
+/coomera-construction-fleet-management/  /construction-and-mining
+/narre-warren-south-trade-services-fleet-management/     /service-and-specialty-trades
+/taylors-hill-transport-logistics-fleet-management/  /transport-and-logistics
+/eastwood-mining-operations-fleet-management/    /construction-and-mining
+
+/praiso/        /404 410
+/praiso-driver-management-app-and-online-portal-creating-a-safer-driver-experience/ /404 410
+/geotab/ /404 410
+
+

@@ -1,0 +1,5 @@
+{
+    "es6-css-minify.cssMinPath": "/styles",
+    "es6-css-minify.jsMinPath": "/scripts",
+    "es6-css-minify.minifyOnSave": "yes"
+}

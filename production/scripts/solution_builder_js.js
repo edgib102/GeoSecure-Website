@@ -13,7 +13,6 @@ function adjustContentMargin() {
     // content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace}px` : '0';
 
     if(window.innerHeight >= 50){
-        console.log("trueee")
         content.style.marginBottom = remainingSpace > 0 ? `${remainingSpace/2}px` : '0';
         content.style.marginTop = remainingSpace > 0 ? `${remainingSpace/2}px` : '0';
     } else{
@@ -233,13 +232,14 @@ document.onreadystatechange = () => {
                     submissionList = layoutList[solutionStep].querySelectorAll(".submission")
                      
                     isNull = false;
+                    hasContent = false;
                     selection = []
 
     
                     submissionList.forEach(element => {
                         if(element.classList.contains("optional")){
-                            isNull = false;
-                        }
+                            
+                        } 
                         else if (element.value == ""){
                             isNull = true;
                         }
@@ -248,7 +248,8 @@ document.onreadystatechange = () => {
                         
             
                     });
-                    console.log(selection)
+
+                    console.log(hasContent)
     
                     if(isNull != true){
                         hasContent = true;
@@ -258,10 +259,23 @@ document.onreadystatechange = () => {
                         hasContent = false
                         // solutionStep --;
                     }
+                    console.log(hasContent)
                 }
 
                 if(hasContent == true){
                     solutionStep++;
+
+                    
+                    imgList.forEach(img => {
+                        if(img.getAttribute('data-inf-id') != (solutionStep+1)){
+                            console.log("step:" + solutionStep + "  "+ img)
+                            img.style.display = "none"
+                            console.log(img.getAttribute('data-inf-id'))
+                        }else{
+                            img.style.display = "block"
+                            
+                        }
+                    });
 
                     for (let i = 0; i < layoutList.length; i++) {
                         if(i == solutionStep){

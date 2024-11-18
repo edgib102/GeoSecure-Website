@@ -275,6 +275,9 @@
 .fact-pillars img{
     width: 3rem;
 }
+.fact-pillars img:not(.primary-img){
+    aspect-ratio:  1/1;
+}
 
 .central-pillar{
     text-align: center;
@@ -289,6 +292,7 @@
 .central-pillar img{
     width: 50%;
     padding-bottom: 2rem;
+    height: auto;
 }
 .central-pillar ul{
     text-align: left;

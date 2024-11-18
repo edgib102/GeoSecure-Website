@@ -365,6 +365,7 @@
 .slide{
     height: 5.5rem;
     margin: 3rem;
+    width: fit-content;
 }
 .slider:hover .slideTrack{
     animation-play-state: paused;

@@ -198,7 +198,8 @@
 }
 
 .selector-thumb > img{
-    width: 2rem
+    width: 2rem;
+    aspect-ratio: 1/1;
 }
 .selector-thumb > p{
     position: relative;

@@ -15,6 +15,22 @@ document.onreadystatechange = function () {
 
     window.addEventListener('resize', updateCircleElement(circleElements, lineElementContainer))
 
+    var glide = new Glide('#carousel-1', {
+        type: 'carousel',
+        perView: 1,
+        focusAt: 'center',
+        breakpoints: {
+          800: {
+            perView: 2
+          },
+          480: {
+            perView: 1
+          }
+        }
+      })
+      
+      glide.mount()
+
 
 }
 
